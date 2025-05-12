@@ -1,0 +1,6 @@
+owner = BOS
+add_core = BOS
+
+trade_goods = fish
+life_rating = 33
+

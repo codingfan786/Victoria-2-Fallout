@@ -1,0 +1,5 @@
+owner = JAC
+add_core = JAC
+trade_goods = grain
+life_rating = 31
+

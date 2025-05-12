@@ -1,0 +1,5 @@
+owner = RHO
+add_core = RHO
+trade_goods = cattle
+life_rating = 32
+

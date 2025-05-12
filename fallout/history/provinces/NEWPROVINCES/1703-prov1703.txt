@@ -1,0 +1,5 @@
+owner = ORO
+add_core = ORO
+trade_goods = grain
+life_rating = 33
+

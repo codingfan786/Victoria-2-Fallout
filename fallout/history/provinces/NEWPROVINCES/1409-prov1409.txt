@@ -1,0 +1,5 @@
+owner = GDH
+add_core = GDH
+trade_goods = grain
+life_rating = 31
+

@@ -1,0 +1,5 @@
+trade_goods = wool
+life_rating = 31
+
+owner = JAC
+add_core = JAC

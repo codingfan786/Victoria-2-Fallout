@@ -1,0 +1,5 @@
+owner = GLW
+add_core = GLW
+trade_goods = wool
+life_rating = 33
+

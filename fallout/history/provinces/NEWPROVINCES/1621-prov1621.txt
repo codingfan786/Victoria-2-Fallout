@@ -1,0 +1,5 @@
+owner = LON
+add_core = LON
+trade_goods = coal
+life_rating = 34
+

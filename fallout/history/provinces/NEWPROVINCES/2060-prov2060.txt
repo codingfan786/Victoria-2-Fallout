@@ -1,0 +1,5 @@
+owner = CLJ
+add_core = CLJ
+trade_goods = timber
+life_rating = 33
+

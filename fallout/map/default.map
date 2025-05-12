@@ -1,0 +1,34 @@
+max_provinces = 2355
+
+sea_starts = {
+1 2 3 4 5 7 11 26 39 54 55 56 61 63 65 72 77 94 103 107 108 116 136 155 156 166 190 225 229 237 238 273 360 378 453 485 517 555 645 752 792 815 850 854 870 871 878 879 910 916 921 940 956 966 980 992 1042 1069 1086 1106 1115 1118 1124 1139 1183 1201 1283 1367 1408 1510 1512 1546 1559 1574 1637 1670 1674 1691 1692 1695 1706 1707 1714 1729 1747 1763 1769 1793 1839 1898 1971 1972 2001 2016 2019 2025 2055 2058 2068 2124 2156 2180 
+}
+
+definitions = "../mod/fallout/map/definition.csv"
+provinces = "provinces.bmp"
+positions = "positions.txt"
+terrain = "terrain.bmp"
+rivers = "rivers.bmp"
+terrain_definition = "terrain.txt"
+tree_definition = "trees.txt"
+continent = "continent.txt"
+adjacencies = "adjacencies.csv"
+region = "region.txt"
+region_sea = "region_sea.txt"
+province_flag_sprite = "province_flag_sprites"
+
+
+border_heights = {
+	500
+	800
+	1100
+}
+
+terrain_sheet_heights = {
+	500 #150
+}
+
+tree = 350
+
+border_cutoff = 1100.0
+

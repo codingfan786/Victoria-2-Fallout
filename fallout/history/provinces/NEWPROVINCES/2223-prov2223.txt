@@ -1,0 +1,5 @@
+owner = SCO
+add_core = SCO
+trade_goods = fruit
+life_rating = 33
+

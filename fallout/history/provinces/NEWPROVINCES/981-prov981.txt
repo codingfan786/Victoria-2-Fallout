@@ -1,0 +1,5 @@
+owner = TON
+add_core = TON
+trade_goods = wool
+life_rating = 31
+

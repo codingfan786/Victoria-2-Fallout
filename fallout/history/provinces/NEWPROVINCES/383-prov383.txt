@@ -1,0 +1,5 @@
+owner = VIP
+add_core = VIP
+trade_goods = wool
+life_rating = 31
+

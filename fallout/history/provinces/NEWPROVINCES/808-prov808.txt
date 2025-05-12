@@ -1,0 +1,6 @@
+trade_goods = iron
+life_rating = 40
+
+
+owner = MRA
+add_core = MRA

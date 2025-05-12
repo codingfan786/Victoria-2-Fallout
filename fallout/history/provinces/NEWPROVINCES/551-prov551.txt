@@ -1,0 +1,5 @@
+owner = DIV
+add_core = DIV
+trade_goods = wool
+life_rating = 33
+

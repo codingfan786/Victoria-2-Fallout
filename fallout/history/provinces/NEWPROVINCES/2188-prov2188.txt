@@ -1,0 +1,5 @@
+owner = HAN
+add_core = HAN
+trade_goods = grain
+life_rating = 33
+

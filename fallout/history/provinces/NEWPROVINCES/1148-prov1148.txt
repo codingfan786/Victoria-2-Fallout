@@ -1,0 +1,5 @@
+owner = BLP
+add_core = BLP
+trade_goods = grain
+life_rating = 30
+

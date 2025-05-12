@@ -1,0 +1,5 @@
+owner = TOB
+add_core = TOB
+trade_goods = grain
+life_rating = 33
+

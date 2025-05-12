@@ -1,0 +1,5 @@
+owner = NCN
+add_core = NCN
+trade_goods = fruit
+life_rating = 34
+

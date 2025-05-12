@@ -1,0 +1,5 @@
+owner = NCN
+add_core = NCN
+trade_goods = grain
+life_rating = 34
+

@@ -1,0 +1,5 @@
+owner = NCR
+add_core = NCR
+trade_goods = wool
+life_rating = 33
+

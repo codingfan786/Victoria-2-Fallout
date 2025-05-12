@@ -1,0 +1,5 @@
+owner = TOB
+add_core = TOB
+trade_goods = oil
+life_rating = 33
+

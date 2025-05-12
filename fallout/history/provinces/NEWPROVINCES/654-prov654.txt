@@ -1,0 +1,5 @@
+owner = BVC
+add_core = BVC
+trade_goods = iron
+life_rating = 30
+

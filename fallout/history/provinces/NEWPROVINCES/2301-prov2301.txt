@@ -1,0 +1,5 @@
+owner = SUN
+add_core = SUN
+trade_goods = grain
+life_rating = 33
+

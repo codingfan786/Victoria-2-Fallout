@@ -1,0 +1,5 @@
+owner = RUB
+add_core = RUB
+trade_goods = wool
+life_rating = 31
+

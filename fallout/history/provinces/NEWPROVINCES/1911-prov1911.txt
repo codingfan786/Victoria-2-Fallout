@@ -1,0 +1,5 @@
+owner = FOR
+add_core = FOR
+trade_goods = coal
+life_rating = 33
+

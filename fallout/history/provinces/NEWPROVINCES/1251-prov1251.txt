@@ -1,0 +1,5 @@
+owner = CES
+add_core = CES
+trade_goods = sulphur
+life_rating = 35
+

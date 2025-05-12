@@ -1,0 +1,5 @@
+owner = FOR
+add_core = FOR
+trade_goods = coffee
+life_rating = 33
+

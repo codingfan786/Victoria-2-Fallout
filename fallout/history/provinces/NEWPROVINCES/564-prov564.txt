@@ -1,0 +1,5 @@
+owner = RIP
+add_core = RIP
+trade_goods = wool
+life_rating = 31
+

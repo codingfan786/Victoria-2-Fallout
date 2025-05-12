@@ -1,0 +1,5 @@
+owner = DEA
+add_core = DEA
+trade_goods = dye
+life_rating = 34
+

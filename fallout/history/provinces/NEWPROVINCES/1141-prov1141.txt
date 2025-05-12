@@ -1,0 +1,5 @@
+owner = CLK
+add_core = CLK
+trade_goods = grain
+life_rating = 34
+

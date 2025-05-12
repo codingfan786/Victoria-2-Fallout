@@ -1,0 +1,5 @@
+owner = WHT
+add_core = WHT
+trade_goods = coal
+life_rating = 31
+

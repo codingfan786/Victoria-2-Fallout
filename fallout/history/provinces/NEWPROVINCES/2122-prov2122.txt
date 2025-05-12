@@ -1,0 +1,5 @@
+owner = TTM
+add_core = TTM
+trade_goods = fruit
+life_rating = 33
+

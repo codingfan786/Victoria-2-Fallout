@@ -1,0 +1,5 @@
+owner = EAG
+add_core = EAG
+trade_goods = dye
+life_rating = 34
+

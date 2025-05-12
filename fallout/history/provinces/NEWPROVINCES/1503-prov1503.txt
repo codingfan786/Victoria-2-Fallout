@@ -1,0 +1,5 @@
+owner = TWO
+add_core = TWO
+trade_goods = grain
+life_rating = 31
+

@@ -1,0 +1,5 @@
+owner = BOS
+add_core = BOS
+trade_goods = oil
+life_rating = 35
+

@@ -1,0 +1,5 @@
+owner = RHO
+add_core = RHO
+trade_goods = fish
+life_rating = 32
+

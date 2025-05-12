@@ -1,0 +1,92 @@
+#Please keep tags sorted alphabetically when you add/remove country tags
+
+# Special countries...
+REB 	= 	"countries/rebels.txt"
+
+#ENG		= "countries/United Kingdom.txt"
+
+#california
+NCR = "countries/NewCaliforniaRepublic.txt"
+BOS = "countries/BrotherhoodOfSteel.txt"
+SHI = "countries/Shi.txt"
+
+BLP = "countries/PazBandits.txt"
+BVC = "countries/ValleBandits.txt"
+RAP = "countries/TheRapids.txt"
+
+DIV = "countries/TheDivide.txt"
+
+
+#mojave
+MOT = "countries/MojaveTerritories.txt"
+VEG = "countries/NewVegas.txt"
+MRA = "countries/MojaveRaiders.txt"
+
+
+#nevada
+DES = "countries/DesertRangers.txt"
+EHT = "countries/Eighties.txt"
+
+JAC = "countries/Jackals.txt"
+VIP = "countries/Vipers.txt"
+TVT = "countries/TVTown.txt"
+TOF = "countries/The215.txt"
+GRD = "countries/TheGuardians.txt"
+PSH = "countries/ProtectronSecurityHub.txt"
+SKY = "countries/SkyReavers.txt"
+RIP = "countries/RiperultTerritory.txt"
+RUB = "countries/RubyValleyRefuge.txt"
+GRA = "countries/GrabberTerritory.txt"
+
+
+#utah
+WHT = "countries/WhiteLegs.txt"
+NCN = "countries/NewCanaan.txt"
+
+CLK = "countries/Timekeepers.txt"
+TAR = "countries/TarWalkers.txt"
+SOR = "countries/Sorrows.txt"
+DEA = "countries/DeadHorses.txt"
+CRZ = "countries/CrazyHorns.txt"
+EAG = "countries/EagleRock.txt"
+LON = "countries/Lonetree.txt"
+
+
+#colorado
+PRO = "countries/FarSon.txt"
+DRY = "countries/Dryblowers.txt"
+TOB = "countries/OldBones.txt"
+ORO = "countries/Ouroboros.txt"
+YMP = "countries/BlackCanyon.txt"
+GLW = "countries/Glowbugs.txt"
+
+CLJ = "countries/ClaimJumpers.txt"
+FOR = "countries/Foragers.txt"
+PNT = "countries/Ciphers.txt"
+INR = "countries/CircleJunction.txt"
+TTM = "countries/TwinMothers.txt"
+NAV = "countries/Navajo.txt"
+RES = "countries/TheReservation.txt"
+BLK = "countries/Blackfoot.txt"
+
+
+#lanius
+LAC = "countries/LaniussCohort.txt"
+
+HAN = "countries/Handogs.txt"
+ASF = "countries/ArchdioceseOfSantaFe.txt"
+SUN = "countries/SunDogs.txt"
+SCO = "countries/ScorpionsBite.txt"
+
+
+#new mexico
+CES = "countries/CaesarsLegion.txt"
+GDH = "countries/GenteDelSol.txt"
+
+TON = "countries/TohonoNation.txt"
+COW = "countries/CowboyCountry.txt"
+TWO = "countries/TwoSun.txt"
+
+RHO = "countries/RustyHooks.txt"
+TWI = "countries/TwistedHairs.txt"
+

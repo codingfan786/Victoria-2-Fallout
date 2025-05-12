@@ -1,0 +1,5 @@
+owner = BOS
+add_core = BOS
+trade_goods = coffee
+life_rating = 33
+

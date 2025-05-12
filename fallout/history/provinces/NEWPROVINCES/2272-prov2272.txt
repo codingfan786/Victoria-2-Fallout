@@ -1,0 +1,5 @@
+owner = ASF
+add_core = ASF
+trade_goods = cattle
+life_rating = 33
+

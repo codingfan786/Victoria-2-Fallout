@@ -1,0 +1,5 @@
+owner = NCR
+add_core = NCR
+trade_goods = oil
+life_rating = 35
+

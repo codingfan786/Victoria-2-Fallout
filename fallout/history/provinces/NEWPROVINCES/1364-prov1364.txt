@@ -1,0 +1,5 @@
+owner = BLP
+add_core = BLP
+trade_goods = iron
+life_rating = 30
+

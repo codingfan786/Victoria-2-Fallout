@@ -1,0 +1,5 @@
+owner = MOT
+add_core = MOT
+trade_goods = grain
+life_rating = 35
+

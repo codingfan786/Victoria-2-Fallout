@@ -1,0 +1,5 @@
+trade_goods = cattle
+life_rating = 32
+owner = NAV
+add_core = NAV
+

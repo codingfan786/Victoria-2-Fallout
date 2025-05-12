@@ -1,0 +1,5 @@
+owner = DIV
+add_core = DIV
+trade_goods = grain
+life_rating = 33
+

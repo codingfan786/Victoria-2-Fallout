@@ -1,0 +1,5 @@
+trade_goods = oil
+life_rating = 40
+
+owner = VEG
+add_core = VEG

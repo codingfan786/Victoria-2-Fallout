@@ -1,0 +1,5 @@
+owner = RES
+add_core = RES
+trade_goods = sulphur
+life_rating = 32
+

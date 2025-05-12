@@ -1,0 +1,889 @@
+army = {
+	name = "Army"
+	location = 799
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 799
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 799
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 799
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 760
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 766
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 766
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 766
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 749
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 749
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 756
+	}
+}
+
+army = {
+	name = "Army"
+	location = 749
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 756
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 784
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 784
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 771
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 771
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 771
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 813
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 813
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 813
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 795
+	}
+}
+
+army = {
+	name = "Army"
+	location = 771
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 262
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 262
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 262
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 262
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 262
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 245
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 245
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 245
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 245
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 245
+	}
+}
+
+army = {
+	name = "Army"
+	location = 268
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 268
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 268
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 268
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 271
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 271
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 271
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 271
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 271
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 271
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 235
+	}
+}
+
+
+
+army = {
+	name = "Army"
+	location = 271
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 291
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 291
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 291
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 291
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 279
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 279
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 279
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 279
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 279
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 279
+	}
+}
+
+army = {
+	name = "Army"
+	location = 291
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 269
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 269
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 269
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 269
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 269
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 243
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 216
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 226
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 241
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 224
+	}
+}
+
+army = {
+	name = "Army"
+	location = 279
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 195
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 188
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 188
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 188
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 187
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 187
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 187
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 187
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 208
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 197
+	}
+}
+
+
+army = {
+	name = "Army"
+	location = 245
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 171
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 171
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 171
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 171
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 171
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 172
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 172
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 172
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 189
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 167
+	}
+}
+
+army = {
+	name = "Army"
+	location = 276
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 180
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 180
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 180
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 215
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 242
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 254
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 230
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 233
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 258
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 193
+	}
+}
+
+army = {
+	name = "Army"
+	location = 266
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 266
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 266
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 266
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 266
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 266
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 266
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 266
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 266
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 266
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 266
+	}
+}
+
+army = {
+	name = "Army"
+	location = 255
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 255
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 255
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 255
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 255
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 255
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 255
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 255
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 255
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 255
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 266
+	}
+}
+
+army = {
+	name = "Army"
+	location = 261
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 261
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 261
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 261
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 261
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 261
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 261
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 261
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 261
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 261
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 261
+	}
+}
+
+army = {
+	name = "Army"
+	location = 250
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 250
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 250
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 250
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 250
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 250
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 250
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 250
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 250
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 250
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 250
+	}
+}
+
+army = {
+	name = "Army"
+	location = 262
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 266
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 266
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 261
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 261
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 261
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 250
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 250
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 137
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 149
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 181
+	}
+}
+
+army = {
+	name = "Army"
+	location = 20
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 20
+	}
+
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 20
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 20
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 20
+	}
+	regiment = {
+		name= "Power Armor"
+		type = tank
+		home = 20
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 16
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 16
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 16
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 16
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 16
+	}
+}
+
+army = {
+	name = "Army"
+	location = 16
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 22
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 22
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 17
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 17
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 17
+	}
+}
+

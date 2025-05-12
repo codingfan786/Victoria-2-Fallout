@@ -1,0 +1,5 @@
+owner = TTM
+add_core = TTM
+trade_goods = iron
+life_rating = 33
+

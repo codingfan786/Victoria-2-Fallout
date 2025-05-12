@@ -1,0 +1,5 @@
+owner = LAC
+add_core = LAC
+trade_goods = iron
+life_rating = 35
+

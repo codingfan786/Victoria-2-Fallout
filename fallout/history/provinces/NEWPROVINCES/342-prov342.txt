@@ -1,0 +1,5 @@
+owner = DES
+add_core = DES
+trade_goods = timber
+life_rating = 35
+

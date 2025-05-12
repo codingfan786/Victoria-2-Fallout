@@ -1,0 +1,5 @@
+owner = SOR
+add_core = SOR
+trade_goods = sulphur
+life_rating = 34
+

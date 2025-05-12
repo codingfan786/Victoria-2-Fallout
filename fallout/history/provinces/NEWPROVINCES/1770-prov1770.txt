@@ -1,0 +1,5 @@
+owner = DRY
+add_core = DRY
+trade_goods = fruit
+life_rating = 33
+

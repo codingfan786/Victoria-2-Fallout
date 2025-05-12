@@ -1,0 +1,5 @@
+owner = COW
+add_core = COW
+trade_goods = grain
+life_rating = 31
+

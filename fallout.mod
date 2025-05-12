@@ -1,0 +1,6 @@
+name = "..FALLOUT"
+path = "mod/fallout"
+user_dir = "fallout"
+replace_path = "events"
+replace_path = "decisions"
+replace_path = "history"

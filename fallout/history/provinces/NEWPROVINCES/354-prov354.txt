@@ -1,0 +1,5 @@
+owner = NCR
+add_core = NCR
+trade_goods = fish
+life_rating = 35
+

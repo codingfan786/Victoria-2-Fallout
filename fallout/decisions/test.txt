@@ -1,0 +1,211 @@
+political_decisions = {
+	debug = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			random_owned = {
+				limit = {
+					owner = {tag = DES}
+				}
+				THIS = {
+					inherit = TVT
+					inherit = GRD
+					inherit = VIP
+					inherit = JAC
+					inherit = TOF
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {tag = DES}
+				}
+				THIS = {
+					any_owned = {
+						add_core = THIS
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {tag = EHT}
+				}
+				THIS = {
+					inherit = RIP
+					inherit = RUB
+					inherit = GRA
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {tag = WHT}
+				}
+				THIS = {
+					inherit = TAR
+					inherit = CLK
+					civilized = yes
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {tag = NCN}
+				}
+				SOR = {civilized = yes}
+				DEA = {civilized = yes}
+				CRZ = {civilized = yes}
+				EAG = {civilized = yes}
+				THIS = {
+					inherit = SOR
+					inherit = DEA
+					inherit = CRZ
+					inherit = EAG
+					all_core = {
+						limit = {
+							#terrain = woods
+						}
+						any_pop = {
+							limit = {
+								has_pop_culture = canaanite
+							}
+							move_pop = 1240
+						}
+						
+						secede_province = WHT
+					}
+					all_core = { #idk about this part... might as well move all the canaanite pops
+						limit = {
+							NOT = {terrain = woods}
+						}
+						any_pop = {
+							limit = {
+								has_pop_culture = canaanite
+							}
+							#reduce_pop = 0.1
+						}
+						
+						secede_province = WHT
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {tag = NCN}
+				}
+				THIS = {
+					any_owned = {
+						add_core = NCN
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {tag = LAC}
+				}
+				THIS = {
+					inherit = SUN
+					inherit = TTM
+					inherit = ASF
+					inherit = SCO
+					inherit = HAN
+					inherit = GLW
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {tag = CES}
+				}
+				THIS = {
+					inherit = TWI
+					inherit = RHO
+					inherit = NAV
+					inherit = RES
+					inherit = BLK
+					TWI = {
+						all_core = {
+							add_core = THIS
+						}
+					}
+					RHO = {
+						all_core = {
+							add_core = THIS
+						}
+					}
+						
+				}
+			}
+			any_owned = {
+				limit = {
+					owner = {tag = GDH}
+					OR = {
+						is_core = TON
+						is_core = COW
+						is_core = TWO
+					}
+				}
+				add_core = THIS
+			}
+			random_owned = {
+				limit = {
+					owner = {tag = GDH}
+				}
+				THIS = {
+					inherit = TON
+					inherit = COW
+					inherit = TWO
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {tag = VEG}
+				}
+				THIS = {
+					inherit = MRA
+					any_owned = {
+						add_core = THIS
+					}
+				}
+			}
+			MOT = {add_accepted_culture = south_mojave}
+			random_owned = {
+				limit = {
+					owner = {tag = NCR}
+				}
+				THIS = {
+					inherit = RAP
+					inherit = BLP
+					inherit = BVC
+					inherit = BOS
+					inherit = DIV
+					266 = {secede_province = BOS}
+					255 = {secede_province = BOS}
+					261 = {secede_province = BOS}
+					250 = {secede_province = BOS}
+					188 = {secede_province = BOS}
+					187 = {secede_province = BOS}
+					180 = {secede_province = BOS}
+					172 = {secede_province = BOS}
+					171 = {secede_province = BOS}
+					22 = {secede_province = BOS}
+					17 = {secede_province = BOS}
+					20 = {secede_province = BOS}
+					16 = {secede_province = BOS}
+					766 = {secede_province = BOS}
+					760 = {secede_province = BOS}
+
+					
+					
+				}
+			}
+			any_owned = {
+				limit = {
+					owner = {tag = NCR}
+					NOT = {is_core = DIV}
+				}
+				add_core = THIS
+			}
+		}
+	}
+}

@@ -1,0 +1,5 @@
+owner = BLK
+add_core = BLK
+trade_goods = coal
+life_rating = 32
+

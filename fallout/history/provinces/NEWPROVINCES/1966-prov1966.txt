@@ -1,0 +1,5 @@
+owner = NAV
+add_core = NAV
+trade_goods = grain
+life_rating = 32
+

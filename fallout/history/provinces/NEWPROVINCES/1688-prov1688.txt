@@ -1,0 +1,5 @@
+owner = EAG
+add_core = EAG
+trade_goods = coal
+life_rating = 34
+

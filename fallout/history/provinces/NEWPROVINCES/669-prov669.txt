@@ -1,0 +1,5 @@
+owner = RAP
+add_core = RAP
+trade_goods = fruit
+life_rating = 33
+
