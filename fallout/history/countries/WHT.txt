@@ -1,6 +1,6 @@
 capital = 893
 primary_culture = white_leg
-religion = protestant
+religion = catholic
 government = fascist_dictatorship
 plurality = 25.0
 nationalvalue = nv_order
@@ -183,5 +183,5 @@ enlightenment_thought = 1
 	medicine = 1
 	inorganic_chemistry = 1
 	organic_chemistry = 1
-        electricity = 1
+        #electricity = 1
 }

@@ -1,7 +1,7 @@
 capital = 708
 primary_culture = central_californian
 #culture = south_mojave
-religion = protestant
+religion = catholic
 government = democracy
 plurality = 25.0
 nationalvalue = nv_liberty

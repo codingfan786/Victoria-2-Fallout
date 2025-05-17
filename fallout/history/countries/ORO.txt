@@ -1,6 +1,6 @@
 capital = 1717
 primary_culture = west_coloradan
-religion = protestant
+religion = catholic
 government = bourgeois_dictatorship
 plurality = 25.0
 nationalvalue = nv_liberty

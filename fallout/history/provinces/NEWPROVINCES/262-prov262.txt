@@ -3,3 +3,13 @@ add_core = BOS
 trade_goods = iron
 life_rating = 33
 
+state_building = {
+	level = 1
+	building = furniture_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = regular_clothes_factory
+	upgrade = yes
+}

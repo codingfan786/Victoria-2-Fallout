@@ -3,3 +3,23 @@ add_core = CES
 trade_goods = wool
 life_rating = 32
 
+state_building = {
+	level = 1
+	building = furniture_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = lumber_mill
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = regular_clothes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fabric_factory
+	upgrade = yes
+}

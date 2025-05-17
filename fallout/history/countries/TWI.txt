@@ -1,6 +1,6 @@
 capital = 885
 primary_culture = coastal_arizonan
-religion = protestant
+religion = catholic
 government = democracy
 plurality = 25.0
 nationalvalue = nv_liberty

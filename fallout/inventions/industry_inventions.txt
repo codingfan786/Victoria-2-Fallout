@@ -1147,7 +1147,7 @@ synthetic_dye = {
 		}
 	}
 	effect = {
-		activate_building = dye_factory 
+		#activate_building = dye_factory 
 	}
 }
 gaslights = {

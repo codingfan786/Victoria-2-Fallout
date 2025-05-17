@@ -1,0 +1,72 @@
+alliance=
+	{
+		first="NCR"
+		second="MOT"
+		end_date="2000.1.1"
+		start_date="1.1.1"
+	}
+alliance=
+	{
+		first="NCR"
+		second="VEG"
+		end_date="2000.1.1"
+		start_date="1.1.1"
+	}
+alliance=
+	{
+		first="NCR"
+		second="DES"
+		end_date="2000.1.1"
+		start_date="1.1.1"
+	}
+
+alliance=
+	{
+		first="NCN"
+		second="CRZ"
+		end_date="2000.1.1"
+		start_date="1.1.1"
+	}
+alliance=
+	{
+		first="NCN"
+		second="DEA"
+		end_date="2000.1.1"
+		start_date="1.1.1"
+	}
+alliance=
+	{
+		first="NCN"
+		second="CRZ"
+		end_date="2000.1.1"
+		start_date="1.1.1"
+	}
+alliance=
+	{
+		first="NCN"
+		second="EAG"
+		end_date="2000.1.1"
+		start_date="1.1.1"
+	}
+alliance=
+	{
+		first="NCN"
+		second="SOR"
+		end_date="2000.1.1"
+		start_date="1.1.1"
+	}
+alliance=
+	{
+		first="CES"
+		second="LAC"
+		end_date="2000.1.1"
+		start_date="1.1.1"
+	}
+alliance=
+	{
+		first="CES"
+		second="GDH"
+		end_date="2000.1.1"
+		start_date="1.1.1"
+	}
+	

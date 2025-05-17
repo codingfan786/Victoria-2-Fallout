@@ -3,3 +3,45 @@ life_rating = 40
 
 owner = VEG
 add_core = VEG
+
+state_building = {
+	level = 10
+	building = furniture_factory
+	upgrade = yes
+}
+state_building = {
+	level = 9
+	building = lumber_mill
+	upgrade = yes
+}
+state_building = {
+	level = 10
+	building = regular_clothes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 9
+	building = fabric_factory
+	upgrade = yes
+}
+state_building = {
+	level = 9
+	building = liquor_distillery
+	upgrade = yes
+}
+state_building = {
+	level = 9
+	building = winery
+	upgrade = yes
+}
+state_building = {
+	level = 9
+	building = luxury_clothes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 9
+	building = luxury_furniture_factory
+	upgrade = yes
+}
+

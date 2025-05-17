@@ -1,7 +1,7 @@
 capital = 1655
 primary_culture = canaanite
 culture = west_coloradan
-religion = protestant
+religion = catholic
 government = democracy
 plurality = 25.0
 nationalvalue = nv_liberty

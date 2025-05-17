@@ -1,0 +1,57 @@
+2346	=	{	
+	bankers = { 
+		culture = 	central_californian	
+		religion = catholic 
+		size = 	10000	
+	}	
+	bankers = { 
+		culture = 	north_californian	
+		religion = catholic 
+		size = 	10000	
+	}	
+	bankers = { 
+		culture = 	south_californian	
+		religion = catholic 
+		size = 	10000	
+	}		
+	bankers = { 
+		culture = 	san_franciscan	
+		religion = catholic 
+		size = 	10000	
+	}	
+	bankers = { 
+		culture = 	brotherhood	
+		religion = catholic 
+		size = 	10000	
+	}	
+	bankers = { 
+		culture = 	north_mojave	
+		religion = catholic 
+		size = 	10000	
+	}	
+	bankers = { 
+		culture = 	south_mojave	
+		religion = catholic 
+		size = 	10000	
+	}		
+	bankers = { 
+		culture = 	desert_new_mexican	
+		religion = catholic 
+		size = 	10000	
+	}	
+	bankers = { 
+		culture = 	canyon_new_mexican	
+		religion = catholic 
+		size = 	10000	
+	}	
+	bankers = { 
+		culture = 	east_coloradan	
+		religion = catholic 
+		size = 	10000	
+	}	
+	bankers = { 
+		culture = 	west_coloradan	
+		religion = catholic 
+		size = 	10000	
+	}		
+}

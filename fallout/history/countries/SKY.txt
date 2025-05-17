@@ -1,6 +1,6 @@
 capital = 650
 primary_culture = zetan
-religion = protestant
+religion = catholic
 government = presidential_dictatorship
 plurality = 20.0
 nationalvalue = nv_order

@@ -1,6 +1,6 @@
 capital = 692
 primary_culture = east_nevadan
-religion = protestant
+religion = catholic
 government = democracy
 plurality = 25.0
 nationalvalue = nv_liberty

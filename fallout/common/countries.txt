@@ -4,6 +4,7 @@
 REB 	= 	"countries/rebels.txt"
 
 #ENG		= "countries/United Kingdom.txt"
+BAN = "countries/Bank.txt"
 
 #california
 NCR = "countries/NewCaliforniaRepublic.txt"
@@ -32,7 +33,7 @@ VIP = "countries/Vipers.txt"
 TVT = "countries/TVTown.txt"
 TOF = "countries/The215.txt"
 GRD = "countries/TheGuardians.txt"
-PSH = "countries/ProtectronSecurityHub.txt"
+#PSH = "countries/ProtectronSecurityHub.txt"
 SKY = "countries/SkyReavers.txt"
 RIP = "countries/RiperultTerritory.txt"
 RUB = "countries/RubyValleyRefuge.txt"

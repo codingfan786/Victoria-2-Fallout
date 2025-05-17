@@ -1,7 +1,7 @@
 capital = 1101
 primary_culture = utah_tribal
 culture = canaanite
-religion = protestant
+religion = catholic
 government = bourgeois_dictatorship
 plurality = 20.0
 nationalvalue = nv_order

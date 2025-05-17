@@ -1,0 +1,11 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+world_bank = {
+	trigger = {
+		has_country_flag = is_bank
+	}
+	max_tariff = -1.5
+	min_tariff = -2
+}

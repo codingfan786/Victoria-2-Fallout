@@ -12,6 +12,7 @@ country_event = {
 	}
 
 	immediate = {
+
 		any_owned = {
 			limit = {
 				terrain = mountain
@@ -76,6 +77,31 @@ country_event = {
 				infrastructure = 5
 			}
 		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = 13371337002
+	title = "Startup"
+	desc = "Ignore"
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAN
+		NOT = {has_global_flag = GAMESTART}
+		#ai = yes
+	}
+
+	immediate = {
+		BAN = {
+			set_country_flag = is_bank
+		}
+		set_global_flag = GAMESTART
+		#2346 = {secede_province = BAN}
 	}
 
 	option = {

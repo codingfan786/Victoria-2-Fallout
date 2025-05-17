@@ -1,6 +1,6 @@
 capital = 1756
 primary_culture = utah_tribal
-religion = protestant
+religion = catholic
 government = democracy
 plurality = 25.0
 nationalvalue = nv_liberty

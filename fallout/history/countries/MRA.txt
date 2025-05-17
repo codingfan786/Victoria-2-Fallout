@@ -1,7 +1,7 @@
 capital = 746
 primary_culture = north_mojave
 culture = south_mojave
-religion = protestant
+religion = catholic
 government = presidential_dictatorship
 plurality = 20.0
 nationalvalue = nv_order

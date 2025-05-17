@@ -1,7 +1,7 @@
 capital = 1336
 primary_culture = desert_arizonan
 culture = coastal_arizonan
-religion = protestant
+religion = catholic
 government = fascist_dictatorship
 plurality = 25.0
 nationalvalue = nv_order
@@ -12,7 +12,7 @@ consciousness = 2
 nonstate_consciousness = 1
 
 #GreaterPowers = prestige
-prestige = 100
+prestige = 300
 
 
 # Political reforms

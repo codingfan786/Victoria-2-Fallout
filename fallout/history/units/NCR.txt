@@ -1,3 +1,13 @@
+MOT = {
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+}
+VEG = {
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+}
+DES = {
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+}
+
 army = {
 	name = "Army"
 	location = 398

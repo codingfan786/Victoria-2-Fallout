@@ -3,3 +3,46 @@ add_core = NCR
 trade_goods = grain
 life_rating = 33
 
+#basic goods
+state_building = {
+	level = 2
+	building = furniture_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = lumber_mill
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = regular_clothes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fabric_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = liquor_distillery
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = winery
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = glass_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fertilizer_factory
+	upgrade = yes
+}
+
+

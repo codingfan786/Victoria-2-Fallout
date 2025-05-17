@@ -1,6 +1,6 @@
 capital = 1926
 primary_culture = desert_new_mexican
-religion = protestant
+religion = catholic
 government = absolute_monarchy
 plurality = 25.0
 nationalvalue = nv_order

@@ -2,7 +2,7 @@ capital = 398
 primary_culture = central_californian
 culture = north_californian
 culture = south_californian
-religion = protestant
+religion = catholic
 government = democracy
 plurality = 25.0
 nationalvalue = nv_liberty
@@ -13,7 +13,7 @@ consciousness = 2
 nonstate_consciousness = 1
 
 #GreaterPowers = prestige
-prestige = 100
+prestige = 600
 
 
 # Political reforms

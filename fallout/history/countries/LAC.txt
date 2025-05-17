@@ -1,7 +1,7 @@
 capital = 2020
 primary_culture = desert_new_mexican
 culture = canyon_new_mexican
-religion = protestant
+religion = catholic
 government = fascist_dictatorship
 plurality = 25.0
 nationalvalue = nv_order

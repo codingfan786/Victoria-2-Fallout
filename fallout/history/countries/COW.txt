@@ -1,7 +1,7 @@
 capital = 1156
 primary_culture = desert_arizonan
 culture = mexican
-religion = protestant
+religion = catholic
 government = democracy
 plurality = 25.0
 nationalvalue = nv_liberty

@@ -3,3 +3,44 @@ add_core = CES
 trade_goods = fish
 life_rating = 35
 
+#naval
+state_building = {
+	level = 2
+	building = steamer_shipyard
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = artillery_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = explosives_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = canned_food_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = fuel_refinery
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = machine_parts_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = cement_factory
+	upgrade = yes
+}
