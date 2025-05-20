@@ -815,7 +815,7 @@ dye_plantation = {
 fishing_wharf = {
 	template = RGO_template_farmers
 	output_goods = fish 
-	value = 0.11
+	value = 0.33 #was 0.11
 	farm = yes
 }
 

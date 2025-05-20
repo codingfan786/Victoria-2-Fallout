@@ -1,0 +1,32 @@
+political_decisions = {
+	war_on_paradise = {
+		potential = {
+			tag = WHT
+			NOT = {has_country_flag = war_on_paradise_started}
+			NOT = {year = 1916}
+		}
+		allow = {
+			NOT = {year = 1916}
+			NOT = {war_with = NCN}
+			any_neighbor_country = {
+				tag = NCN
+			}
+		}
+		effect = {
+			set_country_flag = war_on_paradise_started
+			NCN = {
+				set_country_flag = war_on_paradise_started
+			}
+			any_country = {
+				leave_alliance = NCN
+			}
+			war = {
+				target = NCN
+				attacker_goal = { casus_belli = war_on_paradise }
+				defender_goal = { casus_belli = war_on_paradise }
+				call_ally = no
+			}
+		}
+	}
+}
+

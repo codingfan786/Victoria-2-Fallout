@@ -1,6 +1,6 @@
 capital = 1336
 primary_culture = desert_arizonan
-culture = coastal_arizonan
+#culture = coastal_arizonan #lets try minimizing this crap
 religion = catholic
 government = fascist_dictatorship
 plurality = 25.0

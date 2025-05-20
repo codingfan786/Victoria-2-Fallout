@@ -1,6 +1,6 @@
 capital = 708
 primary_culture = central_californian
-#culture = south_mojave
+culture = south_mojave
 religion = catholic
 government = democracy
 plurality = 25.0

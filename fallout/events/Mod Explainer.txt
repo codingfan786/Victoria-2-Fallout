@@ -1,0 +1,175 @@
+country_event = {
+	id = 1337017
+	title = "Mod Explainer"
+	desc = "main_explain"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Victory Point System"
+		country_event = 1337018
+	}
+	option = {
+		name = "New Conquest CB System"
+		country_event = 1337019
+	}
+	option = {
+		name = "NCR-Brotherhood War (NCR & BOS)"
+		country_event = 1337020
+	}
+	option = {
+		name = "Operation Sunburst (Mojave Territories & BOS)"
+		country_event = 1337021
+	}
+	option = {
+		name = "Baja Campaign (NCR & Gente Del Sol)"
+		country_event = 1337022
+	}
+	option = {
+		name = "Nevada Road Wars (Desert Rangers & Eighties)"
+		country_event = 1337023
+	}
+	option = {
+		name = "War on Paradise (White Legs & New Canaan)"
+		country_event = 1337024
+	}
+	option = {
+		name = "Rosterable Nations"
+		country_event = 1337025
+	}
+	option = {
+		name = "Close menu"
+	}
+}
+
+
+country_event = {
+	id = 1337018
+	title = "Mod Explainer"
+	desc = "vp_explain"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Main menu"
+		country_event = 1337017
+	}
+	option = {
+		name = "Close menu"
+	}
+}
+
+country_event = {
+	id = 1337019
+	title = "Mod Explainer"
+	desc = "conquest_explain"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Main menu"
+		country_event = 1337017
+	}
+	option = {
+		name = "Close menu"
+	}
+}
+
+country_event = {
+	id = 1337020
+	title = "Mod Explainer"
+	desc = "bos_explain"
+
+	picture = ncr_brotherhood
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Main menu"
+		country_event = 1337017
+	}
+	option = {
+		name = "Close menu"
+	}
+}
+
+country_event = {
+	id = 1337021
+	title = "Mod Explainer"
+	desc = "sunburst_explain"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Main menu"
+		country_event = 1337017
+	}
+	option = {
+		name = "Close menu"
+	}
+}
+
+country_event = {
+	id = 1337022
+	title = "Mod Explainer"
+	desc = "baja_explain"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Main menu"
+		country_event = 1337017
+	}
+	option = {
+		name = "Close menu"
+	}
+}
+
+country_event = {
+	id = 1337023
+	title = "Mod Explainer"
+	desc = "nevada_explain"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Main menu"
+		country_event = 1337017
+	}
+	option = {
+		name = "Close menu"
+	}
+}
+
+country_event = {
+	id = 1337024
+	title = "Mod Explainer"
+	desc = "paradise_explain"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Main menu"
+		country_event = 1337017
+	}
+	option = {
+		name = "Close menu"
+	}
+}
+
+country_event = {
+	id = 1337025
+	title = "Mod Explainer"
+	desc = "roster_explain"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Main menu"
+		country_event = 1337017
+	}
+	option = {
+		name = "Close menu"
+	}
+}
+

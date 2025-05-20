@@ -1,3 +1,12 @@
+TWI = {
+	truce_until = "1916.1.1"
+}
+RHO = {
+	truce_until = "1916.1.1"
+}
+TON = {
+	truce_until = "1916.1.1"
+}
 army = {
 	name = "Army"
 	location = 708

@@ -1,0 +1,51 @@
+political_decisions = {
+	no_two_sun_player = {
+		potential = {
+			tag = GDH
+			NOT = {has_country_flag = two_sun_done}
+		}
+		allow = {
+			ai = no
+			TWO = {
+				ai = yes
+			}
+			year = 1915
+		}
+		effect = {
+			set_country_flag = two_sun_done
+			inherit = TWO
+		}
+	}
+
+	baja_integration = {
+		potential = {
+			tag = GDH
+			NOT = {has_country_flag = integrated_baja}
+			exists = BVC
+			exists = BLP
+		}
+		allow = {
+			war = no
+			has_country_flag = baja_campaign_started
+		}
+		effect = {
+			set_country_flag = integrated_baja
+			inherit = BVC
+			inherit = BLP
+
+			BVC = {all_core = {add_core = GDH}}
+			BLP = {all_core = {add_core = GDH}}
+
+			add_accepted_culture = bajan
+		}
+	}
+
+
+
+
+
+
+
+
+
+}

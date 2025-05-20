@@ -27,18 +27,85 @@ utah_tribal;Syncretic Tribal;x
 white_leg;White Leg;x
 zeta_group;Zetan;x
 zetan;Zetan;x
+empty;Empty;x
 mexico_group;Mexican;x
 bajan;Bajan Mexican;x
 mexican;Mexican;x
 synthetic_rubber_factory;Rubber Factory;x
-state_201;Southwest Pheonix;x
-state_213;Southeast Pheonix;x
-state_225;East Pheonix;x
-state_202;North Pheonix;x
-state_223;Flagstaff;x
-state_182;Tumbleweed;x
-state_341;West Red Sun City;x
-state_344;East Red Sun City;x
 BAN;World Bank;x
-state_1;Wasteland;x
-continent_1;Western United States;x
+conquest_timer;Invasion time limit;x
+conquest_timer_desc;When this runs out, you will be peaced out with all ai you are at war with and you will annex any land you have occupied from them.;x
+NCR_Legion_War;NCR-Legion War Has Started;x
+nevada_road_war;Nevada Road War Has Ended;x
+NORMAL_NEVADA_ROAD_WAR_NAME;Nevada Road War;x
+AGRESSION_NEVADA_ROAD_WAR_NAME;Nevada Road War;x
+NORMAL_BAJA_CAMPAIGN_NAME;Baja Campaign;x
+AGRESSION_BAJA_CAMPAIGN_NAME;Baja Campaign;x
+NORMAL_OPERATION_SUNBURST_NAME;Operation Sunburst;x
+AGRESSION_OPERATION_SUNBURST_NAME;Operation Sunburst;x
+NORMAL_BOS_NCR_WAR_NAME;NCR-Brotherhood War;x
+AGRESSION_BOS_NCR_WAR_NAME;NCR-Brotherhood War;x
+baja_campaign_started;The Bajan Campaign has occured;x
+sunburst_only;Trust in Elijah!§R We will not invade the NCR right now.;x
+sunburst_plus_ncr_bos_war;Sieze California!§R We will invade the NCR immediately!;x
+NORMAL_WAR_ON_PARADISE_NAME;War on Paradise;x
+AGRESSION_WAR_ON_PARADISE_NAME;War on Paradise;x
+peacetime_training;Peacetime Training;x
+war_on_paradise_started;The White Legs have invaded New Canaan;x
+mobilization_nerf;Mobilisation Nerf;x
+mobilization_nerf_desc;Do you really want to deal with mobbing 600+ brigades?;x
+mobilization_bonus;Mobilisation Bonus;x
+mobilization_bonus_desc;For shitter nations.;x
+war_on_paradise_ended;The war in New Canaan has ended.;x
+colorado_rushdown;Goddard's Expedition;x
+colorado_rushdown_desc;The Baggers are a collective team of NCR military soldiers and escorts bringing Goddard and his team of NCR scientists to the Boulder Dome.;x
+no_two_sun_player_title;Annex Two Sun;x
+no_two_sun_player_desc;No Two Sun player? No problem!;x
+NORMAL_NCR_LEGION_WAR_NAME;NCR-Legion War;x
+AGRESSION_NCR_LEGION_WAR_NAME;NCR-Legion War;x
+vp_score;Score;x
+bos_ncr_war_title;NCR-Brotherhood War;x
+bos_ncr_war_desc;The NCR-Brotherhood War, referred to in the New California Republic as the Brotherhood War, is a major conflict between the Brotherhood of Steel and the NCR that has thoroughly affected New California as well as areas around it, shifting its fragile balance of power. The conflict devolved into a battle of attrition, thus resulted in years of stalemate in which the war effort had gone poorly for both sides in New California. Brotherhood commando raids on the NCR's gold reserves in the Hub lead to the weakening of the NCR economy and the establishing a fiat currency, and at least four chapter bunkers were self-destructed by the Brotherhood in a last-ditch attempt to deny them to the NCR.;x
+vertibirds_title;Build additional vertibirds;x
+vertibirds_desc;After developing our aeronautic technology, we can finally expand our vertibird fleet to transport more troops at once between our bases in Lost Hills, Hidden Valley, Maxson, and Navarro.;x
+ruby_access_title;March through Ruby Valley;x
+ruby_access_desc;It is high time we finally deploy troops directly in west Nevada.;x
+baja_integration_title;Cross into Baja;x
+baja_integration_desc;We've successfully defended the people of Baja from the invading colonizers of California! Baja welcomes us with open arms!;x
+operation_sunburst_title;Operation Sunburst;x
+operation_sunburst_desc;Operation: Sunburst, also known as the Battle for HELIOS One, was a decisive battle fought between the Mojave chapter of the Brotherhood of Steel and the Mojave expedition of the New California Republic over control of the pre-War Poseidon Energy solar plant, HELIOS One. The conflict was part of the larger NCR-Brotherhood War and resulted in the routing of Brotherhood forces and the lockdown of the Hidden Valley bunker.;x
+integrate_mojave_title;Mojave pacification;x
+integrate_mojave_desc;The security of our position in the Mojave is of utmost importance! We must deal with the raiders in the Mojave and secure our supply lines through the Divide at once!;x
+NCR_legion_war_title;NCR-Legion War;x
+NCR_legion_war_desc;The NCR-Legion War is an ongoing military conflict between the New California Republic and Caesar's Legion over Hoover Dam that began after the Ranger Unification Treaty established a permanent NCR presence in the Mojave. To Caesar the Dam served primarily as a barrier to his eventual conquest of New Vegas and California.;x
+baja_campaign_title;Baja Campaign;x
+baja_campaign_desc;Shortly after the Ranger Unification Treaty, Ranger officials directly requested an increase in the deployment of troops to the Mojave Wasteland from the NCR president. The president agreed but decided to order the Rangers' veteran members into Baja on a mission many considered "chasing ghosts," whilst forcing the Rangers to contend with under-equipped reinforcements, indirectly undermining the NCR's war effort against Caesar's Legion. As a result of executive meddling and miscommunication, however, the entire situation became a massive waste of time, money and resources with a lengthy, complicated history.;x
+baja_settlement_title;Resettle Rattletail;x
+baja_settlement_desc;Rattletail was one of the original New Californian settlements in Baja and was abandoned after the first raids by the Baja bandits occured. Now that we've retaken Baja we can reestablish the settlement.;x
+new_canaan_missionaries_title;Recall our missionaries;x
+new_canaan_missionaries_desc;New Canaan has had a long reputation of peaceful proselytizing of the Utahan natives. With the onset of the White Leg invasion we have realized that the threat to Utah requires us all to come together and fight!;x
+new_canaan_flee_title;Barbarians at the gate!;x
+new_canaan_flee_desc;The White Legs tribe has invaded us and overrun our southern defences! We must flee our homeland if we are to survive!§R This option will trigger the total loss event for the war. In it the White Legs will take all of our land, but we will gain all of the land of the Sorrows and our Canaanite pops will all move to the Sorrows territory. Additionally, when the NCR-Legion war occurs Joshua Graham will return to us as a 5/4 general from the Legion. They will lose his services as a general when this occurs.;x
+expand_vegas_title;Clean up Outer Vegas;x
+expand_vegas_desc;New Vegas has been a bastion of civilization ever since the visionary Robert House woke up from his suspended animation. It is time to extend his influence to the rest of the Mojave.;x
+choose_host_title;Choose host;x
+choose_host_desc;You will be the host when you press this button. DO NOT PRESS IT IF YOU'RE NOT THE HOST!;x
+disable_vp_title;Disable VP system.;x
+disable_vp_desc;Disables the VP system. Will require save editting to turn back on.;x
+view_ncr_score_title;NCR Victory Points;x
+view_ncr_score_desc;Look at the decision trigger to view the current NCR Victory Points;x
+view_ces_score_title;Legion Victory Points;x
+view_ces_score_desc;Look at the decision trigger to view the current Legion Victory Points;x
+war_on_paradise_title;
+war_on_paradise_desc;The settlement of New Canaan served as a vital trading partner and source of supply for the overstretched NCR military in the Mojave. Seeing this, the White Leg tribals took matters into their own hands to curry favor with the Legion. The surprise raid lead to the complete destruction of New Canaan and the dispersion of the Canaanites throughout Utah.;x
+sunburst_desc;Operation: Sunburst, also known as the Battle for HELIOS One, was a decisive battle fought between the Mojave chapter of the Brotherhood of Steel and the Mojave expedition of the New California Republic over control of the pre-War Poseidon Energy solar plant, HELIOS One.\n\nWe currently have a brief opportunity to launch the NCR-Brotherhood war right now, or we could keep our conflict localised in the Mojave.;x
+nevada_desc;The proxy wars between the Desert Rangers and the Eighties have come to an end. All of the puppeted countries of the Eighties and Ruby Valley have been annexed by the Eighties.;x
+main_explain;This mod is a WW1/WW2 style mod that features a few smaller wars and a buildup period before the main NCR-Legion War occurs. There is also a Victory Point system.\n\nThe main war can start as early as mid 1916.\n\nOther features are explained below.;x
+vp_explain;Every January and July after the NCR-Legion War starts a score will be assigned depending on how many Victory Points each side controls/has occupied. \A Victory Point means occupying all provinces in one of the following states:\nShady Sands, The Hub, Dayglow, New Vegas, New Canaan, Flagstaff, Pheonix (All 4 states count as one whole VP), Red Sun City (Both states count as one whole VP), and Dog City.\n\nIf Dog City is controlled by Handogs, it is counted as if it is controlled by the NCR side.\n1 point is given for each VP you have more than the other team when points are given in January and July. 10 points to win.;x
+conquest_explain;The only CB to take land from AI is the conquest CB which has been changed from vanilla. Whenever you use the conquest CB you have 180 days to occupy the enemy country, and at the end of it you will annex all the land you have occupied.;x
+bos_explain;At any point before 1915 the Brotherhood of Steel can declare war on the New California Republic. This war lasts for 180 days and at the end, whatever is sieged by either side is transfered to the occupier. However, the Brotherhood has three main bunker's that cannot be taken in the war. These are the Lost Hills bunker, Maxson, and the Navarro base. If the NCR occupies one of these by the end of the war, it is treated as if the NCR has occupied everything in the region associated with each bunker. The picture in this event shows the bunker locations and associated regions.;x
+sunburst_explain;At any point before 1915 the Mojave Territories can declare war on the Brotherhood of Steel. This war lasts for 180 days and at the end, whatever is sieged by either side is transfered to the occupier. If Hidden Valley Bunker is sieged, the Brotherhood will lose the entirety of it's Mojave territory. If the Mojave Outpost in the Long 15 state is sieged, the Mojave Territories will be unable to take any provinces from the Brotherhood.;x
+baja_explain;At any point before 1915 the NCR can declare war on the countries in Baja. Gente Del Sol immediately puppets both nation and joins the war against NCR. This war lasts for 270 days and at the end, whatever is sieged by NCR is transfered to them. The rest of the Baja countries are then annexed to Gente Del Sol by decision and they get cores and accepted pops there.;x
+nevada_explain;Any time before 1916 Desert Rangers can declare on the Nevadan AI with an instant CB. This CB automatically makes the target country a puppet of the Eighties and they are called into the war. The CB works like a normal conquest CB in the mod except with a 90 day timer instead of 180. In 1916 an event will trigger that will let the Eighties inherit any puppeted nations that are still alive and Ruby Valley Refuge.;x
+paradise_explain;At any point before 1916 if the White Legs border New Canaan they can declare war on them. This war lasts for 1 year and at the end of it any sieged land will transfer ownership to the controller. If the White legs siege the New Canaan capital at any point, the war ends immediately and the entire country of New Canaan is transfered to the White Legs. When this happens all Canaanite pops will move to the Sorrows territory and New Canaan will annex and core the Sorrows, effectively migrating their country south. New Canaan also has a decision to surrender the war at any time and migrate.;x
+roster_explain;The following countries are rosterable:\n\nNCR side:\nNCR, Mojave Territories, Desert Rangers, New Vegas, New Canaan, Baggers\n\nLegion side:\nCaesar's Legion, Lanius' Cohort, Gente Del Sol, Two Sun, White Legs, The Eighties\n\nIf you need to cut slots, cut Two Sun, then Eighties, then Baggers. If you need more slots, roster Shi, then... idk.;x

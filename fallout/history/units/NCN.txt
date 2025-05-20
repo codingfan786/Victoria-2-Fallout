@@ -1,3 +1,18 @@
+CRZ = {
+	truce_until = "1915.1.1"
+}
+DEA = {
+	truce_until = "1915.1.1"
+}
+SOR = {
+	truce_until = "1915.1.1"
+}
+LON = {
+	truce_until = "1915.1.1"
+}
+EAG = {
+	truce_until = "1915.1.1"
+}
 army = {
 	name = "Army"
 	location = 1292

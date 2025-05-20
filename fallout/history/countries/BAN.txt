@@ -1,5 +1,5 @@
 capital = 2346
-primary_culture = Empty
+primary_culture = empty
 religion = catholic
 
 

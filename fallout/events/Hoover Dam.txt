@@ -1,0 +1,33 @@
+country_event = {
+	id = 1337014
+	title = "Control of Hoover Dam"
+	desc = "Now that we've occupied Hoover Dam we can get it running again."
+
+	trigger = {
+		has_global_flag = NCR_Legion_War
+
+		866 = {	
+			controlled_by = THIS
+		}
+		NOT = {
+			866 = {
+				owned_by = THIS
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		866 = {
+			secede_province = THIS
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+

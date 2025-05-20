@@ -1,7 +1,7 @@
 capital = 398
 primary_culture = central_californian
-culture = north_californian
-culture = south_californian
+#culture = north_californian #lets try minimizing this crap
+#culture = south_californian #lets try minimizing this crap
 religion = catholic
 government = democracy
 plurality = 25.0

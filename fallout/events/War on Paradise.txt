@@ -1,0 +1,402 @@
+country_event = {
+	id = 1337011
+	title = "End of the War"
+	desc = "The time limit for the war is up."
+	fire_only_once = yes
+
+	trigger = {
+		tag = WHT
+		NOT = {has_country_flag = war_on_paradise_ended}
+		has_country_flag = war_on_paradise_started
+		OR = {
+			NOT = {has_country_modifier = conquest_timer}
+			1309 = {controlled_by = WHT}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = war_on_paradise_ended
+		remove_country_modifier = conquest_timer
+
+		random_owned = {
+			limit = {
+				1309 = {controlled_by = WHT}
+			}
+			NCN = {
+				set_country_flag = paradise_lost
+			}
+			NCN = {country_event = 1337012}
+		}
+		random_owned = {
+			limit = {
+				NOT = {1309 = {controlled_by = WHT}}
+			}
+			NCN = {
+				set_country_flag = paradise_won
+			}
+		}
+
+		WHT = {
+			any_owned = {
+				limit = {
+					NCN = {NOT = {has_country_flag = paradise_lost}}
+					OR = {
+						controlled_by = NCN
+						controller = {vassal_of = NCN}
+					}
+					NOT = {is_core = WHT}
+				}
+				secede_province = NCN
+			}
+		}
+		NCN = {
+			any_owned = {
+				limit = {
+					NCN = {NOT = {has_country_flag = paradise_lost}}
+					controlled_by = WHT
+				}
+				secede_province = WHT
+			}
+		}
+
+		end_war = NCN
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = 1337012
+	title = "End of the War"
+	desc = "The time limit for the war is up."
+
+	is_triggered_only = yes
+
+	immediate = {
+				all_core = {
+					limit = {
+						region = state_198
+					}
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 925
+					}
+				}
+				all_core = {
+					limit = {
+						region = state_196
+					}
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 965
+					}
+				}
+				all_core = {
+					limit = {
+						region = state_230
+					}
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 988
+					}
+				}
+				all_core = {
+					limit = {
+						region = state_231
+					}
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1002
+					}
+				}
+
+				all_core = {
+					limit = {
+						region = state_208
+					}
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1057
+					}
+				}
+				all_core = {
+					limit = {
+						region = state_227
+					}
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1063
+					}
+				}
+				all_core = {
+					limit = {
+						region = state_244
+					}
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1128
+					}
+				}
+				all_core = {
+					limit = {
+						region = state_232
+					}
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1160
+					}
+				}
+				all_core = {
+					limit = {
+						region = state_268
+					}
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1070
+					}
+				}
+				all_core = {
+					limit = {
+						region = state_212
+					}
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1030
+					}
+				}
+				all_core = {
+					limit = {
+						region = state_192
+					}
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1161
+					}
+				}
+
+				1292 = {
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1071
+					}
+				}
+				1296 = {
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1116
+					}
+				}
+				1318 = {
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1185
+					}
+				}
+				1344 = {
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1230
+					}
+				}
+				1325 = {
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1259
+					}
+				}
+
+				1319 = {
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1240
+					}
+				}
+				1298 = {
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1190
+					}
+				}
+				1309 = {
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1249
+					}
+				}
+				1297 = {
+					any_pop = {
+						limit = {has_pop_culture = canaanite}
+						move_pop = 1226
+					}
+				}
+
+				
+				
+				SOR = {
+					civilized = yes
+					all_core = {add_core = NCN}
+					any_owned = {
+						secede_province = NCN
+					}
+				}
+
+				all_core = {
+					limit = {
+						NOT = {is_core = SOR}
+					}
+					secede_province = WHT
+				}
+				
+				#civilized = yes
+
+		any_owned = {
+			limit = {
+				OR = {
+					trade_goods = sulphur
+					trade_goods = iron
+					trade_goods = coal
+					trade_goods = timber
+					trade_goods = oil
+				}
+			}
+			any_pop = {
+				limit = {
+					type = farmers
+				}
+				pop_type = labourers
+			}
+		}
+		any_owned = {
+			limit = {
+				NOT = {
+					OR = {
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = coal
+						trade_goods = timber
+						trade_goods = oil
+					}
+				}	
+			}
+			any_pop = {
+				limit = {
+					type = labourers
+				}
+				pop_type = farmers
+			}
+		}
+	}
+
+	option = {
+		name = "Ok"
+	}
+
+}
+
+
+country_event = {
+	id = 1337013
+	title = "No Access!"
+	desc = "The AI should NOT be allied to us!"
+
+
+	trigger = {
+		tag = TAR
+		ai = yes
+		is_vassal = no
+		OR = {
+			alliance_with = NCN
+			alliance_with = CRZ
+			alliance_with = EAG
+			alliance_with = DEA
+			alliance_with = SOR
+			alliance_with = CLK
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		leave_alliance = NCN
+		leave_alliance = CRZ
+		leave_alliance = EAG
+		leave_alliance = DEA
+		leave_alliance = SOR
+		leave_alliance = CLK
+
+
+		relation = {
+			who = NCN
+			value = -400
+		}
+		NCN = {
+			relation = {
+				who = THIS
+				value = -400
+			}
+		}
+		relation = {
+			who = CRZ
+			value = -400
+		}
+		CRZ = {
+			relation = {
+				who = THIS
+				value = -400
+			}
+		}
+		relation = {
+			who = EAG
+			value = -400
+		}
+		EAG = {
+			relation = {
+				who = THIS
+				value = -400
+			}
+		}
+		relation = {
+			who = DEA
+			value = -400
+		}
+		DEA = {
+			relation = {
+				who = THIS
+				value = -400
+			}
+		}
+		relation = {
+			who = SOR
+			value = -400
+		}
+		SOR = {
+			relation = {
+				who = THIS
+				value = -400
+			}
+		}
+		relation = {
+			who = CLK
+			value = -400
+		}
+		CLK = {
+			relation = {
+				who = THIS
+				value = -400
+			}
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+

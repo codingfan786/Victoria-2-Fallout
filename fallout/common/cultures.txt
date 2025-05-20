@@ -5,7 +5,7 @@ debug = {
 	leader = european
 	unit = EuropeanGC
 
-	Empty = {
+	empty = {
 		color = {255 255 255}
 	}
 }

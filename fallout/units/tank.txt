@@ -4,19 +4,19 @@ tank = {
 	type = land
 	sprite = Tank
 	active = no
-	unit_type = special
+	unit_type = infantry #special #maybe this will help with losses??
 	floating_flag = yes
 	
 	#Core Abilities
 	priority = 50
 	max_strength = 3
 	default_organisation = 40
-	maximum_speed = 4.00
+	maximum_speed = 5.00
 	weighted_value = 10.0
 
 
 	#Building Costs
-	build_time = 120
+	build_time = 90
 	build_cost = {
 		barrels = 10
 		artillery = 10
@@ -37,9 +37,9 @@ tank = {
 
 	#Land Abilties
 	reconnaissance = 0
-	attack = 20
+	attack = 30 #was 20 but didnt feel very good
 	defence = 10
-	discipline = 1.1
+	discipline = 1.0 #was 1.1 but probably not necessary
 	support = 0.0
 	maneuver = 1
 	siege = 1

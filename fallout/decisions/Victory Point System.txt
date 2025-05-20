@@ -1,0 +1,184 @@
+political_decisions = {
+	choose_host = {
+		potential = {
+			ai = no
+			NOT = {has_global_flag = host_set}
+		}
+		allow = {
+
+		}
+		effect = {
+			set_country_flag = is_host
+			set_global_flag = host_set
+		}
+	}
+
+	disable_vp = {
+		potential = {
+			ai = no
+			has_country_flag = is_host
+		}
+		allow = {
+
+		}
+		effect = {
+			set_global_flag = DISABLE_VP_SYSTEM
+		}
+	}
+
+
+	view_ncr_score = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			NCR = {
+				check_variable = {
+					which = vp_score
+					value = 1
+				}
+			}
+			NCR = {
+				check_variable = {
+					which = vp_score
+					value = 2
+				}
+			}
+			NCR = {
+				check_variable = {
+					which = vp_score
+					value = 3
+				}
+			}
+			NCR = {
+				check_variable = {
+					which = vp_score
+					value = 4
+				}
+			}
+			NCR = {
+				check_variable = {
+					which = vp_score
+					value = 5
+				}
+			}
+			NCR = {
+				check_variable = {
+					which = vp_score
+					value = 6
+				}
+			}
+			NCR = {
+				check_variable = {
+					which = vp_score
+					value = 7
+				}
+			}
+			NCR = {
+				check_variable = {
+					which = vp_score
+					value = 8
+				}
+			}
+			NCR = {
+				check_variable = {
+					which = vp_score
+					value = 9
+				}
+			}
+			NCR = {
+				check_variable = {
+					which = vp_score
+					value = 10
+				}
+			}
+			always = no
+		}
+		effect = {
+
+
+		}
+	}
+
+
+	view_ces_score = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			CES = {
+				check_variable = {
+					which = vp_score
+					value = 1
+				}
+			}
+			CES = {
+				check_variable = {
+					which = vp_score
+					value = 2
+				}
+			}
+			CES = {
+				check_variable = {
+					which = vp_score
+					value = 3
+				}
+			}
+			CES = {
+				check_variable = {
+					which = vp_score
+					value = 4
+				}
+			}
+			CES = {
+				check_variable = {
+					which = vp_score
+					value = 5
+				}
+			}
+			CES = {
+				check_variable = {
+					which = vp_score
+					value = 6
+				}
+			}
+			CES = {
+				check_variable = {
+					which = vp_score
+					value = 7
+				}
+			}
+			CES = {
+				check_variable = {
+					which = vp_score
+					value = 8
+				}
+			}
+			CES = {
+				check_variable = {
+					which = vp_score
+					value = 9
+				}
+			}
+			CES = {
+				check_variable = {
+					which = vp_score
+					value = 10
+				}
+			}
+			always = no
+		}
+		effect = {
+
+
+		}
+	}
+
+
+
+
+
+
+
+
+}

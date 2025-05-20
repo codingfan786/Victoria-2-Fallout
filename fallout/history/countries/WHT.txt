@@ -1,5 +1,6 @@
 capital = 893
 primary_culture = white_leg
+culture = utah_tribal #experimental
 religion = catholic
 government = fascist_dictatorship
 plurality = 25.0
@@ -75,6 +76,7 @@ enlightenment_thought = 1
 
 
 1914.1.1 = {
+	civilized = yes
 	# Technologies
 	post_napoleonic_thought = 1
 	strategic_mobility = 1
@@ -131,6 +133,7 @@ enlightenment_thought = 1
 	idealism = 1
 	empiricism = 1
 	analytic_philosophy = 1
+	phenomenology_n_hermeneutic = 1
 	malthusian_thought = 1
 	positivism = 1
 	functionalism = 1

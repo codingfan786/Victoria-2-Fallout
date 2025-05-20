@@ -1,5 +1,7 @@
 trade_goods = grain
 life_rating = 33
 
-owner = YMP
-add_core = YMP
+#owner = YMP
+#add_core = YMP
+owner = BAG
+add_core = BAG

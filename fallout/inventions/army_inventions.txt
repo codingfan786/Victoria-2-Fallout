@@ -2089,7 +2089,7 @@ army_nco_tactical_training = {
 }
 
 new_uniforms = {
-	limit = { great_war_experience = 1 }
+	limit = { army_nco_training = 1 }
 	chance = {
 		base = 0
 		modifier = {

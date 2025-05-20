@@ -1,0 +1,127 @@
+political_decisions = {
+	bos_ncr_war = {
+		potential = {
+			tag = BOS
+			NOT = {has_country_flag = bos_ncr_war_started}
+			NOT = {year = 1915}
+		}
+		allow = {
+			NOT = {year = 1915}
+			NOT = {war_with = NCR}
+			month = 3
+		}
+		effect = {
+			set_country_flag = bos_ncr_war_started
+			NCR = {
+				set_country_flag = bos_ncr_war_started
+			}
+			any_country = {
+				leave_alliance = NCR
+			}
+			war = {
+				target = NCR
+				attacker_goal = { casus_belli = bos_ncr_war }
+				defender_goal = { casus_belli = bos_ncr_war }
+				call_ally = no
+			}
+		}
+	}
+
+	vertibirds = {
+		potential = {
+			tag = BOS
+			NOT = {has_country_flag = spawned_vertibirds}
+		}
+		allow = {
+			aeronautics = 1
+		}
+		effect = {
+			set_country_flag = spawned_vertibirds
+			#1559 = {
+			#	secede_province = BOS
+			#}
+			261 = {
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+				sub_unit = { 
+					type = steam_transport
+					value = current 
+				}
+			}
+		}
+	}
+}

@@ -70,6 +70,7 @@ NAV = "countries/Navajo.txt"
 RES = "countries/TheReservation.txt"
 BLK = "countries/Blackfoot.txt"
 
+BAG = "countries/Baggers Expedition.txt"
 
 #lanius
 LAC = "countries/LaniussCohort.txt"

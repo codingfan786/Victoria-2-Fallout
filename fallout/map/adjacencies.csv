@@ -757,3 +757,73 @@
 2153;2092;impassable;0;0;scary mountain
 
 
+739;749;impassable;0;0;scary mountain
+739;766;impassable;0;0;scary mountain
+739;760;impassable;0;0;scary mountain
+744;760;impassable;0;0;scary mountain
+760;759;impassable;0;0;scary mountain
+760;798;impassable;0;0;scary mountain
+798;799;impassable;0;0;scary mountain
+799;827;impassable;0;0;scary mountain
+799;835;impassable;0;0;scary mountain
+771;822;impassable;0;0;scary mountain
+771;806;impassable;0;0;scary mountain
+771;776;impassable;0;0;scary mountain
+771;754;impassable;0;0;scary mountain
+756;754;impassable;0;0;scary mountain
+
+
+1559;54;impassable;0;0;scary mountain
+
+261;1559;canal;261;1;Lost Hills Vertiberd
+760;1559;canal;760;2;Hidden Valley Vertiberd
+180;1559;canal;180;3;Maxson Vertiberd
+20;1559;canal;20;4;Navarro Vertiberd
+
+870;854;canal;866;5;Hoover Dam Boatlift
+2001;1971;canal;1994;6;x
+2025;2019;canal;2020;7;Red Sun City
+
+
+62;50;sea;61;0;San Fran Crossings
+67;50;sea;61;0;San Fran Crossings
+79;83;sea;72;0;San Fran Crossings
+
+223;253;sea;225;0;Bos Island Crossings
+202;223;sea;166;0;Bos Island Crossings
+202;186;sea;166;0;Bos Island Crossings
+350;348;sea;273;0;Bos Island Crossings
+354;348;sea;229;0;Bos Island Crossings
+
+821;817;sea;792;0;South Colorado River Crossings
+877;817;sea;792;0;South Colorado River Crossings
+859;877;sea;792;0;South Colorado River Crossings
+859;915;sea;871;0;South Colorado River Crossings
+831;890;sea;871;0;South Colorado River Crossings
+1170;1213;sea;1106;0;South Colorado River Crossings
+1242;1213;sea;1106;0;South Colorado River Crossings
+890;869;sea;878;0;South Colorado River Crossings
+920;869;sea;878;0;South Colorado River Crossings
+927;972;sea;921;0;South Colorado River Crossings
+927;972;sea;921;0;South Colorado River Crossings
+861;898;sea;879;0;South Colorado River Crossings
+861;901;sea;879;0;South Colorado River Crossings
+904;852;sea;870;0;South Colorado River Crossings
+904;853;sea;870;0;South Colorado River Crossings
+
+973;961;sea;980;0;North Colorado River Crossings
+1699;1680;sea;1695;0;North Colorado River Crossings
+1649;1680;sea;1674;0;North Colorado River Crossings
+1756;1797;sea;1747;0;North Colorado River Crossings
+1756;1761;sea;1747;0;North Colorado River Crossings
+1728;1678;sea;1747;0;North Colorado River Crossings
+1728;1665;sea;1747;0;North Colorado River Crossings
+1846;1835;sea;1839;0;North Colorado River Crossings
+1905;1889;sea;1898;0;North Colorado River Crossings
+
+
+
+
+
+1207;1037;sea;956;0;TEMPORARY CROSSING FROM GDH TO BAJA REMOVE WHEN NAVY IS ADDED
+

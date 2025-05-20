@@ -1,0 +1,94 @@
+country_event = {
+	id = 1337006
+	title = "No Access!"
+	desc = "The Eighties should NOT has access to non-puppet Nevadans!"
+
+
+	trigger = {
+		has_country_flag = nevada_person
+		is_vassal = no
+		NOT = {tag = RUB}
+		OR = {
+			military_access = EHT
+			EHT = {military_access = THIS}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		end_military_access = EHT
+		EHT = {end_military_access = THIS}
+		relation = {
+			who = EHT
+			value = -400
+		}
+		EHT = {
+			relation = {
+				who = THIS
+				value = -400
+			}
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = 1337007
+	title = "Nevada road war"
+	desc = "nevada_desc"
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = DES
+		war = no
+		OR = {
+			AND = {
+				RUB = { OR = { is_vassal = yes exists = no } }
+				RIP = { OR = { is_vassal = yes exists = no } }
+				GRA = { OR = { is_vassal = yes exists = no } }
+				GRD = { OR = { is_vassal = yes exists = no } }
+				TVT = { OR = { is_vassal = yes exists = no } }
+				TOF = { OR = { is_vassal = yes exists = no } }
+				JAC = { OR = { is_vassal = yes exists = no } }
+				VIP = { OR = { is_vassal = yes exists = no } }
+			}
+			year = 1916
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		TVT = {all_core = {add_core = DES}}
+		TOF = {all_core = {add_core = DES}}
+		JAC = {all_core = {add_core = DES}}
+		VIP = {all_core = {add_core = DES}}
+		GRD = {all_core = {add_core = DES}}
+
+		any_country = {
+			limit = {
+				has_country_flag = nevada_person
+				vassal_of = EHT
+			}
+			annex_to = EHT
+		}
+		EHT = {
+			inherit = RUB
+		}
+		set_global_flag = nevada_road_war
+	}
+
+	option = {
+		name = "Ok."
+	}
+}

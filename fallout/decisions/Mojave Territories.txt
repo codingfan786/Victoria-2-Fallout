@@ -1,0 +1,45 @@
+political_decisions = {
+	operation_sunburst = {
+		potential = {
+			tag = MOT
+			NOT = {has_country_flag = operation_sunburst_started}
+			NOT = {year = 1915}
+		}
+		allow = {
+			NOT = {year = 1915}
+			NOT = {war_with = BOS}
+			month = 3
+		}
+		effect = {
+			BOS = {country_event = 1337010}
+		}
+	}
+
+	integrate_mojave = {
+		potential = {
+			tag = MOT
+			NOT = {has_country_flag = mojave_integrated}
+		}
+		allow = {
+			OR = {
+				year = 1916
+				MRA = {exists = no}
+			}
+		}
+		effect = {
+			set_country_flag = mojave_integrated
+			add_accepted_culture = south_mojave
+			any_owned = {
+				limit = {
+					OR = {
+						culture = brotherhood
+						culture = south_mojave
+						culture = north_mojave
+						culture = central_californian #maybe? for the divide
+					}
+				}
+				add_core = THIS
+			}
+		}
+	}
+}

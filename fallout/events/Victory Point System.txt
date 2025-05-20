@@ -1,0 +1,1375 @@
+country_event = {
+	id = 1337015
+	title = "Victory or Death!"
+	desc = "Time to count up the victory points."
+
+	trigger = {
+		tag = BAN
+		has_global_flag = NCR_Legion_War
+		NOT = {has_global_flag = DISABLE_VP_SYSTEM}
+
+
+		OR = {
+			AND = {
+				year = 1917
+				NOT = {has_country_flag = vp_1917}
+			}
+			AND = {
+				year = 1918
+				NOT = {has_country_flag = vp_1918}
+			}
+			AND = {
+				year = 1919
+				NOT = {has_country_flag = vp_1919}
+			}
+			AND = {
+				year = 1920
+				NOT = {has_country_flag = vp_1920}
+			}
+			AND = {
+				year = 1921
+				NOT = {has_country_flag = vp_1921}
+			}
+			AND = {
+				year = 1922
+				NOT = {has_country_flag = vp_1922}
+			}
+			AND = {
+				year = 1923
+				NOT = {has_country_flag = vp_1923}
+			}
+			AND = {
+				year = 1924
+				NOT = {has_country_flag = vp_1924}
+			}
+			AND = {
+				year = 1925
+				NOT = {has_country_flag = vp_1925}
+			}
+			AND = {
+				year = 1926
+				NOT = {has_country_flag = vp_1926}
+			}
+			AND = {
+				year = 1927
+				NOT = {has_country_flag = vp_1927}
+			}
+			AND = {
+				year = 1928
+				NOT = {has_country_flag = vp_1928}
+			}
+			AND = {
+				year = 1929
+				NOT = {has_country_flag = vp_1929}
+			}
+			AND = {
+				year = 1930
+				NOT = {has_country_flag = vp_1930}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		random_owned = {
+			limit = {
+				year = 1917
+			}
+			THIS = {
+				set_country_flag = vp_1917
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1918
+			}
+			THIS = {
+				set_country_flag = vp_1918
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1919
+			}
+			THIS = {
+				set_country_flag = vp_1919
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1920
+			}
+			THIS = {
+				set_country_flag = vp_1920
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1921
+			}
+			THIS = {
+				set_country_flag = vp_1921
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1922
+			}
+			THIS = {
+				set_country_flag = vp_1922
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1923
+			}
+			THIS = {
+				set_country_flag = vp_1923
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1924
+			}
+			THIS = {
+				set_country_flag = vp_1924
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1925
+			}
+			THIS = {
+				set_country_flag = vp_1925
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1926
+			}
+			THIS = {
+				set_country_flag = vp_1926
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1927
+			}
+			THIS = {
+				set_country_flag = vp_1927
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1928
+			}
+			THIS = {
+				set_country_flag = vp_1928
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1929
+			}
+			THIS = {
+				set_country_flag = vp_1929
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1930
+			}
+			THIS = {
+				set_country_flag = vp_1930
+			}
+		}
+
+
+		NCR = {
+			set_variable = {
+				which = net_score
+				value = 0
+			}
+		}
+
+		CES = {
+			set_variable = {
+				which = net_score
+				value = 0
+			}
+		}
+
+
+
+		random_owned = {
+			limit = {
+				#the hub
+				326 = {controller = {has_country_flag = ncr_side}}
+				318 = {controller = {has_country_flag = ncr_side}}
+				317 = {controller = {has_country_flag = ncr_side}}
+				328 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#shady sands
+				389 = {controller = {has_country_flag = ncr_side}}
+				412 = {controller = {has_country_flag = ncr_side}}
+				401 = {controller = {has_country_flag = ncr_side}}
+				387 = {controller = {has_country_flag = ncr_side}}
+				398 = {controller = {has_country_flag = ncr_side}}
+				399 = {controller = {has_country_flag = ncr_side}}
+				417 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#dayglow
+				533 = {controller = {has_country_flag = ncr_side}}
+				539 = {controller = {has_country_flag = ncr_side}}
+				518 = {controller = {has_country_flag = ncr_side}}
+				509 = {controller = {has_country_flag = ncr_side}}
+				523 = {controller = {has_country_flag = ncr_side}}
+				500 = {controller = {has_country_flag = ncr_side}}
+				486 = {controller = {has_country_flag = ncr_side}}
+				479 = {controller = {has_country_flag = ncr_side}}
+				501 = {controller = {has_country_flag = ncr_side}}
+				519 = {controller = {has_country_flag = ncr_side}}
+				526 = {controller = {has_country_flag = ncr_side}}
+				523 = {controller = {has_country_flag = ncr_side}}
+
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#vegas
+				740 = {controller = {has_country_flag = ncr_side}}
+				778 = {controller = {has_country_flag = ncr_side}}
+				767 = {controller = {has_country_flag = ncr_side}}
+				#807 = {controller = {has_country_flag = ncr_side}}
+				797 = {controller = {has_country_flag = ncr_side}}
+				796 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#flagstaff
+				1295 = {controller = {has_country_flag = ncr_side}}
+				1303 = {controller = {has_country_flag = ncr_side}}
+				1313 = {controller = {has_country_flag = ncr_side}}
+				1314 = {controller = {has_country_flag = ncr_side}}
+				1336 = {controller = {has_country_flag = ncr_side}}
+				1349 = {controller = {has_country_flag = ncr_side}}
+				1350 = {controller = {has_country_flag = ncr_side}}
+				1381 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#pheonix
+				1170 = {controller = {has_country_flag = ncr_side}}
+				1221 = {controller = {has_country_flag = ncr_side}}
+				1242 = {controller = {has_country_flag = ncr_side}}
+				1268 = {controller = {has_country_flag = ncr_side}}
+				1301 = {controller = {has_country_flag = ncr_side}}
+				1329 = {controller = {has_country_flag = ncr_side}}
+				1371 = {controller = {has_country_flag = ncr_side}}
+				1375 = {controller = {has_country_flag = ncr_side}}
+				1380 = {controller = {has_country_flag = ncr_side}}
+				1402 = {controller = {has_country_flag = ncr_side}}
+				1251 = {controller = {has_country_flag = ncr_side}}
+				1256 = {controller = {has_country_flag = ncr_side}}
+				1294 = {controller = {has_country_flag = ncr_side}}
+				1300 = {controller = {has_country_flag = ncr_side}}
+				1306 = {controller = {has_country_flag = ncr_side}}
+				1321 = {controller = {has_country_flag = ncr_side}}
+				1334 = {controller = {has_country_flag = ncr_side}}
+				1169 = {controller = {has_country_flag = ncr_side}}
+				1184 = {controller = {has_country_flag = ncr_side}}
+				1195 = {controller = {has_country_flag = ncr_side}}
+				1213 = {controller = {has_country_flag = ncr_side}}
+				1223 = {controller = {has_country_flag = ncr_side}}
+				1224 = {controller = {has_country_flag = ncr_side}}
+				1225 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#red sun
+				1998 = {controller = {has_country_flag = ncr_side}}
+				2003 = {controller = {has_country_flag = ncr_side}}
+				2009 = {controller = {has_country_flag = ncr_side}}
+				2015 = {controller = {has_country_flag = ncr_side}}
+				2020 = {controller = {has_country_flag = ncr_side}}
+				2024 = {controller = {has_country_flag = ncr_side}}
+				2031 = {controller = {has_country_flag = ncr_side}}
+				2039 = {controller = {has_country_flag = ncr_side}}
+				2045 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				2225 = {controller = {has_country_flag = ncr_side}}
+				2228 = {controller = {has_country_flag = ncr_side}}
+				2241 = {controller = {has_country_flag = ncr_side}}
+				2253 = {controller = {has_country_flag = ncr_side}}
+				2255 = {controller = {has_country_flag = ncr_side}}
+				2268 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#NCN = {NOT = {has_country_flag = paradise_lost}}
+				1297 = {controller = {has_country_flag = ncr_side}}
+				1298 = {controller = {has_country_flag = ncr_side}}
+				1309 = {controller = {has_country_flag = ncr_side}}
+				1319 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				always = no #lets not have the vp switch
+				NCN = {has_country_flag = paradise_lost}
+				1030 = {controller = {has_country_flag = ncr_side}}
+				1070 = {controller = {has_country_flag = ncr_side}}
+				1071 = {controller = {has_country_flag = ncr_side}}
+				1116 = {controller = {has_country_flag = ncr_side}}
+				1161 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+
+		random_owned = {
+			limit = {
+				#the hub
+				326 = {controller = {has_country_flag = ces_side}}
+				318 = {controller = {has_country_flag = ces_side}}
+				317 = {controller = {has_country_flag = ces_side}}
+				328 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#shady sands
+				389 = {controller = {has_country_flag = ces_side}}
+				412 = {controller = {has_country_flag = ces_side}}
+				401 = {controller = {has_country_flag = ces_side}}
+				387 = {controller = {has_country_flag = ces_side}}
+				398 = {controller = {has_country_flag = ces_side}}
+				399 = {controller = {has_country_flag = ces_side}}
+				417 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#dayglow
+				533 = {controller = {has_country_flag = ces_side}}
+				539 = {controller = {has_country_flag = ces_side}}
+				518 = {controller = {has_country_flag = ces_side}}
+				509 = {controller = {has_country_flag = ces_side}}
+				523 = {controller = {has_country_flag = ces_side}}
+				500 = {controller = {has_country_flag = ces_side}}
+				486 = {controller = {has_country_flag = ces_side}}
+				479 = {controller = {has_country_flag = ces_side}}
+				501 = {controller = {has_country_flag = ces_side}}
+				519 = {controller = {has_country_flag = ces_side}}
+				526 = {controller = {has_country_flag = ces_side}}
+				523 = {controller = {has_country_flag = ces_side}}
+
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#vegas
+				740 = {controller = {has_country_flag = ces_side}}
+				778 = {controller = {has_country_flag = ces_side}}
+				767 = {controller = {has_country_flag = ces_side}}
+				#807 = {controller = {has_country_flag = ces_side}}
+				797 = {controller = {has_country_flag = ces_side}}
+				796 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#flagstaff
+				1295 = {controller = {has_country_flag = ces_side}}
+				1303 = {controller = {has_country_flag = ces_side}}
+				1313 = {controller = {has_country_flag = ces_side}}
+				1314 = {controller = {has_country_flag = ces_side}}
+				1336 = {controller = {has_country_flag = ces_side}}
+				1349 = {controller = {has_country_flag = ces_side}}
+				1350 = {controller = {has_country_flag = ces_side}}
+				1381 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#pheonix
+				1170 = {controller = {has_country_flag = ces_side}}
+				1221 = {controller = {has_country_flag = ces_side}}
+				1242 = {controller = {has_country_flag = ces_side}}
+				1268 = {controller = {has_country_flag = ces_side}}
+				1301 = {controller = {has_country_flag = ces_side}}
+				1329 = {controller = {has_country_flag = ces_side}}
+				1371 = {controller = {has_country_flag = ces_side}}
+				1375 = {controller = {has_country_flag = ces_side}}
+				1380 = {controller = {has_country_flag = ces_side}}
+				1402 = {controller = {has_country_flag = ces_side}}
+				1251 = {controller = {has_country_flag = ces_side}}
+				1256 = {controller = {has_country_flag = ces_side}}
+				1294 = {controller = {has_country_flag = ces_side}}
+				1300 = {controller = {has_country_flag = ces_side}}
+				1306 = {controller = {has_country_flag = ces_side}}
+				1321 = {controller = {has_country_flag = ces_side}}
+				1334 = {controller = {has_country_flag = ces_side}}
+				1169 = {controller = {has_country_flag = ces_side}}
+				1184 = {controller = {has_country_flag = ces_side}}
+				1195 = {controller = {has_country_flag = ces_side}}
+				1213 = {controller = {has_country_flag = ces_side}}
+				1223 = {controller = {has_country_flag = ces_side}}
+				1224 = {controller = {has_country_flag = ces_side}}
+				1225 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#red sun
+				1998 = {controller = {has_country_flag = ces_side}}
+				2003 = {controller = {has_country_flag = ces_side}}
+				2009 = {controller = {has_country_flag = ces_side}}
+				2015 = {controller = {has_country_flag = ces_side}}
+				2020 = {controller = {has_country_flag = ces_side}}
+				2024 = {controller = {has_country_flag = ces_side}}
+				2031 = {controller = {has_country_flag = ces_side}}
+				2039 = {controller = {has_country_flag = ces_side}}
+				2045 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				2225 = {controller = {has_country_flag = ces_side}}
+				2228 = {controller = {has_country_flag = ces_side}}
+				2241 = {controller = {has_country_flag = ces_side}}
+				2253 = {controller = {has_country_flag = ces_side}}
+				2255 = {controller = {has_country_flag = ces_side}}
+				2268 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#NCN = {NOT = {has_country_flag = paradise_lost}}
+				1297 = {controller = {has_country_flag = ces_side}}
+				1298 = {controller = {has_country_flag = ces_side}}
+				1309 = {controller = {has_country_flag = ces_side}}
+				1319 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				always = no
+				NCN = {has_country_flag = paradise_lost}
+				1030 = {controller = {has_country_flag = ces_side}}
+				1070 = {controller = {has_country_flag = ces_side}}
+				1071 = {controller = {has_country_flag = ces_side}}
+				1116 = {controller = {has_country_flag = ces_side}}
+				1161 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+
+
+		CES = {
+			any_owned = {
+				limit = {
+					CES = {
+						check_variable = {
+							which = net_score
+							value = 1
+						}
+					}
+					NCR = {
+						check_variable = {
+							which = net_score
+							value = 1
+						}
+					}
+				}
+				CES = {
+					change_variable = {
+						which = net_score
+						value = -1
+					}
+				}
+				NCR = {
+					change_variable = {
+						which = net_score
+						value = -1
+					}
+				}
+			}
+		}
+		CES = {
+			any_owned = {
+				limit = {
+					CES = {
+						check_variable = {
+							which = net_score
+							value = 1
+						}
+					}
+				}
+				CES = {
+					change_variable = {
+						which = net_score
+						value = -1
+					}
+				}
+				CES = {
+					change_variable = {
+						which = vp_score
+						value = 1
+					}
+				}
+			}
+		}
+		NCR = {
+			any_owned = {
+				limit = {
+					NCR = {
+						check_variable = {
+							which = net_score
+							value = 1
+						}
+					}
+				}
+				NCR = {
+					change_variable = {
+						which = net_score
+						value = -1
+					}
+				}
+				NCR = {
+					change_variable = {
+						which = vp_score
+						value = 1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+
+
+
+
+country_event = {
+	id = 1337016
+	title = "Victory or Death!"
+	desc = "Time to count up the victory points."
+
+	trigger = {
+		tag = BAN
+		has_global_flag = NCR_Legion_War
+		NOT = {has_global_flag = DISABLE_VP_SYSTEM}
+		month = 6
+		
+		OR = {
+			AND = {
+				year = 1917
+				NOT = {has_country_flag = vp_j_1917}
+			}
+			AND = {
+				year = 1918
+				NOT = {has_country_flag = vp_j_1918}
+			}
+			AND = {
+				year = 1919
+				NOT = {has_country_flag = vp_j_1919}
+			}
+			AND = {
+				year = 1920
+				NOT = {has_country_flag = vp_j_1920}
+			}
+			AND = {
+				year = 1921
+				NOT = {has_country_flag = vp_j_1921}
+			}
+			AND = {
+				year = 1922
+				NOT = {has_country_flag = vp_j_1922}
+			}
+			AND = {
+				year = 1923
+				NOT = {has_country_flag = vp_j_1923}
+			}
+			AND = {
+				year = 1924
+				NOT = {has_country_flag = vp_j_1924}
+			}
+			AND = {
+				year = 1925
+				NOT = {has_country_flag = vp_j_1925}
+			}
+			AND = {
+				year = 1926
+				NOT = {has_country_flag = vp_j_1926}
+			}
+			AND = {
+				year = 1927
+				NOT = {has_country_flag = vp_j_1927}
+			}
+			AND = {
+				year = 1928
+				NOT = {has_country_flag = vp_j_1928}
+			}
+			AND = {
+				year = 1929
+				NOT = {has_country_flag = vp_j_1929}
+			}
+			AND = {
+				year = 1930
+				NOT = {has_country_flag = vp_j_1930}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		random_owned = {
+			limit = {
+				year = 1917
+			}
+			THIS = {
+				set_country_flag = vp_j_1917
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1918
+			}
+			THIS = {
+				set_country_flag = vp_j_1918
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1919
+			}
+			THIS = {
+				set_country_flag = vp_j_1919
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1920
+			}
+			THIS = {
+				set_country_flag = vp_j_1920
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1921
+			}
+			THIS = {
+				set_country_flag = vp_j_1921
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1922
+			}
+			THIS = {
+				set_country_flag = vp_j_1922
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1923
+			}
+			THIS = {
+				set_country_flag = vp_j_1923
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1924
+			}
+			THIS = {
+				set_country_flag = vp_j_1924
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1925
+			}
+			THIS = {
+				set_country_flag = vp_j_1925
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1926
+			}
+			THIS = {
+				set_country_flag = vp_j_1926
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1927
+			}
+			THIS = {
+				set_country_flag = vp_j_1927
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1928
+			}
+			THIS = {
+				set_country_flag = vp_j_1928
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1929
+			}
+			THIS = {
+				set_country_flag = vp_j_1929
+			}
+		}
+		random_owned = {
+			limit = {
+				year = 1930
+			}
+			THIS = {
+				set_country_flag = vp_j_1930
+			}
+		}
+
+
+		NCR = {
+			set_variable = {
+				which = net_score
+				value = 0
+			}
+		}
+
+		CES = {
+			set_variable = {
+				which = net_score
+				value = 0
+			}
+		}
+
+
+
+		random_owned = {
+			limit = {
+				#the hub
+				326 = {controller = {has_country_flag = ncr_side}}
+				318 = {controller = {has_country_flag = ncr_side}}
+				317 = {controller = {has_country_flag = ncr_side}}
+				328 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#shady sands
+				389 = {controller = {has_country_flag = ncr_side}}
+				412 = {controller = {has_country_flag = ncr_side}}
+				401 = {controller = {has_country_flag = ncr_side}}
+				387 = {controller = {has_country_flag = ncr_side}}
+				398 = {controller = {has_country_flag = ncr_side}}
+				399 = {controller = {has_country_flag = ncr_side}}
+				417 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#dayglow
+				533 = {controller = {has_country_flag = ncr_side}}
+				539 = {controller = {has_country_flag = ncr_side}}
+				518 = {controller = {has_country_flag = ncr_side}}
+				509 = {controller = {has_country_flag = ncr_side}}
+				523 = {controller = {has_country_flag = ncr_side}}
+				500 = {controller = {has_country_flag = ncr_side}}
+				486 = {controller = {has_country_flag = ncr_side}}
+				479 = {controller = {has_country_flag = ncr_side}}
+				501 = {controller = {has_country_flag = ncr_side}}
+				519 = {controller = {has_country_flag = ncr_side}}
+				526 = {controller = {has_country_flag = ncr_side}}
+				523 = {controller = {has_country_flag = ncr_side}}
+
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#vegas
+				740 = {controller = {has_country_flag = ncr_side}}
+				778 = {controller = {has_country_flag = ncr_side}}
+				767 = {controller = {has_country_flag = ncr_side}}
+				#807 = {controller = {has_country_flag = ncr_side}}
+				797 = {controller = {has_country_flag = ncr_side}}
+				796 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#flagstaff
+				1295 = {controller = {has_country_flag = ncr_side}}
+				1303 = {controller = {has_country_flag = ncr_side}}
+				1313 = {controller = {has_country_flag = ncr_side}}
+				1314 = {controller = {has_country_flag = ncr_side}}
+				1336 = {controller = {has_country_flag = ncr_side}}
+				1349 = {controller = {has_country_flag = ncr_side}}
+				1350 = {controller = {has_country_flag = ncr_side}}
+				1381 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#pheonix
+				1170 = {controller = {has_country_flag = ncr_side}}
+				1221 = {controller = {has_country_flag = ncr_side}}
+				1242 = {controller = {has_country_flag = ncr_side}}
+				1268 = {controller = {has_country_flag = ncr_side}}
+				1301 = {controller = {has_country_flag = ncr_side}}
+				1329 = {controller = {has_country_flag = ncr_side}}
+				1371 = {controller = {has_country_flag = ncr_side}}
+				1375 = {controller = {has_country_flag = ncr_side}}
+				1380 = {controller = {has_country_flag = ncr_side}}
+				1402 = {controller = {has_country_flag = ncr_side}}
+				1251 = {controller = {has_country_flag = ncr_side}}
+				1256 = {controller = {has_country_flag = ncr_side}}
+				1294 = {controller = {has_country_flag = ncr_side}}
+				1300 = {controller = {has_country_flag = ncr_side}}
+				1306 = {controller = {has_country_flag = ncr_side}}
+				1321 = {controller = {has_country_flag = ncr_side}}
+				1334 = {controller = {has_country_flag = ncr_side}}
+				1169 = {controller = {has_country_flag = ncr_side}}
+				1184 = {controller = {has_country_flag = ncr_side}}
+				1195 = {controller = {has_country_flag = ncr_side}}
+				1213 = {controller = {has_country_flag = ncr_side}}
+				1223 = {controller = {has_country_flag = ncr_side}}
+				1224 = {controller = {has_country_flag = ncr_side}}
+				1225 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#red sun
+				1998 = {controller = {has_country_flag = ncr_side}}
+				2003 = {controller = {has_country_flag = ncr_side}}
+				2009 = {controller = {has_country_flag = ncr_side}}
+				2015 = {controller = {has_country_flag = ncr_side}}
+				2020 = {controller = {has_country_flag = ncr_side}}
+				2024 = {controller = {has_country_flag = ncr_side}}
+				2031 = {controller = {has_country_flag = ncr_side}}
+				2039 = {controller = {has_country_flag = ncr_side}}
+				2045 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				2225 = {controller = {has_country_flag = ncr_side}}
+				2228 = {controller = {has_country_flag = ncr_side}}
+				2241 = {controller = {has_country_flag = ncr_side}}
+				2253 = {controller = {has_country_flag = ncr_side}}
+				2255 = {controller = {has_country_flag = ncr_side}}
+				2268 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#NCN = {NOT = {has_country_flag = paradise_lost}}
+				1297 = {controller = {has_country_flag = ncr_side}}
+				1298 = {controller = {has_country_flag = ncr_side}}
+				1309 = {controller = {has_country_flag = ncr_side}}
+				1319 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				alway = no
+				NCN = {has_country_flag = paradise_lost}
+				1030 = {controller = {has_country_flag = ncr_side}}
+				1070 = {controller = {has_country_flag = ncr_side}}
+				1071 = {controller = {has_country_flag = ncr_side}}
+				1116 = {controller = {has_country_flag = ncr_side}}
+				1161 = {controller = {has_country_flag = ncr_side}}
+			}
+			NCR = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+
+		random_owned = {
+			limit = {
+				#the hub
+				326 = {controller = {has_country_flag = ces_side}}
+				318 = {controller = {has_country_flag = ces_side}}
+				317 = {controller = {has_country_flag = ces_side}}
+				328 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#shady sands
+				389 = {controller = {has_country_flag = ces_side}}
+				412 = {controller = {has_country_flag = ces_side}}
+				401 = {controller = {has_country_flag = ces_side}}
+				387 = {controller = {has_country_flag = ces_side}}
+				398 = {controller = {has_country_flag = ces_side}}
+				399 = {controller = {has_country_flag = ces_side}}
+				417 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#dayglow
+				533 = {controller = {has_country_flag = ces_side}}
+				539 = {controller = {has_country_flag = ces_side}}
+				518 = {controller = {has_country_flag = ces_side}}
+				509 = {controller = {has_country_flag = ces_side}}
+				523 = {controller = {has_country_flag = ces_side}}
+				500 = {controller = {has_country_flag = ces_side}}
+				486 = {controller = {has_country_flag = ces_side}}
+				479 = {controller = {has_country_flag = ces_side}}
+				501 = {controller = {has_country_flag = ces_side}}
+				519 = {controller = {has_country_flag = ces_side}}
+				526 = {controller = {has_country_flag = ces_side}}
+				523 = {controller = {has_country_flag = ces_side}}
+
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#vegas
+				740 = {controller = {has_country_flag = ces_side}}
+				778 = {controller = {has_country_flag = ces_side}}
+				767 = {controller = {has_country_flag = ces_side}}
+				#807 = {controller = {has_country_flag = ces_side}}
+				797 = {controller = {has_country_flag = ces_side}}
+				796 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#flagstaff
+				1295 = {controller = {has_country_flag = ces_side}}
+				1303 = {controller = {has_country_flag = ces_side}}
+				1313 = {controller = {has_country_flag = ces_side}}
+				1314 = {controller = {has_country_flag = ces_side}}
+				1336 = {controller = {has_country_flag = ces_side}}
+				1349 = {controller = {has_country_flag = ces_side}}
+				1350 = {controller = {has_country_flag = ces_side}}
+				1381 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#pheonix
+				1170 = {controller = {has_country_flag = ces_side}}
+				1221 = {controller = {has_country_flag = ces_side}}
+				1242 = {controller = {has_country_flag = ces_side}}
+				1268 = {controller = {has_country_flag = ces_side}}
+				1301 = {controller = {has_country_flag = ces_side}}
+				1329 = {controller = {has_country_flag = ces_side}}
+				1371 = {controller = {has_country_flag = ces_side}}
+				1375 = {controller = {has_country_flag = ces_side}}
+				1380 = {controller = {has_country_flag = ces_side}}
+				1402 = {controller = {has_country_flag = ces_side}}
+				1251 = {controller = {has_country_flag = ces_side}}
+				1256 = {controller = {has_country_flag = ces_side}}
+				1294 = {controller = {has_country_flag = ces_side}}
+				1300 = {controller = {has_country_flag = ces_side}}
+				1306 = {controller = {has_country_flag = ces_side}}
+				1321 = {controller = {has_country_flag = ces_side}}
+				1334 = {controller = {has_country_flag = ces_side}}
+				1169 = {controller = {has_country_flag = ces_side}}
+				1184 = {controller = {has_country_flag = ces_side}}
+				1195 = {controller = {has_country_flag = ces_side}}
+				1213 = {controller = {has_country_flag = ces_side}}
+				1223 = {controller = {has_country_flag = ces_side}}
+				1224 = {controller = {has_country_flag = ces_side}}
+				1225 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#red sun
+				1998 = {controller = {has_country_flag = ces_side}}
+				2003 = {controller = {has_country_flag = ces_side}}
+				2009 = {controller = {has_country_flag = ces_side}}
+				2015 = {controller = {has_country_flag = ces_side}}
+				2020 = {controller = {has_country_flag = ces_side}}
+				2024 = {controller = {has_country_flag = ces_side}}
+				2031 = {controller = {has_country_flag = ces_side}}
+				2039 = {controller = {has_country_flag = ces_side}}
+				2045 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				2225 = {controller = {has_country_flag = ces_side}}
+				2228 = {controller = {has_country_flag = ces_side}}
+				2241 = {controller = {has_country_flag = ces_side}}
+				2253 = {controller = {has_country_flag = ces_side}}
+				2255 = {controller = {has_country_flag = ces_side}}
+				2268 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				#NCN = {NOT = {has_country_flag = paradise_lost}}
+				1297 = {controller = {has_country_flag = ces_side}}
+				1298 = {controller = {has_country_flag = ces_side}}
+				1309 = {controller = {has_country_flag = ces_side}}
+				1319 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				always = no
+				NCN = {has_country_flag = paradise_lost}
+				1030 = {controller = {has_country_flag = ces_side}}
+				1070 = {controller = {has_country_flag = ces_side}}
+				1071 = {controller = {has_country_flag = ces_side}}
+				1116 = {controller = {has_country_flag = ces_side}}
+				1161 = {controller = {has_country_flag = ces_side}}
+			}
+			CES = {
+				change_variable = {
+					which = net_score
+					value = 1
+				}
+			}
+		}
+
+
+		CES = {
+			any_owned = {
+				limit = {
+					CES = {
+						check_variable = {
+							which = net_score
+							value = 1
+						}
+					}
+					NCR = {
+						check_variable = {
+							which = net_score
+							value = 1
+						}
+					}
+				}
+				CES = {
+					change_variable = {
+						which = net_score
+						value = -1
+					}
+				}
+				NCR = {
+					change_variable = {
+						which = net_score
+						value = -1
+					}
+				}
+			}
+		}
+		CES = {
+			any_owned = {
+				limit = {
+					CES = {
+						check_variable = {
+							which = net_score
+							value = 1
+						}
+					}
+				}
+				CES = {
+					change_variable = {
+						which = net_score
+						value = -1
+					}
+				}
+				CES = {
+					change_variable = {
+						which = vp_score
+						value = 1
+					}
+				}
+			}
+		}
+		NCR = {
+			any_owned = {
+				limit = {
+					NCR = {
+						check_variable = {
+							which = net_score
+							value = 1
+						}
+					}
+				}
+				NCR = {
+					change_variable = {
+						which = net_score
+						value = -1
+					}
+				}
+				NCR = {
+					change_variable = {
+						which = vp_score
+						value = 1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}

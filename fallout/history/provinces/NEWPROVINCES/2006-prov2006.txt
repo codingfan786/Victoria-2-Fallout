@@ -1,5 +1,7 @@
-owner = YMP
-add_core = YMP
+#owner = YMP
+#add_core = YMP
+owner = BAG
+add_core = BAG
 trade_goods = fruit
 life_rating = 33
 

@@ -1,0 +1,192 @@
+country_event = {
+	id = 1337009
+	title = "End of the War"
+	desc = "The time limit for the war is up."
+	fire_only_once = yes
+	#picture = ncr_brotherhood
+	#state_43	261	lost hills
+	#state_30	180	maxson
+	#state_4	20	navarro
+
+	trigger = {
+		tag = BOS
+		NOT = {has_country_flag = bos_ncr_war_ended}
+		has_country_flag = bos_ncr_war_started
+		NOT = {has_country_modifier = conquest_timer}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = bos_ncr_war_ended
+		remove_country_modifier = conquest_timer
+
+		BOS = {
+			all_core = {
+				limit = {
+					
+					NOT = {region = state_125}
+					NOT = {region = state_126}
+					NOT = {region = state_43}
+					NOT = {region = state_30}
+					NOT = {region = state_4}
+					controlled_by = NCR
+				}
+				secede_province = NCR
+			}
+		}
+
+		random_owned = {
+			limit = {
+				261 = { controlled_by = NCR }
+			}
+			BOS = {
+				all_core = {
+					limit = {
+						OR = {
+							region = state_42
+							region = state_37
+							region = state_40
+							region = state_35
+							province_id = 204
+						}
+					}
+					secede_province = NCR
+				}
+				set_country_flag = lost_lost_hills
+			}
+		}
+		random_owned = {
+			limit = {
+				180 = { controlled_by = NCR }
+			}
+			BOS = {
+				all_core = {
+					limit = {
+						OR = {
+							region = state_33
+							region = state_28
+							region = state_27
+							region = state_22
+							province_id = 104
+						}
+					}
+					secede_province = NCR
+				}
+				set_country_flag = lost_maxson
+			}
+		}
+
+		random_owned = {
+			limit = {
+				20 = { controlled_by = NCR }
+			}
+			BOS = {
+				all_core = {
+					limit = {
+						OR = {
+							region = state_7
+							region = state_5
+							region = state_2
+							region = state_3
+							province_id = 41
+						}
+					}
+					secede_province = NCR
+				}
+				set_country_flag = lost_navarro
+			}
+		}
+
+
+
+		NCR = {
+			all_core = {
+				limit = {
+					controlled_by = BOS
+					BOS = {NOT = {has_country_flag = lost_lost_hills}}
+					OR = {
+						culture = central_californian
+						culture = south_californian
+						province_id = 287
+					}
+					NOT = {
+						OR = {
+							region = state_17
+							region = state_14
+							region = state_18
+							region = state_16
+							region = state_24
+							region = state_29
+							region = state_22
+
+							region = state_45
+							region = state_46
+							region = state_59
+							region = state_72
+							region = state_80
+							region = state_88
+						}
+					}
+				}
+				secede_province = BOS
+			}
+		}
+		NCR = {
+			all_core = {
+				limit = {
+					controlled_by = BOS
+					BOS = {NOT = {has_country_flag = lost_maxson}}
+					OR = {
+						region = state_17
+						region = state_14
+						region = state_18
+						region = state_16
+						region = state_24
+						region = state_29
+						region = state_22
+
+						region = state_45
+						region = state_46
+						region = state_59
+						region = state_72
+						region = state_80
+						region = state_88
+					}
+					
+				}
+				secede_province = BOS
+			}
+		}
+		NCR = {
+			all_core = {
+				limit = {
+					controlled_by = BOS
+					BOS = {NOT = {has_country_flag = lost_navarro}}
+					culture = north_californian
+					NOT = {
+						OR = {
+							region = state_17
+							region = state_14
+							region = state_18
+							region = state_16
+							region = state_24
+							region = state_29
+							region = state_22
+						}
+					}
+				}
+				secede_province = BOS
+			}
+		}
+
+		end_war = NCR
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+

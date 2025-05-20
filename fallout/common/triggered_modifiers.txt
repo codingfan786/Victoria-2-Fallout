@@ -9,3 +9,18 @@ world_bank = {
 	max_tariff = -1.5
 	min_tariff = -2
 }
+
+ai_diplo = {
+	trigger = {
+		ai = yes
+	}
+	diplomatic_points_modifier = -100
+}
+
+player_diplo = {
+	trigger = {
+		ai = no
+	}
+	diplomatic_points_modifier = 1.0
+}
+

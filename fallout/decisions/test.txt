@@ -1,12 +1,46 @@
 political_decisions = {
+
+
+
+
+	another_debug = {
+		potential = {
+			always = no
+			ai = no
+		}
+		allow = {
+
+		}
+		effect = {
+			#inherit = ORO
+			#inherit = TOB
+			#inherit = PRO
+			#inherit = DRY
+			inherit = YMP
+			inherit = GLW
+		}
+	}
 	debug = {
 		potential = {
+			always = no
 			ai = no
 		}
 		allow = {
 			ai = no
 		}
 		effect = {
+			random_owned = {
+				limit = {
+					owner = {tag = BAG}
+				}
+				THIS = {
+					inherit = YMP
+					inherit = GLW
+					inherit = CLJ
+					inherit = FOR
+
+				}
+			}
 			random_owned = {
 				limit = {
 					owner = {tag = DES}

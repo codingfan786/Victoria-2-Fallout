@@ -1,0 +1,921 @@
+# INSTRUCTIONS:
+# -------------
+# constructing_cb - default to yes. if "no", cant be picked for generation or as add_wargoal if no CB already
+# is_triggered_only - Triggered from within the code or by event effects. DO NOT REMOVE THE STOCK ONES.
+# mutual - The CB effects will also be used by the defender in peace treaties
+# months - The number of months this CB will be valid. Only works for triggered CBs.
+# prerequisites - A condition that automatically activates a CB. Does not work for triggered CBs. 'THIS' scope is the target country.
+# badboy_factor - Multiplied with any badboy increase normally associated with a peace option.
+# prestige_factor - Multiplied with any prestige increase normally associated with a peace option.
+# peace_cost_factor - Multiplied with the cost of the peace options in the peace treaty
+# po_xxx - Peace options. If toggled on, badboy_factor and prestige_factor are multiplied with any associated base changes to these (see defines.txt.)
+# allowed_states - If 'po_demand_states' is on, badboy_factor applies to these provinces. 'THIS' scope is us.
+# on_add - effect triggered when war goal added (triggering country's scope)
+# construction_speed - base modifier for how long creating this CB will take. default is 1. 1.2 means 20% faster
+# great_war_obligatory - cb is always added to the peace offer/demand in great wars.
+# po_remove_cores - may be used only with: po_transfer_provinces, po_demand_state, po_annex
+# crisis - can be offered as a wargoal in a crisis
+#
+# The peace options are:
+#po_annex
+#po_demand_state
+#po_add_to_sphere
+#po_disarmament
+#po_reparations
+#po_transfer_provinces
+#po_remove_prestige
+#po_make_puppet
+#po_release_puppet
+#po_status_quo
+#po_install_communist_gov_type
+#po_uninstall_communist_gov_type
+#po_remove_cores
+#po_colony
+
+# NOTE: The order in which the peace options are listed is the order in which the AI will normally prioritize them in peace treaties
+
+# TRIGGERED - Triggered from within the code or by event effects
+# --------------------------------------------------------------
+
+# Order that CBs are executed in a peace treaty
+peace_order = { 
+
+}
+
+
+status_quo = {
+	sprite_index = 1
+	is_triggered_only = yes
+	months = 6
+	constructing_cb = no
+	
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		always = no
+	}
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	badboy_factor = 1
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	
+	po_status_quo = yes
+	
+	war_name = WAR_NAME
+}
+
+# Civil war
+civil_war = {
+	sprite_index = 2
+	is_triggered_only = yes
+	months = 1
+	constructing_cb = no
+	crisis = no
+	
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		always = no
+	}
+
+	badboy_factor = 0
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+	is_civil_war = yes #this is a civil war
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	po_annex = yes
+	
+	war_name = CIVIL_WAR_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+# Sphere of Influence Gain
+add_to_sphere = {
+	sprite_index = 3
+	is_triggered_only = yes
+	months = 6
+	crisis = no
+
+	badboy_factor = 2
+	prestige_factor = 2
+	peace_cost_factor = 50
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		this = { is_greater_power = yes }
+		is_greater_power = no
+		is_independant = yes
+		part_of_sphere = no
+	}
+	
+	is_valid = {
+		this = { is_greater_power = yes }
+		is_greater_power = no
+	}
+	
+	po_add_to_sphere = yes
+	
+	war_name = WAR_ADD_SPHERE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+take_from_sphere = {
+	sprite_index = 4
+	is_triggered_only = yes
+	months = 6
+	
+	badboy_factor = 2
+	prestige_factor = 3
+	peace_cost_factor = 20
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		this = { is_greater_power = yes }
+		is_greater_power = yes
+		ai = yes
+	}
+
+	
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal is scope
+	allowed_countries = {
+		is_sphere_leader_of = FROM
+		OR = {
+			FROM = { is_vassal = no }
+			THIS = { is_our_vassal = FROM }
+		}
+	}
+	
+	po_add_to_sphere = yes
+	
+	war_name = WAR_TAKE_SPHERE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+# Colonial competition
+colonial_competition = {
+	sprite_index = 7
+	is_triggered_only = yes
+	constructing_cb = no    # only used in crises
+	crisis = no
+	months = 6
+
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.9
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	po_colony = yes
+
+	war_name = WAR_COLONIAL_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+
+# Make Puppet
+make_puppet = {
+	sprite_index = 10
+	is_triggered_only = yes
+	months = 6
+	crisis = no
+
+	badboy_factor = 2.0
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		OR = {
+			NOT = { number_of_states = 6 }
+			civilized = no
+		}
+		
+		is_greater_power = no
+		is_vassal = no
+		ai = yes
+	}
+	
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal is scope
+	#allowed_countries = {
+	#	NOT = { is_our_vassal = FROM }
+		#FROM = { is_substate = no }
+	#}
+	
+	po_make_puppet = yes
+
+	war_name = WAR_PUPPET_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+# Become Independent
+become_independent = {
+	sprite_index = 10
+	is_triggered_only = yes
+	months = 6
+	crisis = no
+	
+	always = yes
+
+	badboy_factor = 1
+	prestige_factor = 1
+	peace_cost_factor = 15
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		is_our_vassal = THIS
+	}
+	
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal is scope
+	allowed_countries = {
+		OR = {
+			FROM = { is_our_vassal = THIS }
+			war_with = THIS
+		}
+	}
+	
+	po_release_puppet = yes
+	po_add_to_sphere = yes
+
+	war_name = WAR_INDEPENDENCE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+		add_war_goal = {
+			casus_belli = make_puppet
+		}
+		leave_alliance = FROM
+		release_vassal = THIS
+	}
+}
+
+
+# Humiliate
+humiliate = {
+	sprite_index = 11
+	is_triggered_only = yes
+	months = 6
+
+	badboy_factor = 1.5
+	prestige_factor = 1
+	peace_cost_factor = 15
+	penalty_factor = 1
+	
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	po_remove_prestige = yes
+
+	tws_battle_factor = 2.0
+	
+	war_name = WAR_HUMILIATE_NAME
+
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		has_recently_lost_war = no
+	}	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+# Bad Boy
+rude_boy = {
+	sprite_index = 11
+	is_triggered_only = no
+	months = 6
+	construction_speed = 2
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 0.5
+	peace_cost_factor = 1.5
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 0
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+	
+	always = yes
+
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		badboy = 1
+	}
+	
+	po_remove_prestige = yes
+	po_disarmament = yes
+	po_reparations = yes
+	
+	war_name = WAR_RUDEBOI_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+}
+
+
+# Great War Penalty
+great_war_penalty_cb = {
+	sprite_index = 14
+	is_triggered_only = yes
+	months = 0
+	crisis = no
+	
+	constructing_cb = no
+	
+	great_war_obligatory = yes
+	
+	badboy_factor = 1.3
+	prestige_factor = 1.8
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	po_disarmament = yes
+	po_reparations = yes
+
+	war_name = WAR_NAME
+	
+	#can_use = {
+	#	NOT = { is_our_vassal = THIS }
+	#	is_disarmed = no
+	#}
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+
+
+conquest = {
+	sprite_index = 2
+	is_triggered_only = yes
+	months = 6
+	crisis = no
+
+	can_use = {
+		#THIS = { war = no }
+
+		OR = {
+			NOT = {has_country_flag = nevada_person}
+			has_global_flag = nevada_road_war
+		}
+		NOT = {tag = BVC}
+		NOT = {tag = BLP}
+
+		#kind of stupid...
+		#THIS = {
+		#	NOT = {
+		#		war_countries = {
+		#			ai = no
+		#		}
+		#	}
+		#}
+		
+		ai = yes
+	}
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	badboy_factor = 3
+	prestige_factor = 1
+	peace_cost_factor = 80
+	penalty_factor = 0
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+		add_country_modifier = {
+			name = conquest_timer
+			duration = 180
+		}
+		set_country_flag = conquest_ongoing	
+	}
+	
+	po_remove_prestige = yes
+
+	#tws_battle_factor = 2.0
+
+	on_po_accepted = {
+		#regular scope is surrendering country
+		#THIS is country who added CB
+		#FROM doesnt do anything? Inside the resultant events FROM is the country who added CB
+
+		THIS = { country_event = 1337004 }
+	}
+	
+	war_name = WAR_CONQUEST_NAME
+}
+
+conquest_nevada_real = {
+	sprite_index = 2
+	#is_triggered_only = yes
+	months = 6
+	constructing_cb = no
+
+	can_use = {
+		always = no
+	}
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	badboy_factor = 3
+	prestige_factor = 1
+	peace_cost_factor = 80
+	penalty_factor = 0
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+		add_country_modifier = {
+			name = conquest_timer
+			duration = 90
+		}
+		set_country_flag = conquest_ongoing	
+	}
+	
+	po_remove_prestige = yes
+
+	#tws_battle_factor = 2.0
+
+	on_po_accepted = {
+		#regular scope is surrendering country
+		#THIS is country who added CB
+		#FROM doesnt do anything? Inside the resultant events FROM is the country who added CB
+
+		THIS = { country_event = 1337004 }
+	}
+	
+	war_name = NEVADA_ROAD_WAR_NAME
+
+}
+
+conquest_nevada = {
+	sprite_index = 2
+	is_triggered_only = yes
+	months = 6
+	crisis = no
+	constructing_cb = no
+	always = yes
+
+	can_use = {
+		THIS = { war = no }
+
+		THIS = { tag = DES }
+		has_country_flag = nevada_person
+		NOT = {has_global_flag = nevada_road_war}
+
+		#THIS = {
+		#	NOT = {
+		#		war_countries = {
+		#			ai = no
+		#		}
+		#	}
+		#}
+		
+		ai = yes
+	}
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	badboy_factor = 3
+	prestige_factor = 1
+	peace_cost_factor = 80
+	penalty_factor = 0
+	
+	on_add = {
+		FROM = {
+			end_war = THIS
+		}
+		EHT = {
+			create_vassal = FROM
+			create_alliance = FROM
+		}
+		any_country = {
+			limit = {
+				has_country_flag = nevada_person
+				is_vassal = no
+			}
+			leave_alliance = EHT
+		}
+		THIS = {
+			war = {
+				target = EHT
+				attacker_goal = { casus_belli = conquest_nevada_real }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}	
+	}
+	
+	po_remove_prestige = yes
+
+	#tws_battle_factor = 2.0
+
+	on_po_accepted = {
+		#regular scope is surrendering country
+		#THIS is country who added CB
+		#FROM doesnt do anything? Inside the resultant events FROM is the country who added CB
+	}
+	
+	war_name = NEVADA_ROAD_WAR_NAME
+}
+
+baja_campaign = {
+	sprite_index = 2
+	#is_triggered_only = yes
+	months = 6
+	constructing_cb = no
+
+	can_use = {
+		always = no
+	}
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	badboy_factor = 3
+	prestige_factor = 1
+	peace_cost_factor = 80
+	penalty_factor = 0
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+		add_country_modifier = {
+			name = conquest_timer
+			duration = 270
+		}
+		set_country_flag = conquest_ongoing	
+	}
+	
+	po_remove_prestige = yes
+
+	#tws_battle_factor = 2.0
+
+	on_po_accepted = {
+		#regular scope is surrendering country
+		#THIS is country who added CB
+		#FROM doesnt do anything? Inside the resultant events FROM is the country who added CB
+
+		THIS = { country_event = 1337004 }
+	}
+	
+	war_name = BAJA_CAMPAIGN_NAME
+
+}
+
+operation_sunburst = {
+	sprite_index = 2
+	#is_triggered_only = yes
+	months = 6
+	constructing_cb = no
+
+	can_use = {
+		always = no
+	}
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	badboy_factor = 3
+	prestige_factor = 1
+	peace_cost_factor = 80
+	penalty_factor = 0
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+		MOT = {
+			add_country_modifier = {
+				name = conquest_timer
+				duration = 180
+			}
+		}
+			
+		#set_country_flag = operation_sunburst_ongoing	
+	}
+	
+	po_remove_prestige = yes
+
+	#tws_battle_factor = 2.0
+
+	on_po_accepted = {
+		#regular scope is surrendering country
+		#THIS is country who added CB
+		#FROM doesnt do anything? Inside the resultant events FROM is the country who added CB
+
+		MOT = { country_event = 1337008 }
+	}
+	
+	war_name = OPERATION_SUNBURST_NAME
+}
+
+
+bos_ncr_war = {
+	sprite_index = 2
+	#is_triggered_only = yes
+	months = 6
+	constructing_cb = no
+
+	can_use = {
+		always = no
+	}
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	badboy_factor = 3
+	prestige_factor = 1
+	peace_cost_factor = 80
+	penalty_factor = 0
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+		BOS = {
+			add_country_modifier = {
+				name = conquest_timer
+				duration = 180
+			}
+		}
+			
+	}
+	
+	po_remove_prestige = yes
+
+	#tws_battle_factor = 2.0
+
+	on_po_accepted = {
+		#regular scope is surrendering country
+		#THIS is country who added CB
+		#FROM doesnt do anything? Inside the resultant events FROM is the country who added CB
+
+		BOS = { country_event = 1337009 }
+	}
+	
+	war_name = BOS_NCR_WAR_NAME
+}
+
+war_on_paradise = {
+	sprite_index = 2
+	#is_triggered_only = yes
+	months = 6
+	constructing_cb = no
+
+	can_use = {
+		always = no
+	}
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	badboy_factor = 3
+	prestige_factor = 1
+	peace_cost_factor = 80
+	penalty_factor = 0
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+		WHT = {
+			add_country_modifier = {
+				name = conquest_timer
+				duration = 365
+			}
+		}
+			
+	}
+	
+	po_remove_prestige = yes
+
+	#tws_battle_factor = 2.0
+
+	on_po_accepted = {
+		#regular scope is surrendering country
+		#THIS is country who added CB
+		#FROM doesnt do anything? Inside the resultant events FROM is the country who added CB
+
+		WHT = { country_event = 1337011 }
+	}
+	
+	war_name = WAR_ON_PARADISE_NAME
+}
+
+NCR_legion_war = {
+	sprite_index = 2
+	#is_triggered_only = yes
+	months = 6
+	constructing_cb = no
+
+	can_use = {
+		always = no
+	}
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	badboy_factor = 3
+	prestige_factor = 1
+	peace_cost_factor = 80
+	penalty_factor = 0
+
+	on_add = {
+		
+			
+	}
+
+	#tws_battle_factor = 2.0
+
+	on_po_accepted = {
+		#regular scope is surrendering country
+		#THIS is country who added CB
+		#FROM doesnt do anything? Inside the resultant events FROM is the country who added CB
+
+	}
+	
+	war_name = NCR_LEGION_WAR_NAME
+}

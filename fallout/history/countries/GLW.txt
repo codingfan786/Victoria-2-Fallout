@@ -12,7 +12,7 @@ nonstate_consciousness = 1
 
 #GreaterPowers = prestige
 prestige = 10
-
+oob = "GLW.txt"
 
 # Political reforms
 slavery = no_slavery

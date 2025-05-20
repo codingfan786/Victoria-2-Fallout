@@ -1,3 +1,13 @@
+leader = {
+	name = "Malpais Legate"
+	date = 1910.1.1
+	type = land
+	personality = defence_4.3
+	background = attack_6.1
+	prestige = 0.5
+}
+
+
 GDH = {
 	level = 5		#3=cordial, 4 = friendly, 5 sphere
 }
@@ -6,6 +16,46 @@ LAC = {
 }
 WHT = {
 	level = 5		#3=cordial, 4 = friendly, 5 sphere
+}
+TWO = {
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+}
+
+RAP = {
+	truce_until = "1916.1.1"
+}
+NCR = {
+	truce_until = "1916.1.1"
+}
+MOT = {
+	truce_until = "1916.1.1"
+}
+VEG = {
+	truce_until = "1916.1.1"
+}
+MRA = {
+	truce_until = "1916.1.1"
+}
+SOR = {
+	truce_until = "1916.1.1"
+}
+DEA = {
+	truce_until = "1916.1.1"
+}
+EAG = {
+	truce_until = "1916.1.1"
+}
+LON = {
+	truce_until = "1916.1.1"
+}
+NCN = {
+	truce_until = "1916.1.1"
+}
+ORO = {
+	truce_until = "1915.6.1" #was 1916.6.1 but not necessary now with BAG as player
+}
+BAG = {
+	truce_until = "1916.1.1"
 }
 
 army = {

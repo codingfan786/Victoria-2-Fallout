@@ -1,3 +1,22 @@
+WHT = {
+	truce_until = "1916.1.1"
+}
+EHT = {
+	truce_until = "1916.1.1"
+}
+BOS = {
+	truce_until = "1915.1.1"
+}
+TWI = {
+	truce_until = "1916.1.1"
+}
+RHO = {
+	truce_until = "1916.1.1"
+}
+TON = {
+	truce_until = "1916.1.1"
+}
+
 army = {
 	name = "Army"
 	location = 778

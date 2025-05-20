@@ -7,7 +7,25 @@ VEG = {
 DES = {
 	level = 5		#3=cordial, 4 = friendly, 5 sphere
 }
+BAG = {
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+}
 
+EHT = {
+	truce_until = "1916.1.1"
+}
+WHT = {
+	truce_until = "1916.1.1"
+}
+TWI = {
+	truce_until = "1916.1.1"
+}
+RHO = {
+	truce_until = "1916.1.1"
+}
+TON = {
+	truce_until = "1916.1.1"
+}
 army = {
 	name = "Army"
 	location = 398

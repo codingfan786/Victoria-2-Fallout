@@ -1,0 +1,55 @@
+political_decisions = {
+	new_canaan_missionaries = {
+		potential = {
+			tag = NCN
+			NOT = {has_country_flag = annexed_puppets}
+		}
+		allow = {
+			war = no
+			has_country_flag = war_on_paradise_started
+			OR = {
+				DEA = {vassal_of = NCN}
+				EAG = {vassal_of = NCN}
+				CRZ = {vassal_of = NCN}
+				LON = {vassal_of = NCN}
+				SOR = {vassal_of = NCN}
+			}
+		}
+		effect = {
+			set_country_flag = annexed_puppets
+			add_accepted_culture = utah_tribal
+			any_country = {
+				limit = {
+					OR = {
+						tag = DEA
+						tag = EAG
+						tag = CRZ
+						tag = LON
+						tag = SOR
+					}
+					vassal_of = NCN
+				}
+				civilized = yes
+				annex_to = NCN
+			}
+		}
+	}
+
+
+	new_canaan_flee = {
+		potential = {
+			tag = NCN
+			WHT = {NOT = {has_country_flag = war_on_paradise_ended}}
+		}
+		allow = {
+			WHT = {has_country_flag = war_on_paradise_started}
+			WHT = {NOT = {has_country_flag = war_on_paradise_ended}}
+		}
+		effect = {
+			1309 = {change_controller = WHT}
+			WHT = {country_event = 1337011}
+		}
+
+	}
+}
+

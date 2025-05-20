@@ -1,82 +1,306 @@
+
+
 country_event = {
-	id = 13371337001
+	id = 1337002
 	title = "Startup"
 	desc = "Ignore"
 	fire_only_once = yes
 
 	trigger = {
-		always = no #THIS IS WAY TOO LAGGY
+		tag = BAN
 		NOT = {has_global_flag = GAMESTART}
-		ai = yes
-		civilized = yes
+		year = 1913
+		#ai = yes
 	}
 
 	immediate = {
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 1337017
+		}
+		BAN = {
+			set_country_flag = is_bank
+		}
+		set_global_flag = GAMESTART
+		#2346 = {secede_province = BAN}
 
-		any_owned = {
-			limit = {
-				terrain = mountain
+		CES = {
+			set_country_flag = Legion
+			diplomatic_influence = {
+				who = LAC
+				value = 300
 			}
-			infrastructure = 2
 		}
-		any_owned = {
-			limit = {
-				terrain = desert
-			}
-			infrastructure = 3
+		LAC = {
+			set_country_flag = Legion
 		}
-		any_owned = {
-			limit = {
-				OR = {
-					terrain = farmlands
-					terrain = forest
-					terrain = hills
-					terrain = plains
-				}
-			}
-			infrastructure = 4
+		TWO = {
+			set_country_flag = Legion
 		}
-		any_owned = {
-			limit = {
-				terrain = woods
-			}
-			infrastructure = 5
-		}
+		
+		TVT = {set_country_flag = nevada_person}
+		TOF = {set_country_flag = nevada_person}
+		GRD = {set_country_flag = nevada_person}
+		JAC = {set_country_flag = nevada_person}
+		VIP = {set_country_flag = nevada_person}
+		RIP = {set_country_flag = nevada_person}
+		RUB = {set_country_flag = nevada_person}
+		GRA = {set_country_flag = nevada_person}
 
 		any_country = {
 			limit = {
-				civilized = yes
+				has_country_flag = nevada_person 
+				NOT = {tag = RUB}
 			}
-			any_owned = {
-				limit = {
-					terrain = mountain
-				}
-				infrastructure = 2
-			}
-			any_owned = {
-				limit = {
-					terrain = desert
-				}
-				infrastructure = 3
-			}
-			any_owned = {
-				limit = {
-					OR = {
-						terrain = farmlands
-						terrain = forest
-						terrain = hills
-						terrain = plains
-					}
-				}
-				infrastructure = 4
-			}
-			any_owned = {
-				limit = {
-					terrain = woods
-				}
-				infrastructure = 5
+			country_event = 1337006
+		}
+
+		GDH = {
+			military_access = BVC
+			military_access = BLP
+		}
+
+		any_country = {
+			leadership = 120
+			treasury = 500000
+			ammunition = 1500
+			barrels = 500
+			small_arms = 500
+			artillery = 1000
+			canned_food = 1500
+			liquor = 500
+			wine = 500
+			regular_clothes = 500
+			luxury_clothes = 500
+			cement = 1000
+			machine_parts = 1000
+
+		}
+
+		TAR = {
+			add_casus_belli = {
+				target = WHT
+				type = conquest
+				months = 12
 			}
 		}
+
+		CLK = {
+			add_casus_belli = {
+				target = WHT
+				type = conquest
+				months = 12
+			}
+		}
+		TAR = {
+			country_event = 1337013
+		}
+		TAR = {
+			all_core = {
+				add_core = WHT
+			}
+		}
+		CLK = {
+			all_core = {
+				add_core = WHT
+			}
+		}
+		NCR = {
+			add_country_modifier = {
+				name = mobilization_nerf
+				duration = -1
+			}
+		}
+		CES = {
+			add_country_modifier = {
+				name = mobilization_nerf
+				duration = -1
+			}
+		}
+
+		MOT = {
+			add_country_modifier = {
+				name = mobilization_bonus
+				duration = -1
+			}
+		}
+
+		VEG = {
+			add_country_modifier = {
+				name = mobilization_bonus
+				duration = -1
+			}
+		}
+		DES = {
+			add_country_modifier = {
+				name = mobilization_bonus
+				duration = -1
+			}
+		}
+		SHI = {
+			add_country_modifier = {
+				name = mobilization_bonus
+				duration = -1
+			}
+		}
+		BAG = {
+			add_country_modifier = {
+				name = mobilization_bonus
+				duration = -1
+			}
+			add_country_modifier = {
+				name = colorado_rushdown
+				duration = -1
+			}
+		}
+
+		
+		any_country = {
+			limit = {
+				OR = {
+					tag = VIP
+					tag = JAC
+					tag = TOF
+					tag = GRD
+					tag = TVT
+				}
+			}
+			all_core = {
+				add_core = DES
+			}
+		}
+		random_owned = {
+			limit = {
+				HAN = {ai = no}
+			}
+			ASF = {
+				add_casus_belli = {
+					target = LAC
+					type = conquest
+					months = 12
+				}
+			}
+			SUN = {
+				add_casus_belli = {
+					target = LAC
+					type = conquest
+					months = 24
+				}
+			}
+		}
+
+
+
+		#lets try this
+		random_owned = {
+			limit = {
+				BAG = {ai = yes}
+			}
+			HAN = {any_pop = {reduce_pop = 0.5}}
+			LAC = {any_pop = {reduce_pop = 0.5}}
+			SCO = {any_pop = {reduce_pop = 0.5}}
+			GLW = {any_pop = {reduce_pop = 0.5}}
+		}
+		
+		
+
+		enable_canal = 1
+		enable_canal = 2
+		enable_canal = 3
+		enable_canal = 4
+		enable_canal = 5
+		enable_canal = 6
+		enable_canal = 7
+
+		any_country = {
+			limit = {
+				OR = {
+					tag = YMP
+					tag = GLW
+					tag = HAN
+					tag = CLJ
+					tag = INR
+					tag = FOR
+					tag = TOB
+					tag = DRY
+					tag = ORO
+					tag = PRO
+				}
+			}
+			all_core = {add_core = BAG}
+		}
+
+		NCR = {set_country_flag = ncr_side}
+		MOT = {set_country_flag = ncr_side}
+		VEG = {set_country_flag = ncr_side}
+		DES = {set_country_flag = ncr_side}
+		NCN = {set_country_flag = ncr_side}
+		BAG = {set_country_flag = ncr_side}
+
+		CES = {set_country_flag = ces_side}
+		LAC = {set_country_flag = ces_side}
+		TWO = {set_country_flag = ces_side}
+		GDH = {set_country_flag = ces_side}
+		WHT = {set_country_flag = ces_side}
+		EHT = {set_country_flag = ces_side}
+		BOS = {set_country_flag = ces_side}
+
+
+		HAN = {set_country_flag = ncr_side}
+
+
+		WHT = {
+			define_general = {
+				name = "Salt-Upon-Wounds"
+				personality = defence_5.1
+				background = attack_5.1
+			}
+		}
+
+		LAC = {
+			define_general = {
+				name = "Legate Lanius"
+				personality = defence_5.1
+				background = attack_5.1
+			}
+		}
+		NCR = {
+			define_general = {
+				name = "General Lee Oliver"
+				personality = defence_3.1
+				background = attack_3.1
+			}
+		}
+		MOT = {
+			define_general = {
+				name = "Colonel Hsu"
+				personality = defence_4.1
+				background = attack_3.1
+			}
+			define_general = {
+				name = "Colonel Cassandra Moore"
+				personality = defence_3.1
+				background = attack_4.1
+			}
+		}
+
+		NCR = {
+			set_variable = {
+				which = vp_score
+				value = 0
+			}
+		}
+
+		CES = {
+			set_variable = {
+				which = vp_score
+				value = 0
+			}
+		}
+
+		
 	}
 
 	option = {
@@ -85,26 +309,73 @@ country_event = {
 }
 
 country_event = {
-	id = 13371337002
-	title = "Startup"
-	desc = "Ignore"
-	fire_only_once = yes
+	id = 1337003
+	title = "RETARD"
+	desc = "YOU CHOSE THE WRONG START DATE RETARD"
+	#fire_only_once = yes
 
 	trigger = {
-		tag = BAN
 		NOT = {has_global_flag = GAMESTART}
-		#ai = yes
+		NOT = {has_country_flag = wrong_start}
+		ai = no
+		month = 2
 	}
 
 	immediate = {
-		BAN = {
-			set_country_flag = is_bank
-		}
-		set_global_flag = GAMESTART
-		#2346 = {secede_province = BAN}
+		set_country_flag = wrong_start
 	}
 
 	option = {
 		name = "Ok."
+		THIS = {
+			overlord = {
+				inherit = THIS
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = 47652
+	title = "Situation in the Mojave"
+	desc = "Tension is brewing up in the Mojave, and there are rumours of a war impending, we must prepare."
+	news = yes
+	news_title = "EVTNAME60160_NEWS_TITLE"
+	news_desc_long = "EVTDESC60160_NEWS_LONG"
+	news_desc_medium = "EVTDESC60160_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60160_NEWS_SHORT"
+
+	trigger = {
+		exists = yes
+		NOT = { has_country_flag = existing_country1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "May god have mercy on us all..."
+		set_country_flag = existing_country1
+
+		small_arms = 500
+		artillery = 500
+		canned_food = 500
+		liquor = 500
+		wine = 500
+		regular_clothes = 500
+		luxury_clothes = 500
+		cement = 1000
+		machine_parts = 1000
+		steel = 1000
+		iron = 1000
+		ammunition = 500
+		barrels = 500
+
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			militancy = -2
+		}
 	}
 }

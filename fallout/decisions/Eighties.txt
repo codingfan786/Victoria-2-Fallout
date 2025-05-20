@@ -1,0 +1,27 @@
+political_decisions = {
+
+	ruby_access = {
+		potential = {
+			tag = EHT
+			RUB = {exists = yes}
+			NOT = {
+				military_access = RUB
+			}
+		}
+		allow = {
+			OR = {
+				year = 1915
+				DES = {war_with = GRA}
+				DES = {war_with = RIP}
+			}
+			NOT = {
+				military_access = RUB
+			}
+		}
+		effect = {
+			military_access = RUB
+		}
+	}
+
+
+}

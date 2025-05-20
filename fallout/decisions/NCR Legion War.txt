@@ -1,0 +1,74 @@
+political_decisions = {
+
+
+	NCR_legion_war = {
+		potential = {
+			OR = {
+				tag = CES
+				tag = NCR
+			}
+			NOT = {has_global_flag = NCR_Legion_War}
+		}
+		allow = {
+			war = no
+			year = 1916
+			OR = {
+				year = 1917
+				month = 7
+			}
+		}
+		effect = {
+			set_global_flag = NCR_Legion_War
+
+			any_country = {
+				limit = {
+					ai = no
+					has_country_flag = ncr_side
+				}
+				create_alliance = NCR
+			}
+			any_country = {
+				limit = {
+					ai = no
+					has_country_flag = ces_side
+				}
+				create_alliance = CES
+			}
+
+			CES = {
+				war = {
+					target = NCR
+					attacker_goal = { casus_belli = NCR_legion_war }
+					defender_goal = { casus_belli = NCR_legion_war }
+					call_ally = yes
+				}
+			}
+
+			random_owned = {
+				limit = {
+					NCN = {
+						#always = yes
+						has_country_flag = paradise_lost
+					}
+				}
+				CES = {
+					kill_leader  = 1
+				}
+				NCN = {
+					define_general = {
+						name = "Joshua Graham"
+						personality = defence_4.3
+						background = attack_5.1
+						prestige = 0.35
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+}

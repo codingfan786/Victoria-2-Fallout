@@ -675,7 +675,7 @@ fort = {
 		artillery = 250
 		canned_food = 2800
 	}
-	time = 360 
+	time = 60 
 	visibility = yes
 	onmap = yes
 	max_level = 6
@@ -697,7 +697,7 @@ naval_base = {
 		artillery = 250
 		canned_food = 2800
 	}
-	time = 360
+	time = 120
 	capital = yes
 	onmap = yes
 	port = yes
@@ -718,7 +718,7 @@ railroad = {
 		cement = 100
 		steel = 100
 	}
-	time = 360
+	time = 120
 	visibility = yes
 	onmap = yes
 	max_level = 6

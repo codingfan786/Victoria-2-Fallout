@@ -67,24 +67,26 @@ promotion_chance =
 	group = {
 		modifier = {
 			factor = 0.1
-			life_needs = 0.9
-	
+			life_needs = 0.7
+			strata = poor
 		}
+
 		modifier = {
 			factor = 0.1
 			life_needs = 0.8 
 		}
+
 		modifier = {
 			factor = 0.1
-			life_needs = 0.7
-			strata = poor
+			life_needs = 0.9
+	
 		}
 	}
 	group = {
 		modifier = {
 			factor = 0.1
-			everyday_needs = 0.9
-	
+			everyday_needs = 0.7
+			strata = poor
 		}
 		modifier = {
 			factor = 0.1
@@ -92,15 +94,17 @@ promotion_chance =
 		}
 		modifier = {
 			factor = 0.1
-			everyday_needs = 0.7
-			strata = poor
+			everyday_needs = 0.9
+	
 		}
+		
+		
 	}
 	group = {
 		modifier = {
 			factor = 0.1
-			luxury_needs = 0.9
-	
+			luxury_needs = 0.7
+			strata = poor
 		}
 		modifier = {
 			factor = 0.1
@@ -108,8 +112,8 @@ promotion_chance =
 		}
 		modifier = {
 			factor = 0.1
-			luxury_needs = 0.7
-			strata = poor
+			luxury_needs = 0.9
+	
 		}
 	}
 
@@ -136,7 +140,10 @@ promotion_chance =
 		factor = -100
 		location = { NOT = { controlled_by = owner } }
 	}
-	
+	modifier = {
+		factor = -0.2 #maybe to -0.3?
+		country = { has_country_flag = Legion }
+	}
 }
 
 demotion_chance = 
@@ -303,6 +310,7 @@ demotion_chance =
 		factor = -100
 		location = { NOT = { controlled_by = owner } }
 	}
+	
 }
 
 #general migration chance mtth, same for all pops

@@ -87,7 +87,7 @@ basic_chemistry = 1
 	iron_muzzle_loaded_artillery = 1
 	iron_breech_loaded_artillery = 1
 	steel_breech_loaded_artillery = 1
-	indirect_artillery_fire = 1
+	#indirect_artillery_fire = 1
 	military_staff_system = 1
 	military_plans = 1
 	military_statistics = 1
@@ -96,7 +96,7 @@ basic_chemistry = 1
 	army_command_principle = 1
 	army_professionalism = 1
 	army_decision_making = 1
-	army_risk_management = 1
+	#army_risk_management = 1
 	#army_nco_training = 1
 	
 	post_nelsonian_thought = 1

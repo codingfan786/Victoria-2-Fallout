@@ -1,6 +1,6 @@
 defines = {
 
-start_date = '1836.1.1',
+start_date = '1914.1.1',
 end_date = '2000.12.31',
 
 country = {
@@ -72,8 +72,8 @@ country = {
 	COLONIZATION_MONTHS_TO_COLONIZE = 6,
 	COLONIZATION_DAYS_BETWEEN_INVESTMENT = 90,
 	COLONIZATION_DAYS_FOR_INITIAL_INVESTMENT = 270,
-	COLONIZATION_PROTECTORATE_PROVINCE_MAINTAINANCE = 3.5,
-	COLONIZATION_COLONY_PROVINCE_MAINTAINANCE = 4,
+	COLONIZATION_PROTECTORATE_PROVINCE_MAINTAINANCE = 2.0, --was ..idk
+	COLONIZATION_COLONY_PROVINCE_MAINTAINANCE = 2.0, --was ..idk
 	COLONIZATION_COLONY_INDUSTRY_MAINTAINANCE = 1,
 	COLONIZATION_COLONY_RAILWAY_MAINTAINANCE = 0.1,
 	COLONIZATION_INTEREST_COST_INITIAL = 100,
@@ -82,7 +82,7 @@ country = {
 	COLONIZATION_INFLUENCE_COST = 20,
 	COLONIZATION_EXTRA_GUARD_COST = 5,
 	COLONIZATION_RELEASE_DOMINION_COST = 30,
-	COLONIZATION_CREATE_STATE_COST = 150,
+	COLONIZATION_CREATE_STATE_COST = 0, --was 150
 	COLONIZATION_CREATE_PROTECTORATE_COST = 5,
 	COLONIZATION_CREATE_COLONY_COST = 4, -- per province
 	COLONIZATION_COLONY_STATE_DISTANCE = 400,
@@ -138,7 +138,7 @@ military = {
 	SOLDIER_TO_POP_DAMAGE = 0.2,
 	LAND_SPEED_MODIFIER = 1,
 	NAVAL_SPEED_MODIFIER = 2,
-	EXP_GAIN_DIV = 0.05,
+	EXP_GAIN_DIV = 0.15,
 	LEADER_RECRUIT_COST = 20,
 	SUPPLY_RANGE = 250,
 	POP_MIN_SIZE_FOR_REGIMENT_PROTECTORATE_MULTIPLIER = 8,
@@ -191,7 +191,7 @@ military = {
 	BASE_MILITARY_TACTICS = 1.0, -- base mil tactics before tech                                                      WAS 1.5
 	NAVAL_LOW_SUPPLY_DAMAGE_SUPPLY_STATUS = 0.85, -- how little supply is acceptable before getting damage to STR
 	NAVAL_LOW_SUPPLY_DAMAGE_DAYS_DELAY = 1, -- delay in days before the STR will get damage due to no supplies. Sometimes supply status may jump bcoz of the market.
-	NAVAL_LOW_SUPPLY_DAMAGE_MIN_STR = 5.0, -- when low supply, the navy will supply STR damage but no less then X% to avoid destruction (value from 0 to 100.0)
+	NAVAL_LOW_SUPPLY_DAMAGE_MIN_STR = 15.0, -- when low supply, the navy will supply STR damage but no less then X% to avoid destruction (value from 0 to 100.0)
 	NAVAL_LOW_SUPPLY_DAMAGE_PER_DAY = 1.0, -- damage to navies STR per day if totally 0% supplies (value from 0 to 100.0)
 },
 
@@ -513,9 +513,9 @@ diplomacy = {
 
 	LIBERATE_STATE_RELATION_INCREASE = 50,
 	DISHONORED_CALLALLY_PRESTIGE_PENALTY = -3,
-	BASE_TRUCE_MONTHS = 24,
+	BASE_TRUCE_MONTHS = 9,
 	MAX_INFLUENCE = 100,
-	WARSUBSIDIES_PERCENT = 0.20, -- How many percent of imports you are going to pay each day(mil. constructions and mil. maintainence)
+	WARSUBSIDIES_PERCENT = 1.0, -- How many percent of imports you are going to pay each day(mil. constructions and mil. maintainence)
 	NEIGHBOUR_BONUS_INFLUENCE_PERCENT = 0.50, -- Bonus to neighbouring countries when influencing
 	SPHERE_NEIGHBOUR_BONUS_INFLUENCE_PERCENT = 0.2, -- Bonus to countries in your sphere neighbouring when influencing
 	OTHER_CONTINENT_BONUS_INFLUENCE_PERCENT = -0.50, -- Bonus to neighbouring countries when influencing
@@ -627,13 +627,13 @@ pops = {
 	CONVERSION_SCALE = 0.01,
 	IMMIGRATION_SCALE = 0.004, -- was 0.004
 
-	PROMOTION_SCALE = 0.006, -- was 0.002
+	PROMOTION_SCALE = 0.004, -- was 0.002
 	PROMOTION_ASSIMILATION_CHANCE = 1.0,
 	LUXURY_THRESHOLD = 500,
 	BASE_GOODS_DEMAND = 0.8, --was 0.8
-	BASE_POPGROWTH = 0.0004, -- was 0.0001
+	BASE_POPGROWTH = 0.0002, -- was 0.0001 x4 was too much I think
 	MIN_LIFE_RATING_FOR_GROWTH = 30,
-	LIFE_RATING_GROWTH_BONUS = 0.0004, -- was 0.0001
+	LIFE_RATING_GROWTH_BONUS = 0.0002, -- was 0.0001
 	LIFE_NEED_STARVATION_LIMIT = 0.5,
 
 	MIL_LACK_EVERYDAY_NEED = 0.1,

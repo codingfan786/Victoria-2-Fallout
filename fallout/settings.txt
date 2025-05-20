@@ -36,7 +36,7 @@ lastplayer="Player"
 lasthost=""
 serveradress="cia.gov"
 debug_saves=0
-autosave="FIVE_YEAR"
+autosave="MONTHLY"
 simple=no
 categories=
 {

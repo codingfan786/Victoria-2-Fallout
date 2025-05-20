@@ -1,4 +1,4 @@
-capital = 2012
+capital = 2109
 primary_culture = west_coloradan
 religion = catholic
 government = democracy
@@ -12,7 +12,7 @@ nonstate_consciousness = 1
 
 #GreaterPowers = prestige
 prestige = 10
-
+oob = "YMP.txt"
 
 # Political reforms
 slavery = no_slavery

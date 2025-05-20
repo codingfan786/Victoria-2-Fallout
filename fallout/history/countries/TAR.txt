@@ -51,6 +51,8 @@ foreign_weapons = yes_foreign_weapons
 bronze_muzzle_loaded_artillery = 1
 flintlock_rifles = 1
 1914.1.1 = {
+	civilized = yes
+	
 	# Technologies
 	post_napoleonic_thought = 1
 	strategic_mobility = 1

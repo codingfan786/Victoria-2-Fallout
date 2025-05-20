@@ -1,0 +1,108 @@
+country_event = {
+	id = 1337004
+	title = "End of the War"
+	desc = "The time limit for the war is up."
+	#fire_only_once = yes
+
+	trigger = {
+		has_country_flag = conquest_ongoing
+		NOT = {has_country_modifier = conquest_timer}
+		#OR = {
+		#	NOT = {
+		#		war_countries = {
+		#			ai = no
+		#		}
+		#	}
+		#	AND = {
+		#		NOT = {has_global_flag = nevada_road_war}
+		#		tag = DES
+		#		war_with = EHT
+		#	}
+		#}
+		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		clr_country_flag = conquest_ongoing
+		remove_country_modifier = conquest_timer
+		any_country = {
+			limit = {
+				war_with = THIS
+				ai = yes
+			}
+			any_owned = {
+				limit = {
+					controlled_by = THIS
+				}
+				secede_province = THIS
+			}
+			#end_war = THIS
+		}
+
+		any_country = {
+			limit = {
+				war_with = THIS
+				ai = yes
+				is_vassal = yes
+				OR = {
+					overlord = {ai = yes}
+					NOT = {has_global_flag = NCR_Legion_War}
+				}
+			}
+			#end_war = THIS
+			overlord = {country_event = 1337005}
+		}
+
+		any_country = {
+			limit = {
+				war_with = THIS
+				ai = yes
+			}
+			#end_war = THIS
+			country_event = 1337005
+		}
+
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+
+country_event = {
+	id = 1337005
+	title = "End of the War"
+	desc = "The time limit for the war is up."
+
+	is_triggered_only = yes
+	
+	immediate = {
+		
+		random_owned = {
+			limit = {
+				THIS = {is_vassal = yes}
+				OR = {
+					overlord = { ai = yes }
+					NOT = {has_global_flag = NCR_Legion_War}
+				}
+			}
+			FROM = { end_war = THIS }
+		}
+		random_owned = {
+			limit = {
+				THIS = {is_vassal = no}
+			}
+			FROM = { end_war = THIS }
+		}
+	}
+
+	option = {
+		name = "Ok."
+		
+	}
+}

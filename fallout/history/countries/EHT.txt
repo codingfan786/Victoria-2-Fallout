@@ -130,6 +130,7 @@ basic_chemistry = 1
 	idealism = 1
 	empiricism = 1
 	analytic_philosophy = 1
+	phenomenology_n_hermeneutic = 1
 	malthusian_thought = 1
 	positivism = 1
 	functionalism = 1

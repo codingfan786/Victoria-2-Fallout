@@ -1,0 +1,137 @@
+country_event = {
+	id = 1337008
+	title = "End of the War"
+	desc = "The time limit for the war is up."
+	fire_only_once = yes
+
+	trigger = {
+		tag = MOT
+		NOT = {has_country_flag = operation_sunburst_ended}
+		has_country_flag = operation_sunburst_started
+		NOT = {has_country_modifier = conquest_timer}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = operation_sunburst_ended
+		remove_country_modifier = conquest_timer
+
+		BOS = {
+			all_core = {
+				limit = {
+					OR = {
+						region = state_125
+						region = state_126
+					}
+					controlled_by = MOT
+				}
+				secede_province = MOT
+			}
+		}
+		random_owned = {
+			limit = {
+				760 = { owned_by = MOT }
+			}
+			BOS = {
+				all_core = {
+					limit = {
+						OR = {
+							region = state_125
+							region = state_126
+						}
+					}
+					secede_province = MOT
+				}
+				set_country_flag = lost_hidden_valley
+			}
+		}
+		MOT = {
+			all_core = {
+				limit = {
+					NOT = {region = state_112}
+					NOT = {region = state_96}
+					controlled_by = BOS
+					BOS = {NOT = {has_country_flag = lost_hidden_valley}}
+				}
+				secede_province = BOS
+			}
+		}
+
+		end_war = BOS
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = 1337010
+	title = "Operation Sunburst"
+	desc = "sunburst_desc"
+	#fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = "sunburst_only"
+		MOT = {
+			set_country_flag = operation_sunburst_started
+			BOS = {
+				set_country_flag = operation_sunburst_started
+			}
+			any_country = {
+				leave_alliance = BOS
+			}
+		}
+		MOT = {
+			war = {
+				target = BOS
+				attacker_goal = { casus_belli = operation_sunburst }
+				defender_goal = { casus_belli = operation_sunburst }
+				call_ally = no
+			}
+		}
+	}
+	option = {
+		name = "sunburst_plus_ncr_bos_war"
+
+		MOT = {
+			set_country_flag = operation_sunburst_started
+			BOS = {
+				set_country_flag = operation_sunburst_started
+			}
+			any_country = {
+				leave_alliance = BOS
+			}
+		}
+		MOT = {
+			war = {
+				target = BOS
+				attacker_goal = { casus_belli = operation_sunburst }
+				defender_goal = { casus_belli = operation_sunburst }
+				call_ally = no
+			}
+		}
+		BOS = {
+			set_country_flag = bos_ncr_war_started
+			NCR = {
+				set_country_flag = bos_ncr_war_started
+			}
+			any_country = {
+				leave_alliance = NCR
+			}
+		}
+		BOS = {
+			war = {
+				target = NCR
+				attacker_goal = { casus_belli = bos_ncr_war }
+				defender_goal = { casus_belli = bos_ncr_war }
+				call_ally = no
+			}
+		}
+	}
+}

@@ -1,0 +1,112 @@
+army = {
+	name = "Army"
+	location = 2012
+	regiment = {
+		name= "Hussar"
+		type = hussar
+		home = 1855
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 1849
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 1872
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 1872
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 1882
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 1874
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 1913
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 1928
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 1914
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 1962
+	}
+}
+army = {
+	name = "Army"
+	location = 2012
+	regiment = {
+		name= "Hussar"
+		type = hussar
+		home = 1981
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 2023
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 2006
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 2038
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 2038
+	}
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 2012
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 2033
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 2011
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 2054
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 2044
+	}
+}

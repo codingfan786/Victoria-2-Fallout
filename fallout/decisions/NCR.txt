@@ -1,0 +1,71 @@
+political_decisions = {
+
+	baja_campaign = {
+		potential = {
+			tag = NCR
+			NOT = {has_country_flag = baja_campaign_started}
+			NOT = {year = 1915}
+		}
+		allow = {
+			NOT = {year = 1915}
+			NOT = {war_with = GDH}
+			month = 3
+		}
+		effect = {
+			set_country_flag = baja_campaign_started
+			GDH = {
+				set_country_flag = baja_campaign_started
+				create_vassal = BVC
+				create_alliance = BVC
+				create_vassal = BLP
+				create_alliance = BLP
+			}
+			any_country = {
+				limit = {
+					NOT = {tag = BLP}
+					NOT = {tag = BVC}
+				}
+				leave_alliance = GDH
+			}
+			CES = {
+				diplomatic_influence = {
+					who = GDH
+					value = -300
+				}
+			}
+			war = {
+				target = GDH
+				attacker_goal = { casus_belli = baja_campaign }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+			CES = {
+				diplomatic_influence = {
+					who = GDH
+					value = 500
+				}
+			}
+		}
+	}
+
+	baja_settlement = {
+		potential = {
+			tag = NCR
+			NOT = {has_country_flag = integrated_baja}
+		}
+		allow = {
+			war = no
+			has_country_flag = baja_campaign_started
+		}
+		effect = {
+			set_country_flag = integrated_baja
+
+			BVC = {all_core = {add_core = NCR}}
+			BLP = {all_core = {add_core = NCR}}
+
+			#add_accepted_culture = bajan
+		}
+	}
+
+
+}

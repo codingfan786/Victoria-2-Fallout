@@ -1,0 +1,29 @@
+political_decisions = {
+	expand_vegas = {
+		potential = {
+			tag = VEG
+			NOT = {has_country_flag = mojave_integrated}
+		}
+		allow = {
+			OR = {
+				year = 1916
+				#NOT = {exists = MRA}
+				MRA = {exists = no}
+			}
+		}
+		effect = {
+			set_country_flag = mojave_integrated
+			#add_accepted_culture = south_mojave
+			any_owned = {
+				limit = {
+					OR = {
+						culture = south_mojave
+						culture = north_mojave
+						#culture = brotherhood
+					}
+				}
+				add_core = THIS
+			}
+		}
+	}
+}
