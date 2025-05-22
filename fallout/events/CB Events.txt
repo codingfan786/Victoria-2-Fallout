@@ -6,7 +6,24 @@ country_event = {
 
 	trigger = {
 		has_country_flag = conquest_ongoing
-		NOT = {has_country_modifier = conquest_timer}
+
+
+		OR = {
+			NOT = {has_country_modifier = conquest_timer}
+			NOT = {
+				war_countries = {
+					any_owned_province = {
+						NOT = {
+							controlled_by = THIS
+						}
+					}
+				}
+			}
+		}
+
+
+
+
 		#OR = {
 		#	NOT = {
 		#		war_countries = {
@@ -29,10 +46,38 @@ country_event = {
 	immediate = {
 		clr_country_flag = conquest_ongoing
 		remove_country_modifier = conquest_timer
+
+		random_owned = {
+			limit = {
+				owner = {
+					tag = WHT
+				}
+			}
+			THIS = {
+				remove_country_modifier = misc_timer
+				add_country_modifier = {
+					name = misc_timer
+					duration = 90
+				}
+			}
+		}
+		
+		
+		
+
 		any_country = {
 			limit = {
 				war_with = THIS
 				ai = yes
+				OR = {
+					NOT = {has_global_flag = NCR_Legion_War}
+					AND = {
+						NOT = {has_country_flag = ncr_side}
+						NOT = {has_country_flag = ces_side}
+					}
+						
+					tag = HAN
+				}
 			}
 			any_owned = {
 				limit = {
@@ -61,6 +106,14 @@ country_event = {
 			limit = {
 				war_with = THIS
 				ai = yes
+				OR = {
+					NOT = {has_global_flag = NCR_Legion_War}
+					AND = {
+						NOT = {has_country_flag = ncr_side}
+						NOT = {has_country_flag = ces_side}
+					}
+					tag = HAN
+				}
 			}
 			#end_war = THIS
 			country_event = 1337005

@@ -1373,3 +1373,101 @@ country_event = {
 		name = "Ok."
 	}
 }
+
+
+
+
+country_event = {
+	id = 1337036
+	title = "NCR Victory!"
+	desc = "The NCR side has acquired 10 Victory Score!."
+
+	major = yes
+
+	trigger = {
+		tag = BAN
+		has_global_flag = NCR_Legion_War
+		NOT = {has_global_flag = DISABLE_VP_SYSTEM}
+
+		NCR = {
+			check_variable = {
+				which = vp_score
+				value = 10
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 1337038
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+
+country_event = {
+	id = 1337037
+	title = "Legion Victory!"
+	desc = "The Legion side has acquired 10 Victory Score!."
+
+	major = yes
+
+	trigger = {
+		tag = BAN
+		has_global_flag = NCR_Legion_War
+		NOT = {has_global_flag = DISABLE_VP_SYSTEM}
+
+		CES = {
+			check_variable = {
+				which = vp_score
+				value = 10
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 1337038
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+
+
+country_event = {
+	id = 1337038
+	title = "Victory!"
+	desc = "One of the sides has 10 Victory score! (That means they win.)"
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = "Ok."
+	}
+}

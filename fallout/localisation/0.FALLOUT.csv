@@ -96,7 +96,7 @@ view_ncr_score_title;NCR Victory Points;x
 view_ncr_score_desc;Look at the decision trigger to view the current NCR Victory Points;x
 view_ces_score_title;Legion Victory Points;x
 view_ces_score_desc;Look at the decision trigger to view the current Legion Victory Points;x
-war_on_paradise_title;
+war_on_paradise_title;War on paradise;x
 war_on_paradise_desc;The settlement of New Canaan served as a vital trading partner and source of supply for the overstretched NCR military in the Mojave. Seeing this, the White Leg tribals took matters into their own hands to curry favor with the Legion. The surprise raid lead to the complete destruction of New Canaan and the dispersion of the Canaanites throughout Utah.;x
 sunburst_desc;Operation: Sunburst, also known as the Battle for HELIOS One, was a decisive battle fought between the Mojave chapter of the Brotherhood of Steel and the Mojave expedition of the New California Republic over control of the pre-War Poseidon Energy solar plant, HELIOS One.\n\nWe currently have a brief opportunity to launch the NCR-Brotherhood war right now, or we could keep our conflict localised in the Mojave.;x
 nevada_desc;The proxy wars between the Desert Rangers and the Eighties have come to an end. All of the puppeted countries of the Eighties and Ruby Valley have been annexed by the Eighties.;x
@@ -108,4 +108,27 @@ sunburst_explain;At any point before 1915 the Mojave Territories can declare war
 baja_explain;At any point before 1915 the NCR can declare war on the countries in Baja. Gente Del Sol immediately puppets both nation and joins the war against NCR. This war lasts for 270 days and at the end, whatever is sieged by NCR is transfered to them. The rest of the Baja countries are then annexed to Gente Del Sol by decision and they get cores and accepted pops there.;x
 nevada_explain;Any time before 1916 Desert Rangers can declare on the Nevadan AI with an instant CB. This CB automatically makes the target country a puppet of the Eighties and they are called into the war. The CB works like a normal conquest CB in the mod except with a 90 day timer instead of 180. In 1916 an event will trigger that will let the Eighties inherit any puppeted nations that are still alive and Ruby Valley Refuge.;x
 paradise_explain;At any point before 1916 if the White Legs border New Canaan they can declare war on them. This war lasts for 1 year and at the end of it any sieged land will transfer ownership to the controller. If the White legs siege the New Canaan capital at any point, the war ends immediately and the entire country of New Canaan is transfered to the White Legs. When this happens all Canaanite pops will move to the Sorrows territory and New Canaan will annex and core the Sorrows, effectively migrating their country south. New Canaan also has a decision to surrender the war at any time and migrate.;x
-roster_explain;The following countries are rosterable:\n\nNCR side:\nNCR, Mojave Territories, Desert Rangers, New Vegas, New Canaan, Baggers\n\nLegion side:\nCaesar's Legion, Lanius' Cohort, Gente Del Sol, Two Sun, White Legs, The Eighties\n\nIf you need to cut slots, cut Two Sun, then Eighties, then Baggers. If you need more slots, roster Shi, then... idk.;x
+roster_explain;The following countries are rosterable:\n\nNCR side:\nNCR, Mojave Territories, Desert Rangers, New Vegas, New Canaan, Baggers\n\nLegion side:\nCaesar's Legion, Lanius' Cohort, Gente Del Sol, Two Sun, White Legs, The Eighties\n\nIf you need to cut slots, cut Two Sun, then Eighties, then Vegas. After that if you really need to, you can cut Desert Rangers, Brotherhood of Steel, Baggers. If you need more slots, roster Shi, then... idk. \nThe bare minimum roster is: NCR, Mojave Territories, New Canaan, Baggers Vs. Caesar's Legion, Lanius' Cohort, Gente Del Sol, White Legs.;x
+no_vegas_player_title;Annex New Vegas;x
+no_vegas_player_desc;No New Vegas player? No problem!;x
+no_eighties_player_title;Annex Eighties;x
+no_eighties_player_desc;No Eighties player? No problem!
+war_on_paradise_ended;The war on New Canaan has ended;x
+misc_timer;Misc. Timer;x
+misc_timer_desc;For AI behavior purposes.;x
+GREAT_WAR_NAME;NCR-Legion War;x
+conquest_nevada_real;Conquer Nevada;x
+conquest_nevada;Conquer Nevada;x
+baja_campaign;Baja Campaign;x
+operation_sunburst;Operation Sunburst;
+bos_ncr_war;NCR-Brotherhood War;x
+war_on_paradise;War of Paradise;x
+NCR_legion_war;NCR-Legion War;x
+conquest_nevada_real_short;Annexes all sieged territory;x
+conquest_nevada_short;Annexes all sieged territory;x
+baja_campaign_short;Annexes all sieged territory;x
+operation_sunburst_short;Annexes all sieged territory;x
+bos_ncr_war_short;Annexes all sieged territory;x
+war_on_paradise_short;Annexes all sieged territory;x
+NCR_legion_war_short;Win by Victory Points!;x
+conquest_short;Annexes all sieged territory;x

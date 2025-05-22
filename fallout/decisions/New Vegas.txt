@@ -1,6 +1,7 @@
 political_decisions = {
 	expand_vegas = {
 		potential = {
+			always = no
 			tag = VEG
 			NOT = {has_country_flag = mojave_integrated}
 		}

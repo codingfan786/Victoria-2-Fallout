@@ -5,14 +5,16 @@ political_decisions = {
 			NOT = {has_country_flag = annexed_puppets}
 		}
 		allow = {
-			war = no
+			#war = no
 			has_country_flag = war_on_paradise_started
+			WHT = {has_country_flag = war_on_paradise_ended}
 			OR = {
 				DEA = {vassal_of = NCN}
 				EAG = {vassal_of = NCN}
 				CRZ = {vassal_of = NCN}
 				LON = {vassal_of = NCN}
 				SOR = {vassal_of = NCN}
+				TAR = {vassal_of = NCN}
 			}
 		}
 		effect = {
@@ -26,11 +28,22 @@ political_decisions = {
 						tag = CRZ
 						tag = LON
 						tag = SOR
+						tag = TAR
 					}
 					vassal_of = NCN
 				}
 				civilized = yes
 				annex_to = NCN
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				
+				NOT = {year = 1916}
+				NOT = {month = 5}
+
 			}
 		}
 	}
@@ -48,6 +61,18 @@ political_decisions = {
 		effect = {
 			1309 = {change_controller = WHT}
 			WHT = {country_event = 1337011}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_modifier = misc_timer
+					NOT = {
+						national_provinces_occupied = 0.33
+					}
+				}	
+			}
 		}
 
 	}

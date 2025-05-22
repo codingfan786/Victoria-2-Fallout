@@ -1,6 +1,7 @@
 political_decisions = {
 	no_two_sun_player = {
 		potential = {
+			ai = no
 			tag = GDH
 			NOT = {has_country_flag = two_sun_done}
 		}

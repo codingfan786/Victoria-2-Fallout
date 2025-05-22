@@ -27,6 +27,49 @@ political_decisions = {
 				call_ally = no
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					AND = {
+						year = 1915
+						month = 11
+					}
+				}
+
+				OR = {
+					has_country_modifier = misc_timer
+					NOT = {year = 1915}
+				}
+			}
+		}
+	}
+
+	no_eighties_player = {
+		potential = {
+			ai = no
+			tag = WHT
+			NOT = {has_country_flag = eighties_done}
+		}
+		allow = {
+			ai = no
+			EHT = {
+				ai = yes
+			}
+			DES = {
+				ai = no
+			}
+			year = 1916
+		}
+		effect = {
+			set_country_flag = eighties_done
+			inherit = EHT
+			EHT = {
+				all_core = {add_core = THIS}
+			}
+			add_accepted_culture = east_nevadan
+		}
 	}
 }
 

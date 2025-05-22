@@ -1,0 +1,759 @@
+country_event = {
+	id = 1337026
+	title = "AI go to war"
+	desc = "This event forces the AI (you) to go to war in a timely manner."
+
+	trigger = {
+		has_global_flag = singleplayer_mode
+
+
+		tag = DES
+		ai = yes
+
+		NOT = {has_global_flag = nevada_road_war}
+
+		war = no
+
+		any_neighbor_country = {
+			has_country_flag = nevada_person
+			NOT = {has_country_flag = ai_invaded}
+			NOT = {brigades_compare = 1}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				neighbour = THIS
+				has_country_flag = nevada_person
+				NOT = {has_country_flag = ai_invaded}
+				NOT = {brigades_compare = 1}
+			}
+			set_country_flag = ai_invaded
+			country_event = 1337027
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = 1337027
+	title = "Helper event."
+	desc = "This event helps the AI go to war in a timely manner. Please ignore."
+
+	is_triggered_only = yes
+
+	immediate = {
+		EHT = {
+			create_vassal = THIS
+			create_alliance = THIS
+		}
+		any_country = {
+			limit = {
+				has_country_flag = nevada_person
+				is_vassal = no
+			}
+			leave_alliance = EHT
+		}
+		FROM = {
+			war = {
+				target = EHT
+				attacker_goal = { casus_belli = conquest_nevada_real }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = 1337028
+	title = "AI go to war"
+	desc = "This event forces the AI (you) to go to war in a timely manner."
+
+	trigger = {
+		has_global_flag = singleplayer_mode
+
+		tag = WHT
+		ai = yes
+		war = no
+
+		OR = {
+			CLK = {NOT = {has_country_flag = ai_invaded}}
+			TAR = {NOT = {has_country_flag = ai_invaded}}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		random_owned = {
+			limit = {
+				CLK = {has_country_flag = ai_invaded}
+				TAR = {NOT = {has_country_flag = ai_invaded}}
+			}
+			TAR = {
+				set_country_flag = ai_invaded
+			}
+			TAR = {inherit = TAR}
+			WHT = {
+				war = {
+					target = TAR
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+
+		random_owned = {
+			limit = {
+				CLK = {NOT = {has_country_flag = ai_invaded}}
+			}
+			CLK = {
+				set_country_flag = ai_invaded
+			}
+			CLK = {inherit = CLK}
+			WHT = {
+				war = {
+					target = CLK
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = 1337029
+	title = "AI go to war"
+	desc = "This event forces the AI (you) to go to war in a timely manner."
+
+	trigger = {
+		has_global_flag = singleplayer_mode
+
+		tag = NCR
+		ai = yes
+		war = no
+
+		year = 1915
+
+		OR = {
+			RAP = {NOT = {has_country_flag = ai_invaded}}
+			SHI = {NOT = {has_country_flag = ai_invaded}}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		random_owned = {
+			limit = {
+				RAP = {has_country_flag = ai_invaded}
+				SHI = {NOT = {has_country_flag = ai_invaded}}
+			}
+			SHI = {
+				set_country_flag = ai_invaded
+			}
+			NCR = {
+				war = {
+					target = SHI
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+
+		random_owned = {
+			limit = {
+				RAP = {NOT = {has_country_flag = ai_invaded}}
+			}
+			RAP = {
+				set_country_flag = ai_invaded
+			}
+			NCR = {
+				war = {
+					target = RAP
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+
+		random_owned = {
+			limit = {
+				SHI = {ai = no}
+			}
+			SHI = {
+				set_country_flag = ai_invaded
+			}
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = 1337030
+	title = "AI go to war"
+	desc = "This event forces the AI (you) to go to war in a timely manner."
+
+	trigger = {
+		has_global_flag = singleplayer_mode
+
+		tag = CES
+		ai = yes
+		war = no
+
+		OR = {
+			RHO = {NOT = {has_country_flag = ai_invaded}}
+			TWI = {NOT = {has_country_flag = ai_invaded}}
+			RES = {NOT = {has_country_flag = ai_invaded}}
+			NAV = {NOT = {has_country_flag = ai_invaded}}
+			BLK = {NOT = {has_country_flag = ai_invaded}}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		random_owned = {
+			limit = {
+				NAV = {has_country_flag = ai_invaded}
+				BLK = {NOT = {has_country_flag = ai_invaded}}
+			}
+			BLK = {
+				set_country_flag = ai_invaded
+			}
+			CES = {
+				war = {
+					target = BLK
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+
+		random_owned = {
+			limit = {
+				RES = {has_country_flag = ai_invaded}
+				NAV = {NOT = {has_country_flag = ai_invaded}}
+			}
+			NAV = {
+				set_country_flag = ai_invaded
+			}
+			CES = {
+				war = {
+					target = NAV
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+
+		random_owned = {
+			limit = {
+				TWI = {has_country_flag = ai_invaded}
+				RES = {NOT = {has_country_flag = ai_invaded}}
+			}
+			RES = {
+				set_country_flag = ai_invaded
+			}
+			CES = {
+				war = {
+					target = RES
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+
+		random_owned = {
+			limit = {
+				RHO = {has_country_flag = ai_invaded}
+				TWI = {NOT = {has_country_flag = ai_invaded}}
+			}
+			TWI = {
+				set_country_flag = ai_invaded
+			}
+			CES = {
+				war = {
+					target = TWI
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+
+		random_owned = {
+			limit = {
+				RHO = {NOT = {has_country_flag = ai_invaded}}
+			}
+			RHO = {
+				set_country_flag = ai_invaded
+			}
+			CES = {
+				war = {
+					target = RHO
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = 1337031
+	title = "AI go to war"
+	desc = "This event forces the AI (you) to go to war in a timely manner."
+
+	trigger = {
+		has_global_flag = singleplayer_mode
+
+		tag = TWO
+		ai = yes
+		war = no
+
+		OR = {
+			COW = {neighbour = TWO}
+			TON = {neighbour = TWO}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	immediate = {
+		random_owned = {
+			limit = {
+				COW = {neighbour = TWO}
+				TWO = {war = no}
+			}
+			TWO = {
+				war = {
+					target = COW
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+
+		random_owned = {
+			limit = {
+				TON = {neighbour = TWO}
+				TWO = {war = no}
+			}
+			TWO = {
+				war = {
+					target = TON
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = 1337032
+	title = "AI go to war"
+	desc = "This event forces the AI (you) to go to war in a timely manner."
+
+	trigger = {
+		has_global_flag = singleplayer_mode
+
+		tag = LAC
+		ai = yes
+
+		NOT = {
+			OR = {
+				war_with = ASF
+				war_with = SUN
+				war_with = SCO
+				war_with = HAN
+				war_with = TTM
+			}
+		}
+
+		OR = {
+			ASF = {neighbour = LAC}
+			SUN = {neighbour = LAC}
+			SCO = {neighbour = LAC}
+			HAN = {neighbour = LAC}
+			TTM = {neighbour = LAC}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		clr_country_flag = ai_invaded
+
+		random_owned = {
+			limit = {
+				HAN = {neighbour = LAC}
+				LAC = {NOT = {has_country_flag = ai_invaded}}
+			}
+			LAC = {set_country_flag = ai_invaded}
+			HAN = {inherit = HAN}
+			LAC = {
+				war = {
+					target = HAN
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				SCO = {neighbour = LAC}
+				LAC = {NOT = {has_country_flag = ai_invaded}}
+			}
+			LAC = {set_country_flag = ai_invaded}
+			SCO = {inherit = SCO}
+			LAC = {
+				war = {
+					target = SCO
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				SUN = {neighbour = LAC}
+				LAC = {NOT = {has_country_flag = ai_invaded}}
+			}
+			LAC = {set_country_flag = ai_invaded}
+			LAC = {
+				war = {
+					target = SUN
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				ASF = {neighbour = LAC}
+				LAC = {NOT = {has_country_flag = ai_invaded}}
+			}
+			LAC = {set_country_flag = ai_invaded}
+			LAC = {
+				war = {
+					target = ASF
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+
+		
+
+		random_owned = {
+			limit = {
+				TTM = {neighbour = LAC}
+				LAC = {NOT = {has_country_flag = ai_invaded}}
+			}
+			LAC = {set_country_flag = ai_invaded}
+			LAC = {
+				war = {
+					target = TTM
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = 1337033
+	title = "AI go to war"
+	desc = "This event forces the AI (you) to go to war in a timely manner."
+
+	trigger = {
+		has_global_flag = singleplayer_mode
+
+		tag = BAG
+		ai = yes
+
+		NOT = {
+			OR = {
+				war_with = CLJ
+				war_with = YMP
+				war_with = GLW
+				war_with = FOR
+				war_with = TOB
+				war_with = ORO
+			}
+		}
+
+		OR = {
+			CLJ = {neighbour = BAG}
+			YMP = {neighbour = BAG}
+			GLW = {neighbour = BAG}
+			FOR = {neighbour = BAG}
+			TOB = {neighbour = BAG}
+			ORO = {neighbour = BAG}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		random_owned = {
+			limit = {
+				CLJ = {neighbour = BAG}
+				BAG = {war = no}
+			}
+			CLJ = {inherit = CLJ}
+			BAG = {
+				war = {
+					target = CLJ
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				YMP = {neighbour = BAG}
+				BAG = {war = no}
+			}
+			YMP = {inherit = YMP}
+			BAG = {
+				war = {
+					target = YMP
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				GLW = {neighbour = BAG}
+				BAG = {war = no}
+			}
+			GLW = {inherit = GLW}
+			BAG = {
+				war = {
+					target = GLW
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				FOR = {neighbour = BAG}
+				BAG = {war = no}
+			}
+			FOR = {inherit = FOR}
+			BAG = {
+				war = {
+					target = FOR
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				TOB = {neighbour = BAG}
+				BAG = {war = no}
+			}
+			BAG = {
+				war = {
+					target = TOB
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				ORO = {neighbour = BAG}
+				BAG = {war = no}
+			}
+			BAG = {
+				war = {
+					target = ORO
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+
+		random_owned = {
+			limit = {
+				BAG = {neighbour = INR}
+			}
+			BAG = {
+				war = {
+					target = INR
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				PNT = {neighbour = BAG}
+			}
+			BAG = {
+				war = {
+					target = PNT
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				DRY = {neighbour = BAG}
+				GLW = {exists = no}
+			}
+			BAG = {
+				war = {
+					target = DRY
+					attacker_goal = { casus_belli = conquest }
+					call_ally = no
+				}
+			}
+		}
+
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+country_event = {
+	id = 1337034
+	title = "AI go to war"
+	desc = "This event forces the AI (you) to go to war in a timely manner."
+
+	trigger = {
+		has_global_flag = singleplayer_mode
+
+
+		OR = {
+			tag = MOT
+			tag = VEG
+		}
+		
+		war = no
+		
+		ai = yes
+		MRA = {exists = yes}
+
+		year = 1915
+
+		NOT = {has_country_flag = ai_invaded}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	immediate = {
+		set_country_flag = ai_invaded
+		MRA = {inherit = MRA}
+		war = {
+			target = MRA
+			attacker_goal = { casus_belli = conquest }
+			call_ally = no
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+
+country_event = {
+	id = 1337035
+	title = "AI go to war"
+	desc = "This event forces the AI (you) to go to war in a timely manner."
+
+	trigger = {
+		has_global_flag = singleplayer_mode
+
+
+		tag = MOT
+		
+		
+		ai = yes
+		war = no	
+
+		DIV = {exists = yes}
+
+		year = 1915
+
+		NOT = {has_country_flag = ai_invaded_two}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	immediate = {
+		set_country_flag = ai_invaded_two
+
+		war = {
+			target = DIV
+			attacker_goal = { casus_belli = conquest }
+			call_ally = no
+		}
+	}
+
+	option = {
+		name = "Ok."
+	}
+}
+
+

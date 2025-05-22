@@ -29,17 +29,26 @@ political_decisions = {
 		effect = {
 			set_country_flag = mojave_integrated
 			add_accepted_culture = south_mojave
-			any_owned = {
-				limit = {
-					OR = {
-						culture = brotherhood
-						culture = south_mojave
-						culture = north_mojave
-						culture = central_californian #maybe? for the divide
-					}
-				}
-				add_core = THIS
+		}
+	}
+
+	no_vegas_player = {
+		potential = {
+			ai = no
+			tag = MOT
+			NOT = {has_country_flag = vegas_done}
+		}
+		allow = {
+			ai = no
+			VEG = {
+				ai = yes
 			}
+			year = 1916
+		}
+		effect = {
+			set_country_flag = vegas_done
+			inherit = VEG
+			add_accepted_culture = north_mojave
 		}
 	}
 }

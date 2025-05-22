@@ -48,7 +48,7 @@ country_event = {
 						controlled_by = NCN
 						controller = {vassal_of = NCN}
 					}
-					NOT = {is_core = WHT}
+					is_core = TAR
 				}
 				secede_province = NCN
 			}
@@ -64,6 +64,29 @@ country_event = {
 		}
 
 		end_war = NCN
+
+		random_owned = {
+			limit = {
+				has_global_flag = singleplayer_mode
+				NCN = {ai = yes}
+				NCN = {has_country_flag = paradise_lost}
+			}
+			NCN = {
+				create_vassal = DEA
+				create_vassal = CRZ
+			}
+		}
+		random_owned = {
+			limit = {
+				has_global_flag = singleplayer_mode
+				NCN = {ai = yes}
+				NOT = {NCN = {has_country_flag = paradise_lost}}
+			}
+			NCN = {
+				create_vassal = LON
+				create_vassal = EAG
+			}
+		}
 	}
 
 	option = {

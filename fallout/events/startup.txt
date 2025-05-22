@@ -14,6 +14,18 @@ country_event = {
 	}
 
 	immediate = {
+		great_wars_enabled = yes
+		
+		random_owned = {
+			limit = {
+				OR = {
+					NCR = {ai = yes}
+					CES = {ai = yes}
+				}
+			}
+			set_global_flag = singleplayer_mode
+		}
+
 		any_country = {
 			limit = {
 				ai = no
@@ -63,7 +75,7 @@ country_event = {
 		}
 
 		any_country = {
-			leadership = 120
+			leadership = 300
 			treasury = 500000
 			ammunition = 1500
 			barrels = 500
@@ -197,6 +209,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				BAG = {ai = yes}
+				NOT = {has_global_flag = singleplayer_mode}
 			}
 			HAN = {any_pop = {reduce_pop = 0.5}}
 			LAC = {any_pop = {reduce_pop = 0.5}}
@@ -300,7 +313,106 @@ country_event = {
 			}
 		}
 
-		
+		VEG = {
+			all_core = {add_core = MOT}
+		}
+		MOT = {
+			all_core = {
+				limit = {
+					culture = south_mojave
+				}
+				add_core = VEG
+			}
+		}
+		MRA = {
+			all_core = {add_core = VEG}
+			all_core = {add_core = MOT}
+		}
+		DIV = {
+			all_core = {add_core = MOT}
+		}
+
+		random_owned = {
+			limit = {
+				has_global_flag = singleplayer_mode
+				LAC = {ai = yes}
+			}
+			HAN = {inherit = HAN}
+			ASF = {inherit = ASF}
+			SUN = {inherit = SUN}
+			SCO = {inherit = SCO}
+		}
+		random_owned = {
+			limit = {
+				has_global_flag = singleplayer_mode
+				DES = {ai = yes}
+			}
+			VIP = {inherit = VIP}
+			TVT = {inherit = TVT}
+			JAC = {inherit = JAC}
+			TOF = {inherit = TOF}
+
+			DES = {
+				any_pop = {
+					limit = {
+						type = soldiers
+					}
+					reduce_pop = 3
+				}
+				377 = {
+					sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		        	sub_unit = {type = artillery value = current}
+		            sub_unit = {type = hussar value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		        	sub_unit = {type = artillery value = current}
+		            sub_unit = {type = hussar value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = infantry value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		            sub_unit = {type = artillery value = current}
+		        	sub_unit = {type = artillery value = current}
+		            sub_unit = {type = hussar value = current}
+				}
+			}
+
+			EHT = {
+				create_vassal = GRD
+				create_alliance = GRD
+			}
+			any_country = {
+				limit = {
+					has_country_flag = nevada_person
+					is_vassal = no
+				}
+				leave_alliance = EHT
+			}
+			DES = {
+				war = {
+					target = EHT
+					attacker_goal = { casus_belli = conquest_nevada_real }
+					defender_goal = { casus_belli = status_quo }
+					call_ally = no
+				}
+			}
+		}
 	}
 
 	option = {

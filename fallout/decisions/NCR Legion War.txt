@@ -22,14 +22,41 @@ political_decisions = {
 
 			any_country = {
 				limit = {
-					ai = no
+					OR = {
+						has_global_flag = singleplayer_mode
+						ai = no
+					}
+					
 					has_country_flag = ncr_side
 				}
 				create_alliance = NCR
 			}
+
+			random_owned = {
+				limit = {
+					has_global_flag = singleplayer_mode
+				}
+				LAC = {country_event = 1337004}
+				TWO = {country_event = 1337004}
+				EHT = {country_event = 1337004}
+				
+				CES = {
+					create_vassal = LAC
+					create_vassal = TWO
+					create_vassal = GDH
+					create_vassal = WHT
+					create_vassal = BOS
+					create_vassal = EHT
+				}
+			}
+
 			any_country = {
 				limit = {
-					ai = no
+					OR = {
+						has_global_flag = singleplayer_mode
+						ai = no
+					}
+
 					has_country_flag = ces_side
 				}
 				create_alliance = CES
@@ -42,6 +69,21 @@ political_decisions = {
 					defender_goal = { casus_belli = NCR_legion_war }
 					call_ally = yes
 				}
+			}
+
+			random_owned = {
+				limit = {
+					has_global_flag = singleplayer_mode
+				}
+				CES = {
+					release_vassal = LAC
+					release_vassal = TWO
+					release_vassal = GDH
+					release_vassal = WHT
+					release_vassal = BOS
+					release_vassal = EHT
+				}
+
 			}
 
 			random_owned = {
@@ -60,6 +102,41 @@ political_decisions = {
 						personality = defence_4.3
 						background = attack_5.1
 						prestige = 0.35
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				tag = NCR
+				
+				NOT = {year = 1917}
+				NOT = {month = 5}
+
+				2241 = {controlled_by = LAC}
+				2255 = {controlled_by = LAC}
+				2268 = {controlled_by = LAC}
+				2253 = {controlled_by = LAC}
+				2228 = {controlled_by = LAC}
+				2225 = {controlled_by = LAC}
+			}
+			modifier = {
+				factor = 0
+				tag = CES
+				
+				NOT = {year = 1917}
+
+				NOT = {
+					AND = {
+						2241 = {controlled_by = LAC}
+						2255 = {controlled_by = LAC}
+						2268 = {controlled_by = LAC}
+						2253 = {controlled_by = LAC}
+						2228 = {controlled_by = LAC}
+						2225 = {controlled_by = LAC}
 					}
 				}
 			}
