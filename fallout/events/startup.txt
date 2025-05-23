@@ -15,7 +15,19 @@ country_event = {
 
 	immediate = {
 		great_wars_enabled = yes
-		
+		state_125 = {add_core = MOT}
+		state_126 = {add_core = MOT}
+		MOT = {
+			any_owned = {
+				limit = {
+					terrain = woods
+				}
+				any_pop = {
+					reduce_pop = 2
+				}
+			}
+		}
+
 		random_owned = {
 			limit = {
 				OR = {
@@ -410,6 +422,21 @@ country_event = {
 					attacker_goal = { casus_belli = conquest_nevada_real }
 					defender_goal = { casus_belli = status_quo }
 					call_ally = no
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				OR = {
+					has_country_flag = ncr_side
+					has_country_flag = ces_side
+				}
+				NOT = {tag = HAN}
+			}
+			capital_scope = {
+				add_province_modifier = {
+					name = capital_supply
+					duration = -1
 				}
 			}
 		}

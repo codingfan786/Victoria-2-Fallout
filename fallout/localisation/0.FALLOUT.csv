@@ -112,7 +112,7 @@ roster_explain;The following countries are rosterable:\n\nNCR side:\nNCR, Mojave
 no_vegas_player_title;Annex New Vegas;x
 no_vegas_player_desc;No New Vegas player? No problem!;x
 no_eighties_player_title;Annex Eighties;x
-no_eighties_player_desc;No Eighties player? No problem!
+no_eighties_player_desc;No Eighties player? No problem!;x
 war_on_paradise_ended;The war on New Canaan has ended;x
 misc_timer;Misc. Timer;x
 misc_timer_desc;For AI behavior purposes.;x
@@ -120,7 +120,7 @@ GREAT_WAR_NAME;NCR-Legion War;x
 conquest_nevada_real;Conquer Nevada;x
 conquest_nevada;Conquer Nevada;x
 baja_campaign;Baja Campaign;x
-operation_sunburst;Operation Sunburst;
+operation_sunburst;Operation Sunburst;x
 bos_ncr_war;NCR-Brotherhood War;x
 war_on_paradise;War of Paradise;x
 NCR_legion_war;NCR-Legion War;x

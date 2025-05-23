@@ -20,6 +20,14 @@ political_decisions = {
 		effect = {
 			set_global_flag = NCR_Legion_War
 
+
+			capital_scope = {remove_province_modifier = capital_supply}
+			any_country = {
+				capital_scope = {
+					remove_province_modifier = capital_supply
+				}
+			}
+
 			any_country = {
 				limit = {
 					OR = {
