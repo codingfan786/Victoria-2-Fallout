@@ -13,7 +13,7 @@ NCN = {
 
 army = {
 	name = "Army"
-	location = 1004
+	location = 888 #1004
 	regiment = {
 		name= "Hussar"
 		type = hussar
@@ -70,7 +70,7 @@ army = {
 
 army = {
 	name = "Army"
-	location = 695
+	location = 900 #695
 	regiment = {
 		name= "Hussar"
 		type = hussar
@@ -127,7 +127,7 @@ army = {
 
 army = {
 	name = "Army"
-	location = 1105
+	location = 888 #1105
 	regiment = {
 		name= "Hussar"
 		type = hussar

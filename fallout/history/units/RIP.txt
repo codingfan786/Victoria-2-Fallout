@@ -84,4 +84,90 @@ army = {
 		type = artillery
 		home = 623
 	}
+
+	regiment = {
+		name= "Hussar"
+		type = hussar
+		home = 383
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 427
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 416
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 444
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 466
+	}
 }
+
+army = {
+	name = "Army"
+	location = 582
+
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 460
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 480
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 496
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 530
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+		home = 531
+	}
+
+	regiment = {
+		name= "Hussar"
+		type = hussar
+		home = 508
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 452
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 434
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 461
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 476
+	}
+}
+

@@ -1,4 +1,5 @@
-owner = JAC
+#owner = JAC
+owner = RIP
 add_core = JAC
 trade_goods = wool
 life_rating = 31

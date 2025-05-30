@@ -29,7 +29,6 @@ country_event = {
 			NCN = {
 				set_country_flag = paradise_lost
 			}
-			NCN = {country_event = 1337012}
 		}
 		random_owned = {
 			limit = {
@@ -40,30 +39,54 @@ country_event = {
 			}
 		}
 
-		WHT = {
-			any_owned = {
-				limit = {
-					NCN = {NOT = {has_country_flag = paradise_lost}}
-					OR = {
-						controlled_by = NCN
-						controller = {vassal_of = NCN}
-					}
-					is_core = TAR
-				}
-				secede_province = NCN
-			}
-		}
-		NCN = {
-			any_owned = {
-				limit = {
-					NCN = {NOT = {has_country_flag = paradise_lost}}
-					controlled_by = WHT
-				}
-				secede_province = WHT
-			}
-		}
+		NCN = {country_event = 1337012}
 
 		end_war = NCN
+
+
+		random_owned = {
+			limit = {
+				NCN = {
+					has_country_flag = paradise_lost
+				}
+			}
+			NCN = {
+				diplomatic_influence = {
+					who = CRZ
+					value = -200
+				}
+			}
+			NCN = {
+				diplomatic_influence = {
+					who = DEA
+					value = -200
+				}
+			}
+			NCN = {
+				diplomatic_influence = {
+					who = SOR
+					value = -200
+				}
+			}
+			NCN = {
+				diplomatic_influence = {
+					who = EAG
+					value = -200
+				}
+			}
+			NCN = {
+				diplomatic_influence = {
+					who = LON
+					value = -200
+				}
+			}
+			NCN = {
+				diplomatic_influence = {
+					who = TAR
+					value = -200
+				}
+			}
+		}
 
 		random_owned = {
 			limit = {
@@ -76,17 +99,7 @@ country_event = {
 				create_vassal = CRZ
 			}
 		}
-		random_owned = {
-			limit = {
-				has_global_flag = singleplayer_mode
-				NCN = {ai = yes}
-				NOT = {NCN = {has_country_flag = paradise_lost}}
-			}
-			NCN = {
-				create_vassal = LON
-				create_vassal = EAG
-			}
-		}
+
 	}
 
 	option = {

@@ -91,4 +91,17 @@ alliance=
 		start_date="1.1.1"
 	}
 	
-	
+alliance=
+	{
+		first="EHT"
+		second="RIP"
+		end_date="2000.1.1"
+		start_date="1.1.1"
+	}
+alliance=
+	{
+		first="EHT"
+		second="GRA"
+		end_date="2000.1.1"
+		start_date="1.1.1"
+	}

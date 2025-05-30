@@ -1,7 +1,3 @@
-# Victoria 2 Fallout
- 
-This is a great war mod.
-
 The following countries are rosterable:
 
 NCR side:

@@ -718,7 +718,7 @@ railroad = {
 		cement = 100
 		steel = 100
 	}
-	time = 120
+	time = 60
 	visibility = yes
 	onmap = yes
 	max_level = 6

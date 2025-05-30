@@ -24,3 +24,18 @@ player_diplo = {
 	diplomatic_points_modifier = 1.0
 }
 
+player_skill_issue = {
+	trigger = {
+		ai = yes
+		is_vassal = no
+		NOT = {has_country_flag = ces_side}
+		NOT = {has_country_flag = nevada_person}
+		OR = {
+			NOT = {has_country_flag = ncr_side}
+			has_country_flag = is_handogs
+		}
+		NOT = {has_country_flag = is_baja}
+	}
+	mobilisation_size = -0.03
+}
+

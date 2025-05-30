@@ -6,8 +6,18 @@ political_decisions = {
 		}
 		allow = {
 			#war = no
-			has_country_flag = war_on_paradise_started
-			WHT = {has_country_flag = war_on_paradise_ended}
+			OR = {
+				AND = {
+					has_country_flag = war_on_paradise_started
+					WHT = {has_country_flag = war_on_paradise_ended}
+				}
+				AND = {
+					year = 1916
+					NOT = {war_with = WHT}
+				}
+				has_global_flag = NCR_Legion_War
+			}
+			
 			OR = {
 				DEA = {vassal_of = NCN}
 				EAG = {vassal_of = NCN}
@@ -15,6 +25,12 @@ political_decisions = {
 				LON = {vassal_of = NCN}
 				SOR = {vassal_of = NCN}
 				TAR = {vassal_of = NCN}
+				is_sphere_leader_of = DEA
+				is_sphere_leader_of = EAG
+				is_sphere_leader_of = CRZ
+				is_sphere_leader_of = LON
+				is_sphere_leader_of = SOR
+				is_sphere_leader_of = TAR
 			}
 		}
 		effect = {
@@ -30,7 +46,10 @@ political_decisions = {
 						tag = SOR
 						tag = TAR
 					}
-					vassal_of = NCN
+					OR = {
+						vassal_of = NCN
+						in_sphere = NCN
+					}
 				}
 				civilized = yes
 				annex_to = NCN
@@ -42,7 +61,7 @@ political_decisions = {
 				factor = 0
 				
 				NOT = {year = 1916}
-				NOT = {month = 5}
+				#NOT = {month = 5}
 
 			}
 		}
@@ -51,6 +70,7 @@ political_decisions = {
 
 	new_canaan_flee = {
 		potential = {
+			always = no
 			tag = NCN
 			WHT = {NOT = {has_country_flag = war_on_paradise_ended}}
 		}

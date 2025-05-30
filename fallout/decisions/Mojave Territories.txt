@@ -43,7 +43,7 @@ political_decisions = {
 			VEG = {
 				ai = yes
 			}
-			year = 1916
+			year = 1915
 		}
 		effect = {
 			set_country_flag = vegas_done

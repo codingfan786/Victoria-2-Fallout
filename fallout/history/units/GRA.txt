@@ -84,4 +84,31 @@ army = {
 		type = artillery
 		home = 598
 	}
+
+	regiment = {
+		name= "Hussar"
+		type = hussar
+		home = 515
+	}
+
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 490
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 535
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 503
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+		home = 522
+	}
 }

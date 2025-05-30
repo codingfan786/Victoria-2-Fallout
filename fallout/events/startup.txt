@@ -78,7 +78,7 @@ country_event = {
 				has_country_flag = nevada_person 
 				NOT = {tag = RUB}
 			}
-			country_event = 1337006
+			#country_event = 1337006
 		}
 
 		GDH = {
@@ -143,6 +143,12 @@ country_event = {
 				duration = -1
 			}
 		}
+		MRA = { #skill issues
+			add_country_modifier = {
+				name = mobilization_nerf
+				duration = -1
+			}
+		}
 
 		MOT = {
 			add_country_modifier = {
@@ -179,7 +185,12 @@ country_event = {
 				duration = -1
 			}
 		}
-
+		NCN = {
+			add_country_modifier = {
+				name = canaanite_diplomacy
+				duration = 365
+			}
+		}
 		
 		any_country = {
 			limit = {
@@ -274,7 +285,18 @@ country_event = {
 
 
 		HAN = {set_country_flag = ncr_side}
+		HAN = {set_country_flag = is_handogs}
 
+		BLP = {set_country_flag = is_baja}
+		BVC = {set_country_flag = is_baja}
+
+		CES = {
+			define_general = {
+				name = "Aurelius of Phoenix"
+				personality = defence_4.1
+				background = attack_4.1
+			}
+		}
 
 		WHT = {
 			define_general = {
@@ -295,21 +317,31 @@ country_event = {
 			define_general = {
 				name = "General Lee Oliver"
 				personality = defence_3.1
-				background = attack_3.1
+				background = attack_4.1
 			}
 		}
 		MOT = {
 			define_general = {
 				name = "Colonel Hsu"
 				personality = defence_4.1
-				background = attack_3.1
+				background = attack_4.1
 			}
 			define_general = {
 				name = "Colonel Cassandra Moore"
-				personality = defence_3.1
+				personality = defence_4.1
 				background = attack_4.1
 			}
 		}
+
+		DES = {
+			define_general = {
+				name = "Snake Vargas"
+				personality = defence_5.1
+				background = attack_3.1
+			}
+		}
+
+
 
 		NCR = {
 			set_variable = {
@@ -358,72 +390,11 @@ country_event = {
 			limit = {
 				has_global_flag = singleplayer_mode
 				DES = {ai = yes}
+				EHT = {ai = yes}
 			}
-			VIP = {inherit = VIP}
-			TVT = {inherit = TVT}
-			JAC = {inherit = JAC}
-			TOF = {inherit = TOF}
-
-			DES = {
-				any_pop = {
-					limit = {
-						type = soldiers
-					}
-					reduce_pop = 3
-				}
-				377 = {
-					sub_unit = {type = infantry value = current}
-		            sub_unit = {type = infantry value = current}
-		            sub_unit = {type = infantry value = current}
-		            sub_unit = {type = infantry value = current}
-		            sub_unit = {type = artillery value = current}
-		            sub_unit = {type = artillery value = current}
-		            sub_unit = {type = artillery value = current}
-		            sub_unit = {type = artillery value = current}
-		        	sub_unit = {type = artillery value = current}
-		            sub_unit = {type = hussar value = current}
-		            sub_unit = {type = infantry value = current}
-		            sub_unit = {type = infantry value = current}
-		            sub_unit = {type = infantry value = current}
-		            sub_unit = {type = infantry value = current}
-		            sub_unit = {type = artillery value = current}
-		            sub_unit = {type = artillery value = current}
-		            sub_unit = {type = artillery value = current}
-		            sub_unit = {type = artillery value = current}
-		        	sub_unit = {type = artillery value = current}
-		            sub_unit = {type = hussar value = current}
-		            sub_unit = {type = infantry value = current}
-		            sub_unit = {type = infantry value = current}
-		            sub_unit = {type = infantry value = current}
-		            sub_unit = {type = infantry value = current}
-		            sub_unit = {type = artillery value = current}
-		            sub_unit = {type = artillery value = current}
-		            sub_unit = {type = artillery value = current}
-		            sub_unit = {type = artillery value = current}
-		        	sub_unit = {type = artillery value = current}
-		            sub_unit = {type = hussar value = current}
-				}
-			}
-
-			EHT = {
-				create_vassal = GRD
-				create_alliance = GRD
-			}
-			any_country = {
-				limit = {
-					has_country_flag = nevada_person
-					is_vassal = no
-				}
-				leave_alliance = EHT
-			}
-			DES = {
-				war = {
-					target = EHT
-					attacker_goal = { casus_belli = conquest_nevada_real }
-					defender_goal = { casus_belli = status_quo }
-					call_ally = no
-				}
-			}
+			GRA = {inherit = GRA}
+			RIP = {inherit = RIP}
+			RUB = {inherit = RUB}
 		}
 		any_country = {
 			limit = {
@@ -438,6 +409,28 @@ country_event = {
 					name = capital_supply
 					duration = -1
 				}
+			}
+		}
+		WHT = {
+			any_pop = {
+				limit = {
+					type = bureaucrats
+				}
+				reduce_pop = 1.5
+			}
+		}
+		EHT = {military_access = GRA}
+		EHT = {military_access = RIP}
+		EHT = {
+			relation = {
+				who = GRA
+				value = 400
+			}
+		}
+		EHT = {
+			relation = {
+				who = RIP
+				value = 400
 			}
 		}
 	}

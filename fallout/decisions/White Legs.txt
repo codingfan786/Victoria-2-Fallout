@@ -23,7 +23,7 @@ political_decisions = {
 			war = {
 				target = NCN
 				attacker_goal = { casus_belli = war_on_paradise }
-				defender_goal = { casus_belli = war_on_paradise }
+				#defender_goal = { casus_belli = war_on_paradise }
 				call_ally = no
 			}
 		}
@@ -55,6 +55,9 @@ political_decisions = {
 		allow = {
 			ai = no
 			EHT = {
+				ai = yes
+			}
+			BOS = {
 				ai = yes
 			}
 			DES = {

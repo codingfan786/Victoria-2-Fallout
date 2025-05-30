@@ -432,7 +432,8 @@ early_classical_theory_and_critique = {
 	cost = 3600
 	
 	activate_building = lumber_mill
-	factory_input = -0.01
+	#factory_input = -0.01 #changed for mp balance in great war mod
+	factory_input = -0.20
 	ai_chance = {
 		factor = 1
 		modifier = {

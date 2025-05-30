@@ -1,4 +1,5 @@
-owner = TOF
+#owner = TOF
+owner = GRA
 add_core = TOF
 trade_goods = grain
 life_rating = 31

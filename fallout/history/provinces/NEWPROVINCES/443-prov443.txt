@@ -1,5 +1,7 @@
+
 trade_goods = grain
 life_rating = 31
-
-owner = TVT
+#owner = TVT
+owner = DES
+add_core = DES
 add_core = TVT

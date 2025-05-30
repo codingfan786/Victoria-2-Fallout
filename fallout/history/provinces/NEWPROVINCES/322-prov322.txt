@@ -1,4 +1,6 @@
-owner = VIP
+#owner = VIP
+owner = DES
+add_core = DES
 add_core = VIP
 trade_goods = wool
 life_rating = 31

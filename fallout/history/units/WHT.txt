@@ -2,10 +2,10 @@ CRZ = {
 	truce_until = "1915.6.1"
 }
 DEA = {
-	truce_until = "1916.1.1"
+	truce_until = "1915.6.1"
 }
 SOR = {
-	truce_until = "1916.1.1"
+	truce_until = "1915.6.1"
 }
 
 army = {

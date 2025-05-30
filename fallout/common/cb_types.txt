@@ -257,6 +257,8 @@ make_puppet = {
 	sprite_index = 10
 	is_triggered_only = yes
 	months = 6
+	#months = 3
+
 	crisis = no
 
 	badboy_factor = 2.0
@@ -368,6 +370,7 @@ humiliate = {
 	sprite_index = 11
 	is_triggered_only = yes
 	months = 6
+	#months = 3
 
 	badboy_factor = 1.5
 	prestige_factor = 1
@@ -497,6 +500,8 @@ conquest = {
 	sprite_index = 2
 	is_triggered_only = yes
 	months = 6
+	#months = 3
+	
 	crisis = no
 
 	can_use = {
@@ -587,7 +592,7 @@ conquest_nevada_real = {
 		}
 		add_country_modifier = {
 			name = conquest_timer
-			duration = 90
+			duration = 180 #90
 		}
 		set_country_flag = conquest_ongoing	
 	}

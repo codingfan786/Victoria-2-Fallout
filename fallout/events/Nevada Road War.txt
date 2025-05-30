@@ -5,6 +5,7 @@ country_event = {
 
 
 	trigger = {
+		always = no
 		has_country_flag = nevada_person
 		is_vassal = no
 		NOT = {tag = RUB}

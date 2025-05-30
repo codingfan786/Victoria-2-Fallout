@@ -1,5 +1,7 @@
 trade_goods = cattle
 life_rating = 31
-owner = GRD
+#owner = GRD
+owner = DES
+add_core = DES
 add_core = GRD
 

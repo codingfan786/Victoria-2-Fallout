@@ -6,7 +6,7 @@ post_napoleonic_thought = {
 	unciv_military = yes
 	activate_unit = engineer
 
-	activate_building = fort	
+	#activate_building = fort	
 	army_base = {
 		default_organisation = 5
 		supply_consumption = -1
@@ -56,7 +56,7 @@ strategic_mobility = {
 	army_base = {
 		supply_consumption = 0.10
 	}
-	max_fort = 1
+	#max_fort = 1
 	dig_in_cap = 1
 	
 	ai_chance = {
@@ -112,7 +112,7 @@ point_defense_system = {
 	army_base = {
 		supply_consumption = 0.20
 	} 
-	max_fort = 1
+	#max_fort = 1
 	dig_in_cap = 1
 	ai_chance = {
 		factor = 1.01
@@ -167,7 +167,7 @@ deep_defense_system = {
 	army_base = {
 		supply_consumption = 0.20
 	} 
-	max_fort = 1
+	#max_fort = 1
 	dig_in_cap = 1
 	
 	ai_chance = {
@@ -221,7 +221,7 @@ infiltration = {
 		supply_consumption = 0.20
 	} 
 	
-	max_fort = 1
+	#max_fort = 1
 	dig_in_cap = 1
 	
 	ai_chance = {
@@ -268,7 +268,7 @@ modern_army_doctrine = {
 		supply_consumption = 0.20
 	} 
 	
-	max_fort = 1
+	#max_fort = 1
 	dig_in_cap = 1
 	
 	ai_chance = {

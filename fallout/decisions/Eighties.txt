@@ -9,11 +9,11 @@ political_decisions = {
 			}
 		}
 		allow = {
-			OR = {
-				year = 1915
-				DES = {war_with = GRA}
-				DES = {war_with = RIP}
-			}
+			#OR = {
+			#	year = 1915
+			#	DES = {war_with = GRA}
+			#	DES = {war_with = RIP}
+			#}
 			NOT = {
 				military_access = RUB
 			}

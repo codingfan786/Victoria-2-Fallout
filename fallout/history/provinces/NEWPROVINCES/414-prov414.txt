@@ -1,4 +1,6 @@
-owner = TVT
+#owner = TVT
+owner = DES
+add_core = DES
 add_core = TVT
 trade_goods = coal
 life_rating = 31
