@@ -1,0 +1,5 @@
+owner = YMP
+add_core = YMP
+trade_goods = coal
+life_rating = 33
+

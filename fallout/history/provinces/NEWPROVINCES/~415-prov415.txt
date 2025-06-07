@@ -1,0 +1,5 @@
+owner = GRD
+add_core = GRD
+trade_goods = grain
+life_rating = 31
+

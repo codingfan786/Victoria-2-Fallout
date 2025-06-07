@@ -1,0 +1,5 @@
+owner = TVT
+add_core = TVT
+trade_goods = timber
+life_rating = 31
+

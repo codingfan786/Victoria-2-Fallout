@@ -1,0 +1,5 @@
+owner = VIP
+add_core = VIP
+trade_goods = cattle
+life_rating = 31
+

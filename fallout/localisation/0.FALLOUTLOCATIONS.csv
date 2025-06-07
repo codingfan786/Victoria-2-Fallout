@@ -8,7 +8,7 @@ state_341;West Red Sun City;x
 state_344;East Red Sun City;x
 state_1;Wasteland;x
 continent_1;Western United States;x
-PROV708;Mojave Outpost;x
+PROV708;Mojave\nOutpost;x
 PROV760;Hidden Valley\nBunker;x
 PROV261;Lost Hills Bunker;x
 PROV180;Maxson Bunker;x
@@ -45,11 +45,11 @@ state_156;Western Grand Canyon;x
 state_195;Eastern Grand Canyon;x
 state_136;South Needles;x
 state_117;North Needles;x
-PROV813;Helios One;x
-PROV771;Black\nMountain\nSummit;x
+PROV813;Helios\nOne;x
+PROV771;Black Mountain Summit;x
 PROV754;Quarry\nJunction;x
-PROV832;Searchlight;x
-PROV861;Cottonwood Cove;x
+PROV832;Camp\nSearchlight;x
+PROV861;Cottonwood\nCove;x
 PROV826;Novac;x
 PROV738;Sloan;x
 PROV720;Goodsprings;x
@@ -62,21 +62,21 @@ PROV828;Boulder City;x
 PROV866;Hoover Dam;x
 state_144;Hoover Dam;x
 PROV847;Ranger Station Delta;x
-PROV853;Camp Forlorn Hope;x
+PROV853;Camp\nForlorn Hope;x
 PROV829;Camp Golf;x
 PROV862;Bitter Springs;x
 PROV851;Ireteba Peak;x
 PROV796;Aerotech Park;x
-PROV777;Camp McCarran;x
+PROV777;Camp\nMcCarran;x
 PROV746;Vault 3;x
 PROV740;Westside;x
 PROV721;Red Rock Canyon;x
 PROV783;Wolfhorn Ranch;x
-PROV812;Ranger Station Charlie;x
+PROV812;Ranger\nStation\nCharlie;x
 PROV838;Cottonwood Crater;x
 PROV718;Old Nuclear Test Site;x
 PROV790;Searchlight Airport;x
-PROV767;North Vegas Square;x
+PROV767;North\nVegas Square;x
 PROV807;Nellis AFB;x
 PROV797;Freeside;x
 PROV749;Hidden Valley\nWest;x
@@ -92,9 +92,9 @@ PROV567;Ashton;x
 PROV697;Jacobstown;x
 PROV636;Mercury Pass;x
 PROV689;Mountain Springs;x
-PROV743;Ivanpah Dry Lake;x
+PROV743;Ivanpah\nDry Lake;x
 PROV759;Service Railyard;x
-PROV744;NCR Correctional Facility;x
+PROV744;NCR\nCorrectional\nFacility;x
 PROV723;Wheaton Springs;x
 PROV737;Crescent Canyon;x
 PROV806;188 Trading Post;x

@@ -1,4 +1,4 @@
-name = "..FALLOUT"
+name = "..FALLOUT: THE GREAT WAR MOD"
 path = "mod/fallout"
 user_dir = "fallout"
 replace_path = "events"
