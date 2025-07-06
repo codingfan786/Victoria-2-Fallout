@@ -72,7 +72,18 @@ country_event = {
 		RIP = {set_country_flag = nevada_person}
 		RUB = {set_country_flag = nevada_person}
 		GRA = {set_country_flag = nevada_person}
-
+		random_owned = {
+			limit = {
+				DES = {ai = no}
+				EHT = {ai = yes}
+			}
+			RUB = {
+				add_country_modifier = {
+					name = mobilization_bonus_rub
+					duration = -1
+				}
+			}
+		}
 		any_country = {
 			limit = {
 				has_country_flag = nevada_person 

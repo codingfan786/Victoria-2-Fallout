@@ -1380,7 +1380,7 @@ country_event = {
 country_event = {
 	id = 1337036
 	title = "NCR Victory!"
-	desc = "The NCR side has acquired 10 Victory Score!."
+	desc = "The NCR side has acquired 10 Victory Score!.\n\nTHE HOST DECISION CAN DISABLE THIS EVENT."
 
 	major = yes
 
@@ -1419,7 +1419,7 @@ country_event = {
 country_event = {
 	id = 1337037
 	title = "Legion Victory!"
-	desc = "The Legion side has acquired 10 Victory Score!."
+	desc = "The Legion side has acquired 10 Victory Score!.\n\nTHE HOST DECISION CAN DISABLE THIS EVENT."
 
 	major = yes
 
@@ -1459,7 +1459,7 @@ country_event = {
 country_event = {
 	id = 1337038
 	title = "Victory!"
-	desc = "One of the sides has 10 Victory score! (That means they win.)"
+	desc = "One of the sides has 10 Victory score! (That means they win.)\n\nTHE HOST DECISION CAN DISABLE THIS EVENT."
 
 	is_triggered_only = yes
 

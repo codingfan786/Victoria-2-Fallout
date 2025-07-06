@@ -513,6 +513,8 @@ conquest = {
 		}
 		NOT = {tag = BVC}
 		NOT = {tag = BLP}
+		NOT = {tag = EHT}
+		NOT = {tag = WHT}
 
 		#kind of stupid...
 		#THIS = {

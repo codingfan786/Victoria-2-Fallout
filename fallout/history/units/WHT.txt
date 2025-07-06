@@ -7,6 +7,9 @@ DEA = {
 SOR = {
 	truce_until = "1915.6.1"
 }
+SKY = {
+	truce_until = "1914.3.1"
+}
 
 army = {
 	name = "Army"
